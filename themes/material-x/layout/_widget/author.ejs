@@ -1,0 +1,115 @@
+<section class='widget <%- item.widget %>'>
+  <div class='content <%= theme.style %>'>
+    <% if(item.avatar) { %>
+      <div class='avatar'>
+        <img class='avatar' src='<%- url_for(item.avatar) %>'/>
+      </div>
+    <%} %>
+    <% if (item.title || item.body || item.hitokoto || item.jinrishici || item.changingword) { %>
+      <div class='text'>
+        <% if (item.title){ %>
+          <h2><%- item.title %></h2>
+        <% } %>
+        <% if (item.body){ %>
+          <%- markdown(item.body) %>
+        <% } %>
+        
+        <!--以下为今日诗词-->
+        <% if (item.jinrishici){ %>
+          <p><span id="jinrishici-sentence"><%- item.jinrishici != true ? item.jinrishici : config.title %></span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        <% } %>
+        <!--以下为一言-->
+        <% if (item.hitokoto){ %>
+          <script defre="defer">
+          fetch('https://v1.hitokoto.cn/')
+          .then(function(res) {
+            return res.json();
+            })
+          .then(function(data) {
+            const hitokotoContent = document.getElementById('hitokoto-content');
+            const hitokotoFrom = document.getElementById('hitokoto-from');
+            hitokotoContent.innerText = data.hitokoto;
+            hitokotoFrom.innerText = '——' + data.from;
+            })
+            .catch(function(err) {
+              console.error(err);
+            })
+          </script>
+          <section class="hitokoto">
+            <header>
+              <div>
+                  <i class="fa fa-quote-left fa-fw" aria-hidden="true"></i> 
+                  Mohen's 一言
+              </div>
+            </header>
+            <div class="content">
+              <p style="text-align:center" id="hitokoto-content"></p>
+              <p style="text-align:right;margin-top:15px" id="hitokoto-from"></p>
+            </div>
+          </section>
+        
+        <% } %>
+        <!--以下为彩色滚动变换字体-->
+        <% if (item.changingword){ %>
+          <div id="binft"></div>
+          <script>
+            var binft = function (r) {
+              function t() {
+                return b[Math.floor(Math.random() * b.length)]
+              }  
+              function e() {
+                return String.fromCharCode(94 * Math.random() + 33)
+              }
+              function n(r) {
+                for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                  var l = document.createElement("span");
+                  l.textContent = e(), l.style.color = t(), n.appendChild(l)
+                }
+                return n
+              }
+              function i() {
+                var t = o[c.skillI];
+                c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+              }
+              var l = "",
+              o = ["深圳实验精神：", "团结奋斗 开拓前进 不断进取 永不满足","深圳实验校风：严格 勤奋 团结 文明", "深圳实验教风：敬业 创新 严谨 精深","深圳实验学风：尊师 刻苦 活泼 求实","深圳实验校训：励精图治","深圳实验师生倡导性价值观：","实验师生应有成为中华民族脊梁的追求"].map(function (r) {
+              return r + ""
+              }),
+              a = 2,
+              g = 1,
+              s = 5,
+              d = 75,
+              b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+              c = {
+                text: "",
+                prefixP: -s,
+                skillI: 0,
+                skillP: 0,
+                direction: "forward",
+                delay: a,
+                step: g
+              };
+              i()
+              };
+              binft(document.getElementById('binft'));
+          </script>
+        <% } %>
+
+      </div>
+    <% } %>
+    <% if (item.social == true && theme.social) { %>
+      <div class="social-wrapper">
+        <% (theme.social||[]).forEach(function(value){ %>
+          <% if (value.url && value.icon) { %>
+            <a href="<%- url_for(value.url) %>"
+              class="social <%- value.icon %> flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          <%}%>
+        <%})%>
+      </div>
+    <% } %>
+  </div>
+</section>

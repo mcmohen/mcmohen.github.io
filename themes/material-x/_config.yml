@@ -1,0 +1,361 @@
+############################### 基本信息 ###############################
+info:
+  name: Material X
+  docs: https://xaoxuu.com/wiki/material-x/
+  cdn: # 把对应的那一行注释掉就使用本地的文件
+    css:
+    #  style: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/css/style.css
+    js:
+      app: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/app.js
+      search: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.5/js/search.js
+      volantis: https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js
+      # unpkg.com/valine/dist/Valine.min.js          
+      # 修改上面链接便可以修改Valine版本
+
+
+############################### 主题风格 ###############################
+style: material    # material: 导航栏和标题栏背景是主题色
+# style: pure        # pure: 导航栏和标题栏背景是白色
+
+
+############################### 服务开关 ###############################
+scrollreveal: true
+nodewaves: true
+busuanzi: true
+# fastclick: true
+
+###############################插件#####################################
+# baidu_analytics: e5e46f321829bf6f4f7f6f7a9cfd1ce5
+
+
+############################### 默认值 ###############################
+# 音乐控件的默认配置，如果sidebar或者page里没有提供，就取这里的参数
+music:
+  enable: true      # 是否启用
+  color: '#1BCDFC'  # 主题色
+  mode: circulation # random （随机） single （单曲） circulation （列表循环） order （列表）
+  server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+  type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
+  id: 2615636388    # 歌曲/专辑/歌单 ID
+  volume: 0.7       # 音量, 0~1
+  autoplay: false   # 自动播放
+
+# 友链页头像占位图
+avatar_placeholder: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgd570170f4f12e1ee829ca0e85a7dffeb77343a.svg
+
+# 日期格式 http://momentjs.com/docs/
+date_format: 'YYYY-MM-DD' # 文章发布日期的格式
+updated_date_format: 'll' # 文章更新日期的格式
+
+# 幻灯片
+backstretch:
+  position: cover  # cover: 封面背景   full: 整个网页背景
+  duration: 6000 # 持续时间（毫秒）
+  fade: 2500     # 渐变（毫秒）
+  images:
+    - https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/f87f9c74efbc681b74af7e5ac550e1f0910aa5.jpg
+
+#https://img.vim-cn.com/6d/a0c9e6f9efad8b731cb7376504bd10d79d2053.jpg
+#https://img.vim-cn.com/1c/a580120a386d51c4e1ac9bc90fdea6c25e105d.jpg
+
+
+############################### 自定义 ###############################
+# page的封面
+cover:
+  scheme: search    # 后期将会提供多种封面方案
+  height: full      # full（默认值）: 首页封面占据整个第一屏幕，其他页面占半个屏幕高度， half: 所有页面都封面都只占半个屏幕高度
+  # title: "Mohen's blog"
+  logo: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgLOGO2.png
+  # logo: assets/logo.png    # logo和title只显示一个，若同时设置，则只显示logo
+  # search_placeholder: '搜索'
+  # 主页封面菜单
+  features:
+    - name: 文章
+      icon: fas fa-book-open # fas fa-rss
+      url: /
+    - name: "资源"
+      icon: fas fa-cubes fa-fw # fas fa-code-branch
+      url: http://mcmohen.top/ # share/
+    - name: 友链
+      icon: fas fa-link
+      url: friends/
+      rel: nofollow
+    - name: 工具箱
+      icon: fas fa-toolbox fa-fw
+      url: tools/
+      rel: nofollow
+    - name: 留言
+      icon: fas fa-comments fa-fw
+      url: comments/
+      rel: nofollow
+    - name: 关于
+      icon: fas fa-info-circle
+      url: about/
+      rel: nofollow
+
+
+# 桌面端导航栏菜单
+menu_desktop:
+  - name: 文章
+    icon: fas fa-book-open # fas fa-grin
+    url: /
+  - name: 分类
+    icon: fas fa-folder-open
+    url: categories/
+    rel: nofollow
+  - name: 标签
+    icon: fas fa-tags fa-fw # fas fa-hashtag
+    url: tags/
+    rel: nofollow
+  - name: 时间轴 # 归档
+    icon: fas fa-calendar-alt # fas fa-archive
+    url: archives/
+    rel: nofollow
+  - name: 工具箱
+    icon: fas fa-toolbox fa-fw
+    url: tools/
+    rel: nofollow
+  - name: 关于
+    icon: fas fa-info-circle
+    url: about/
+    rel: nofollow
+  - name: 留言板
+    icon: fas fa-comments fa-fw
+    url: comments/
+    rel: nofollow
+
+# 手机端导航菜单（从右上角的按钮点击展开）
+menu_mobile:
+  - name: 近期文章
+    icon: fas fa-clock
+    url: /
+  - name: 时间目录 # 文章归档
+    icon: fas fa-calendar-alt # fas fa-archive
+    url: archives/
+    rel: nofollow
+  - name: "资源分享"
+    icon: fas fa-cubes fa-fw  # fas fa-code-branch
+    url: http://mcmohen.top/ # share/
+  - name: 我的友链
+    icon: fas fa-link
+    url: friends/
+    rel: nofollow
+  - name: 神奇音乐            #主题文档
+    icon: fas fa-music
+    url: music/                    #https://xaoxuu.com/wiki/material-x/
+    rel: nofollow
+  - name: 留言板
+    icon: fas fa-comments fa-fw
+    url: comments/
+    rel: nofollow
+
+# 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
+# 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
+# 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
+meta:
+  header: [title, author, date, categories, counter, top]
+  footer: [updated, tags, share]
+
+# 主体元素，你也可以在页面的Front-matter中设置
+body: [article, comments]
+
+# 侧边栏小部件，默认按下面给定的顺序全部显示，文章中还可以自定义显示一部分以及顺序
+sidebar:
+  - widget: author
+    avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg #https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png
+    #jinrishici: 柳暗花明又一村  # 暂时为一言(hitokoto)(在author.ejs中可换回来)
+    body: <h2> MOHEN'S BLOG </h2>
+    social: true
+    changingword: 亭亭山上松
+  - widget: author  # 一言
+    hitokoto: 柳暗花明又一村
+  - widget: plain
+    icon: fas fa-handshake fa-fw
+    title: 欢迎
+    body: <div class="content pure"><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script>var getOSAndBrowser=function(){var os=navigator.platform;var userAgent=navigator.userAgent;var info="";var tempArray="";if(os.indexOf("Win")>-1){if(userAgent.indexOf("Windows NT 5.0")>-1){info+="Win2000"}else if(userAgent.indexOf("Windows NT 5.1")>-1){info+="WinXP"}else if(userAgent.indexOf("Windows NT 5.2")>-1){info+="Win2003"}else if(userAgent.indexOf("Windows NT 6.0")>-1){info+="WindowsVista"}else if(userAgent.indexOf("Windows NT 6.1")>-1||userAgent.indexOf("Windows 7")>-1){info+="Win7"}else if(userAgent.indexOf("Windows NT 6.2")>-1||userAgent.indexOf("Windows 8")>-1){info+="Win8"}else if(userAgent.indexOf("Windows NT 6.3")>-1||userAgent.indexOf("Windows 8.1")>-1){info+="Win8.1"}else if(userAgent.indexOf("Windows NT 10.0")>-1||userAgent.indexOf("Windows 10")>-1){info+="Win10"}else{info+="Other"}}else if(os.indexOf("Mac")>-1){info+="Mac"}else if(os.indexOf("X11")>-1){info+="Unix"}else if(os.indexOf("Linux")>-1){info+="Linux"}else{info+="Other"}info+="/";var isOpera=userAgent.indexOf("Opera")>-1;var isIE=userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1&&!isOpera;var isEdge=userAgent.toLowerCase().indexOf("edge")>-1&&!isIE;var isIE11=(userAgent.toLowerCase().indexOf("trident")>-1&&userAgent.indexOf("rv")>-1);if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(isIE){var version="";var reIE=new RegExp("MSIE (\\d+\\.\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion==7){version="IE7"}else if(fIEVersion==8){version="IE8"}else if(fIEVersion==9){version="IE9"}else if(fIEVersion==10){version="IE10"}else{version="0"}info+=version}else if(isEdge){info+="Edge"}else if(isIE11){info+="IE11"}else if(/[Cc]hrome\/\d+/.test(userAgent)){tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);info+=tempArray[3]+tempArray[1]}else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else{info+="unknown"}return info};document.write("欢迎,来自"+returnCitySN["cname"]+"的朋友");document.write("<br>您的IP是："+returnCitySN["cip"]);document.write("<br>您使用的是："+getOSAndBrowser());</script></div>  <div class="content pure"><iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tm&skin=sogou" frameborder="0" width="270" height="24" allowtransparency="true"></iframe></div>
+  - widget: toc
+  - widget: grid
+    icon: fas fa-map-signs
+    title: 站内导航
+    rows:
+      - name: 近期文章
+        icon: fas fa-clock
+        url: /
+      - name: 时间目录 # 文章归档
+        icon: fas fa-calendar-alt # fas fa-archive
+        url: archives/
+        rel: nofollow
+      - name: "资源分享" # 可能会出现玄学，若出现加双引号
+        icon: fas fa-cubes fa-fw   # fas fa-code-branch
+        url: http://mcmohen.top/ # share/
+      - name: 我的友链
+        icon: fas fa-link
+        url: friends/
+        rel: nofollow
+      - name: 神奇音乐
+        icon: fas fa-music
+        url: music/
+        rel: nofollow
+      - name: 留言板
+        icon: fas fa-comments fa-fw
+        url: comments/
+        rel: nofollow
+  - widget: category
+    more:
+      icon: fas fa-expand-arrows-alt
+      url: categories/
+      rel: nofollow
+  - widget: tagcloud
+    icon: fas fa-fire
+    more:
+      icon: fas fa-expand-arrows-alt
+      url: tags/
+      rel: nofollow
+  # - widget: related_posts # 需要安装插件  npm i -S hexo-related-popular-posts(暂未安装)
+  - widget: music
+    icon: fas fa-compact-disc
+    title: "哲之音乐"
+    more:
+      icon: far fa-heart
+      url: https://music.163.com/#/song?id=561493928
+      rel: external nofollow noopener noreferrer
+      target: _blank
+    server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+    type: playlist    # song （单曲） album （专辑） playlist （歌单） search （搜索）
+    id: 2929037570     # 歌曲/专辑/歌单 ID
+  - widget: plain
+    icon: fas fa-globe fa-fw
+    title: "访客地球"   # 访客地球
+    body: <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5s0uhrcxkch&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+
+#########dplayer#######################################################
+hexo-tag-dplayer:
+  cdn:
+    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js
+    - https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css
+  default: 
+    api: https://api.prprpr.me/dplayer/
+    loop: yes
+    screenshot: yes
+    # 后面还可以接着写其他默认配置
+
+#################################看板娘###############################################
+#model:
+#    use: ./live2d_models/mymiku
+
+#live2d:
+#  enable: true
+#  scriptFrom: local
+#  pluginRootPath: live2dw/
+#  pluginJsPath: lib/
+#  pluginModelPath: assets/
+#  tagMode: false
+#  debug: false
+#  model:
+#    use: live2d-widget-model-hijiki
+#  display:
+#    position: right
+#    width: 150
+#    height: 300
+#  mobile:
+#    show: true
+#  react:
+#    opacity: 0.7
+
+
+# 社交信息
+social:
+  - icon: fas fa-rss
+    url: atom.xml
+  - icon: fab fa-qq
+    url: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgqrcode_1568813101731.jpg
+  - icon: fas fa-envelope
+    url: http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Czo5Pz4zPzk-OzlLenolaGRm # mailto:1245842402@qq.com
+  - icon: fab fa-github
+    url: https://github.com/mcmohen
+  - icon: fas fa-headphones-alt
+    url: https://music.163.com/#/user/home?id=1940296917
+
+# 分享按钮
+# 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
+share:
+  - id: qq
+    name: QQ好友
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png
+  - id: qzone
+    name: QQ空间
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
+  - id: qrcode
+    name: 微信
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
+  - id: weibo
+    name: 微博
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
+  - id: qrcode
+    name: QRcode
+    img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
+
+
+
+# footer: '页脚文字，支持[markdown](/)'
+
+
+############################### 评论系统 ###############################
+# disqus_shortname: 要使用哪个请复制到根目录配置文件！
+# livere_uid: 要使用哪个请复制到根目录配置文件！
+# gitalk: 要使用哪个请复制到根目录配置文件！
+#   clientID: 你的clientID
+#   clientSecret: 你的clientSecret
+#   repo: 你的repo名
+#   owner: 你的GitHub名
+#   admin: [] 至少填写你的GitHub名
+# leancloud: 要使用哪个请复制到根目录配置文件！
+#   app_id: 你的appId
+#   app_key: 你的appKey
+
+
+############################### 杂项，请勿删除 ###############################
+#valine配置
+valine:
+  enable: true  # 如果你想用Valine评论系统，请设置enable为true
+  volantis: true  # 是否启用volantis版本（禁止匿名，增加若干贴吧、QQ表情）
+
+  guest_info: nick,mail,link  #valine comment header info
+  placeholder: 来啊(づ●─●)づ快活啊~~  # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mp  # gravatar style https://valine.js.org/avatar
+  pageSize: 10  # comment list page size
+  verify: true  # valine verify code (true/false)  验证码  hexo\themes\material-x\layout\_partial\scripts.ejs 中强制修改了两个变量
+  notify: true  # valine mail notify (true/false) 邮件提醒                      于是强制开启
+  lang: zh-cn
+  highlight: true
+
+  # 还需要在根目录配置文件中添加下面这三行内容
+  # leancloud:
+  #   app_id: 你的appId
+  #   app_key: 你的appKey
+
+  # DaoVoice
+  #daovoice: true
+  #daovoice_app_id: 4f07a23b
+
+# 搜索配置
+search:
+  enable: true
+  service: hexo
+  # google
+  google_api_key:
+  google_engine_id:
+  # algolia
+  algolia_app_id:
+  algolia_api_key:
+  algolia_index_name:
+  # azure
+  azure_service_name:
+  azure_index_name:
+  azure_query_key:
+  # baidu
+  baidu_api_id:
+
+# Less渲染
+less:
+  compress: true
