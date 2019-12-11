@@ -151,5 +151,5 @@ backup:
   message: Back up my mcmohen.com blog
   repository:
     github: git@github.com:mcmohen/mcmohen.github.io.git,backup
-    coding: git@git.dev.tencent.com:mcmohen/mcmohen.git,backup
+    coding: git@git.dev.tencent.com:mcmohen/mcmohen.coding.me.git,backup
 
