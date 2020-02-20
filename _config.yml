@@ -86,7 +86,7 @@ deploy:
   type: git
   repo: 
     github: https://github.com/mcmohen/mcmohen.github.io.git # git@github.com:mcmohen/mcmohen.github.io.git
-    coding: https://git.dev.tencent.com/mcmohen/mcmohen.coding.me.git # 你的coding仓库地址
+    coding: git@e.coding.net:mcmohen-01/mcmohen.coding.me.git # 你的coding仓库地址
     # github: https://github.com/mcmohen/mcmohen.github.io # 你的GitHub仓库地址
     branch: master
   message:  # 提交信息可以自定义，不填的则默认为提交时间
@@ -151,5 +151,5 @@ backup:
   message: Back up my mcmohen.com blog
   repository:
     github: git@github.com:mcmohen/mcmohen.github.io.git,backup
-    coding: git@git.dev.tencent.com:mcmohen/mcmohen.coding.me.git,backup
+    coding: git@e.coding.net:mcmohen-01/mcmohen.coding.me.git,backup
 

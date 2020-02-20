@@ -36,7 +36,7 @@ links:
       - bilibili某知名up主
 
     - name: lal    # 博客名
-      avatar: http://www.lu-anlai.com/wp-content/uploads/2019/07/a.jpg  # 头像链接
+      avatar: https://public-lu-anlai-china-hong-kong.oss-cn-hongkong.aliyuncs.com/avatar/avatar-128px.jpg  # 头像链接
       url: http://www.lu-anlai.com/     # 博客链接
       backgroundColor: '#013ADF' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
@@ -92,6 +92,14 @@ links:
       tags:
       - 朋友
       - 大佬
+    - name: Lu Shuyu
+      avatar: https://gravatar.loli.net/avatar/3c366b0c5c3121d92c1dcc2cc8faf32c?d=mp&v=Volantis%20Edition%20(based%20on%201.3.10)
+      url: https://aqours.life/
+      backgroundColor: '#808000'
+      textColor: '#fff'
+      tags:
+      - 朋友
+      - 哲人
 
   - group: 特殊嘉宾
     icon: fas fa-user-tie

@@ -1,0 +1,69 @@
+<div id="reward">
+  <% if (theme.reward.reward_comment != undefined){ %>
+  <div><%= theme.reward.reward_comment %></div>
+  <% } %>
+  <div class="reward">
+    <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class=" tr3" title="Github"><span
+        id="github"></span></a>
+    <ul id="RewardBox" class="list pos-f tr3">
+      <% if (theme.reward.PayPalLink != undefined){ %>
+      <li id="PayPal" title="PayPal打赏"><a href="<%- theme.reward.PayPalLink %>" target="_blank">PayPal</a></li>
+      <% } %>
+      <% if (theme.reward.AliPayOR != undefined){ %>
+      <li id="AliPayOR" title="支付宝打赏">AliPay</li>
+      <% } %>
+      <% if (theme.reward.WeChatPayOR != undefined){ %>
+      <li id="WeChatPayOR" title="微信打赏">WeChatPay</li>
+      <% } %>
+      <% if (theme.reward.QQPayOR != undefined){ %>
+      <li id="QQPayOR" title="QQ打赏">QQPay</li>
+      <% } %>
+    </ul>
+    <div id="RewardText" class="tr3">Donate</div>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    var QRBox = $('#QRBox');
+    var MainBox = $('#MainBox');
+    var AliPayOR = '<%= theme.reward.AliPayOR %>';
+    var WeChatPayOR = '<%= theme.reward.WeChatPayOR %>';
+    var QQPayOR = '<%= theme.reward.QQPayOR %>';
+
+    function showQR(QR) {
+      if (QR) {
+        MainBox.css('background-image', 'url(' + QR + ')');
+      }
+      $('#RewardText,#RewardBox,#github').addClass('blur');
+      QRBox.fadeIn(300, function (argument) {
+        MainBox.addClass('showQR');
+      });
+    }
+
+    $('#RewardBox>li').click(function (event) {
+      var thisID = $(this).attr('id');
+      if (thisID === 'AliPayOR') {
+        showQR(AliPayOR);
+      } else if (thisID === 'WeChatPayOR') {
+        showQR(WeChatPayOR);
+      } else if (thisID === 'QQPayOR') {
+        showQR(QQPayOR);
+      }
+    });
+
+    MainBox.click(function (event) {
+      MainBox.removeClass('showQR').addClass('hideQR');
+      setTimeout(function (a) {
+        QRBox.fadeOut(300, function (argument) {
+          MainBox.removeClass('hideQR');
+        });
+        $('#RewardText,#RewardBox,#github').removeClass('blur');
+      }, 600);
+
+    });
+  });
+</script>

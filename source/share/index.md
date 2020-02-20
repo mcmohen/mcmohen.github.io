@@ -1,14 +1,14 @@
 ---
-title: 分享站
+title: 文件收集
 gitalk:
   id: /wiki/material-x/
 ---
 
-### 部分文件仍为压缩包,请自行解压!
 
-### 已使用特殊技术将一部分文件改为非压缩包下载!
 
-1. # [C++](/share/all/C++.html)
-2. # [工具](/share/all/工具.html)
-3. # [游戏](/share/all/游戏.html)
+<marquee><font style="color: #ff0000; font-weight: normal; font-size: 20pt; line-height: normal; font-style: normal; font-variant: normal" face="微软雅黑">注意:请勿上传违反国家相关法律的文件！</font></marquee>
+
+## [文件上传](http://inbox.weiyun.com/5vpx9vP) <---传给墨痕哦QAQ！
+
+## [文件浏览](https://share.weiyun.com/5QqQd7F) <---可以看大家传给我的文件！
 

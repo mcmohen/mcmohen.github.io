@@ -7,6 +7,9 @@
         <div class="article-entry" itemprop="articleBody">
           <%- post.content %>
         </div>
+        <% if (theme.reward.enable && post.layout == 'post' && post.reward != false){ %>
+          <%- partial('reward') %>
+        <% } %>
         <% if(post.layout == 'post'){ %>
           <%- partial('meta', {post: post, position: 'footer'}) %>
         <% } %>
@@ -29,7 +32,7 @@
                                 <%
                                 var items = [];
                                 post.prev.tags.each(function(item){
-                                    items.push('<a class="tag" href="'+url_for(item.path)+'"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>' + item.name + '</a>');
+                                    items.push('<a class="tag" href="'+url_for(item.path)+'"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;' + item.name + '</a>');
                                 });
                                 %>
                                 <h6 class="tags">
@@ -56,7 +59,7 @@
                                 <%
                                 var items = [];
                                 post.next.tags.each(function(item){
-                                    items.push('<a class="tag" href="'+url_for(item.path)+'"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>' + item.name + '</a>');
+                                    items.push('<a class="tag" href="'+url_for(item.path)+'"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;' + item.name + '</a>');
                                 });
                                 %>
                                 <h6 class="tags">
