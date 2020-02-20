@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html>
+<!--instant预加载-->
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.2/js/instantclick-1.2.2.js" type="module"></script>
+<!---daovoice-->
+<!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
+
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?e5e46f321829bf6f4f7f6f7a9cfd1ce5";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>洛谷题解 P2010 【(2016年普及组第二题)回文日期】 | Mohen&#39;s blog</title>
+  
+  
+
+  
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  
+
+  
+    <link rel="stylesheet" href="/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post half'>
+      
+        
+  <img class='logo' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgLOGO2.png'/>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="搜索一下吧！" />  <!--  替换搜索一下 -->
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-book-open fa-fw'></i>&nbsp;文章
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="http://mcmohen.top/"
+            
+            
+            id="http:mcmohen.top">
+            <i class='fas fa-cubes fa-fw fa-fw'></i>&nbsp;资源
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+              rel="nofollow"
+            
+            
+            id="friends">
+            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/tools/"
+            
+              rel="nofollow"
+            
+            
+            id="tools">
+            <i class='fas fa-toolbox fa-fw fa-fw'></i>&nbsp;工具箱
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/share/"
+            
+              rel="nofollow"
+            
+            
+            id="share">
+            <i class='fas fa-cloud-upload-alt fa-fw'></i>&nbsp;文件收集
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/comments/"
+            
+              rel="nofollow"
+            
+            
+            id="comments">
+            <i class='fas fa-comments fa-fw fa-fw'></i>&nbsp;留言
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/about/"
+            
+              rel="nofollow"
+            
+            
+            id="about">
+            <i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+      
+      <!--以下为封面Hitokoto 一言-->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <div style="text-align: center;font-weight: bold;color: rgb(0, 0, 0);">
+      <span id="subtitle"></span>
+      <span id="typed-cursor"></span>
+    </div>
+    <script>
+      var typed = new Typed("#subtitle", { strings: ["Live a good life, write some good code !!!", "愿自己的努力终将获得回报。", "花开不是为了花落，而是为了开的更加灿烂。", "没有伞的孩子必须努力奔跑！", "欲望以提升热忱，毅力以磨平高山。", "如果放弃太早，你永远都不知道自己会错过什么。", "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。"], startDelay: 1000, typeSpeed: 100, loop: !0, backSpeed: 60, backDelay: 2000, showCursor: !0 })
+    </script>
+    <!--到此结束-->
+    </cover>
+    <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Mohen's blog
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-book-open fa-fw'></i>&nbsp;文章
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/categories/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="categories">
+									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tags/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tags">
+									<i class='fas fa-tags fa-fw fa-fw'></i>&nbsp;标签
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-calendar-alt fa-fw'></i>&nbsp;时间轴
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/tools/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="tools">
+									<i class='fas fa-toolbox fa-fw fa-fw'></i>&nbsp;工具箱
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/share/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="share">
+									<i class='fas fa-cloud-upload-alt fa-fw'></i>&nbsp;文件收集
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/about/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="about">
+									<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/comments/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="comments">
+									<i class='fas fa-comments fa-fw fa-fw'></i>&nbsp;留言板
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                  rel="nofollow"
+                
+                
+                id="archives">
+								<i class='fas fa-calendar-alt fa-fw'></i>&nbsp;时间目录
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="http://mcmohen.top/"
+                
+                
+                id="http:mcmohen.top">
+								<i class='fas fa-cubes fa-fw fa-fw'></i>&nbsp;资源分享
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                  rel="nofollow"
+                
+                
+                id="friends">
+								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/music/"
+                
+                  rel="nofollow"
+                
+                
+                id="music">
+								<i class='fas fa-music fa-fw'></i>&nbsp;神奇音乐
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/comments/"
+                
+                  rel="nofollow"
+                
+                
+                id="comments">
+								<i class='fas fa-comments fa-fw fa-fw'></i>&nbsp;留言板
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+		
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+
+  </div>
+
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+      <a title='洛谷题解 P2010 【(2016年普及组第二题)回文日期】' href='/2019/08/15/题解-lg2010 回文日期/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgans.jpg'></a>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2019/08/15/题解-lg2010 回文日期/">
+        洛谷题解 P2010 【(2016年普及组第二题)回文日期】
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="https://mcmohen.github.io" rel="nofollow">
+        
+          <img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg">
+        
+        <p>mcmohen</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-08-15</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/题解/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>题解</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <p><a href="https://www.luogu.org/problem/P2010" target="_blank" rel="noopener">lg2010传送门</a></p>
+<a id="more"></a>
+
+<h3 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意:"></a>题目大意:</h3><h5 id="给出两个时间点"><a href="#给出两个时间点" class="headerlink" title="给出两个时间点"></a>给出两个时间点</h5><h5 id="如-20190815-正好今天"><a href="#如-20190815-正好今天" class="headerlink" title="如:20190815(正好今天)"></a>如:20190815<del>(正好今天)</del></h5><h5 id="20001201-随便取的"><a href="#20001201-随便取的" class="headerlink" title="20001201(随便取的)"></a>20001201<del>(随便取的)</del></h5><h5 id="求出两个时间点之间-包括这两个时间点-的时间有几个是回文的"><a href="#求出两个时间点之间-包括这两个时间点-的时间有几个是回文的" class="headerlink" title="求出两个时间点之间(包括这两个时间点)的时间有几个是回文的"></a>求出两个时间点之间(包括这两个时间点)的时间有几个是回文的</h5><h5 id="如-20111102-当然还有其它"><a href="#如-20111102-当然还有其它" class="headerlink" title="如:20111102(当然还有其它)"></a>如:20111102(当然还有其它)</h5><h5 id="而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0"><a href="#而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0" class="headerlink" title="而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0"></a>而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0</h5><h3 id="需要注意的点"><a href="#需要注意的点" class="headerlink" title="需要注意的点:"></a>需要注意的点:</h3><h5 id="1-保证输入的第一个年份小于等于第二个-废话"><a href="#1-保证输入的第一个年份小于等于第二个-废话" class="headerlink" title="1.  保证输入的第一个年份小于等于第二个(废话)"></a>1.  保证输入的第一个年份小于等于第二个<del>(废话)</del></h5><h5 id="2-要判断闰年与平年-还要判断大月与小月和2月-1月大-2月小-3月大-4月小……-咳咳，是人都知道，但还是要讲一下"><a href="#2-要判断闰年与平年-还要判断大月与小月和2月-1月大-2月小-3月大-4月小……-咳咳，是人都知道，但还是要讲一下" class="headerlink" title="2.  要判断闰年与平年,还要判断大月与小月和2月(1月大,2月小,3月大,4月小……)    咳咳，是人都知道，但还是要讲一下"></a>2.  要判断闰年与平年,还要判断大月与小月和2月<del>(1月大,2月小,3月大,4月小……)</del>    咳咳，是人都知道，但还是要讲一下</h5><h5 id="它们的区别"><a href="#它们的区别" class="headerlink" title="它们的区别:"></a>它们的区别:</h5><h5 id="其中"><a href="#其中" class="headerlink" title="其中:"></a>其中:</h5><ul>
+<li><h5 id="1-3-5-7-8-10-12月每个月有31天；"><a href="#1-3-5-7-8-10-12月每个月有31天；" class="headerlink" title="1,3,5,7,8,10,12月每个月有31天；"></a>1,3,5,7,8,10,12月每个月有31天；</h5></li>
+<li><h5 id="4-6-9-11月每个月有30天；"><a href="#4-6-9-11月每个月有30天；" class="headerlink" title="4,6,9,11月每个月有30天；"></a>4,6,9,11月每个月有30天；</h5></li>
+<li><h5 id="而对于2月，闰年时有29天，平年时有28天。"><a href="#而对于2月，闰年时有29天，平年时有28天。" class="headerlink" title="而对于2月，闰年时有29天，平年时有28天。"></a>而对于2月，闰年时有29天，平年时有28天。</h5></li>
+</ul>
+<h5 id="一个年份是闰年当且仅当它满足下列两种情况其中的一种："><a href="#一个年份是闰年当且仅当它满足下列两种情况其中的一种：" class="headerlink" title="一个年份是闰年当且仅当它满足下列两种情况其中的一种："></a>一个年份是闰年当且仅当它满足下列两种情况其中的一种：</h5><ul>
+<li><h5 id="这个年份是4的整数倍，但不是100的整数倍；"><a href="#这个年份是4的整数倍，但不是100的整数倍；" class="headerlink" title="这个年份是4的整数倍，但不是100的整数倍；"></a>这个年份是4的整数倍，但不是100的整数倍；</h5></li>
+<li><h5 id="这个年份是400的整数倍。"><a href="#这个年份是400的整数倍。" class="headerlink" title="这个年份是400的整数倍。"></a>这个年份是400的整数倍。</h5></li>
+</ul>
+<h5 id="例如："><a href="#例如：" class="headerlink" title="例如："></a>例如：</h5><ul>
+<li><h5 id="以下几个年份都是闰年：2000-2012-2016"><a href="#以下几个年份都是闰年：2000-2012-2016" class="headerlink" title="以下几个年份都是闰年：2000,2012,2016"></a>以下几个年份都是闰年：2000,2012,2016</h5></li>
+<li><h5 id="以下几个年份是平年：1900-2011-2014"><a href="#以下几个年份是平年：1900-2011-2014" class="headerlink" title="以下几个年份是平年：1900,2011,2014"></a>以下几个年份是平年：1900,2011,2014</h5></li>
+</ul>
+<h6 id="所以可以得出如下判断闰年的代码"><a href="#所以可以得出如下判断闰年的代码" class="headerlink" title="所以可以得出如下判断闰年的代码:"></a>所以可以得出如下判断闰年的代码:</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(y%<span class="number">400</span>==<span class="number">0</span>) <span class="comment">//y为年份   返回true为闰年   反之平年</span></span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y%<span class="number">4</span>==<span class="number">0</span>&amp;&amp;y%<span class="number">100</span>!=<span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="很好理解！"><a href="#很好理解！" class="headerlink" title="很好理解！"></a><del>很好理解！</del></h4><h3 id="接下来就是思路了"><a href="#接下来就是思路了" class="headerlink" title="接下来就是思路了:"></a>接下来就是思路了:</h3><h5 id="总体思路就是暴力枚举！-D"><a href="#总体思路就是暴力枚举！-D" class="headerlink" title="总体思路就是暴力枚举！:D"></a>总体思路就是暴力枚举！:D</h5><h5 id="反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过"><a href="#反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过" class="headerlink" title="反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过"></a>反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过</h5><h5 id="这样的枚举代码肯定很长-我的就是"><a href="#这样的枚举代码肯定很长-我的就是" class="headerlink" title="这样的枚举代码肯定很长(我的就是)"></a>这样的枚举代码肯定很长<del>(我的就是)</del></h5><h5 id="所以一定要细心！"><a href="#所以一定要细心！" class="headerlink" title="所以一定要细心！"></a>所以一定要细心！</h5><h4 id="细心！"><a href="#细心！" class="headerlink" title="细心！"></a>细心！</h4><h3 id="细心！-1"><a href="#细心！-1" class="headerlink" title="细心！"></a>细心！</h3><h6 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下:"></a>代码如下:</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rn</span><span class="params">(<span class="keyword">int</span>)</span></span>;  <span class="comment">//调用函数</span></span><br><span class="line"><span class="keyword">int</span> x,y,cnt=<span class="number">0</span>,day=<span class="number">0</span>,years,months,yeare,monthe;</span><br><span class="line"><span class="keyword">int</span> mds=<span class="number">0</span>,mde=<span class="number">0</span>; <span class="comment">//x是开始时间 y结束</span></span><br><span class="line"><span class="keyword">int</span> s[<span class="number">9</span>],e[<span class="number">9</span>]; <span class="comment">//cnt计数 years是开始年份 yeare是结束年份  //其它一样  mds和mde是临时变量(后面会讲)</span></span><br><span class="line"><span class="keyword">bool</span> tp=<span class="literal">true</span>,ttp=<span class="literal">true</span>; <span class="comment">//判断变量</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">8</span>;i&gt;=<span class="number">1</span>;i--) <span class="comment">//两个for循环将int类型拆为数组</span></span><br><span class="line">	&#123;</span><br><span class="line">		s[i]=x%<span class="number">10</span>;  </span><br><span class="line">		x/=<span class="number">10</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">8</span>;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">	&#123;</span><br><span class="line">		e[i]=y%<span class="number">10</span>;</span><br><span class="line">		y/=<span class="number">10</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">8</span>;i++) <span class="comment">//特判两个日期是否一样</span></span><br><span class="line">		<span class="keyword">if</span>(s[i]!=e[i])</span><br><span class="line">			tp=<span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">int</span> zip=<span class="number">8</span>;<span class="comment">//因为数据点说了60%的数据开始和结束时间一样</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">4</span>;i++) <span class="comment">//zip记录数组下标</span></span><br><span class="line">		<span class="keyword">if</span>(s[i]!=s[zip--]) <span class="comment">//分别前后判断</span></span><br><span class="line">			ttp=<span class="literal">false</span>; <span class="comment">//只要有不同ttp就为false</span></span><br><span class="line">	<span class="keyword">if</span>(tp) <span class="comment">//假如输入数据相同且回文</span></span><br><span class="line">		<span class="keyword">if</span>(ttp)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="number">1</span>; <span class="comment">//直接输出1个回文并返回(程序结束)</span></span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;	</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">else</span>  <span class="comment">//假如数据相同但不回文</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="number">0</span>; <span class="comment">//输出0个回文并返回(程序结束)</span></span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">    <span class="comment">//假如输入的两个数据不同  那就开始一堆操作了...</span></span><br><span class="line">	years=s[<span class="number">1</span>]*<span class="number">1000</span>+s[<span class="number">2</span>]*<span class="number">100</span>+s[<span class="number">3</span>]*<span class="number">10</span>+s[<span class="number">4</span>]; </span><br><span class="line">	yeare=e[<span class="number">1</span>]*<span class="number">1000</span>+e[<span class="number">2</span>]*<span class="number">100</span>+e[<span class="number">3</span>]*<span class="number">10</span>+e[<span class="number">4</span>];</span><br><span class="line">	months=s[<span class="number">5</span>]*<span class="number">10</span>+s[<span class="number">6</span>];</span><br><span class="line">	monthe=e[<span class="number">5</span>]*<span class="number">10</span>+s[<span class="number">6</span>]; <span class="comment">//将数组转为开始和结束的年和月</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=months;i&gt;=<span class="number">1</span>;i--) <span class="comment">//循环开始的月份次 如3月就循环3次</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">1</span>||i==<span class="number">3</span>||i==<span class="number">5</span>||i==<span class="number">7</span>||i==<span class="number">8</span>||i==<span class="number">10</span>||i==<span class="number">12</span>)  <span class="comment">//判断是否为大月</span></span><br><span class="line">			mds+=<span class="number">31</span>;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">6</span>||i==<span class="number">9</span>||i==<span class="number">11</span>)  <span class="comment">//小月</span></span><br><span class="line">			mds+=<span class="number">30</span>;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">2</span>&amp;&amp;rn(years))  <span class="comment">//2月闰年</span></span><br><span class="line">			mds+=<span class="number">29</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(i==<span class="number">2</span>&amp;&amp;!rn(years))  <span class="comment">//2月平年</span></span><br><span class="line">			mds+=<span class="number">28</span>;    <span class="comment">//mds记录开始月份转为天数有多少天</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=monthe;i&gt;=<span class="number">1</span>;i--)  <span class="comment">//结束月份 道理同上</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">1</span>||i==<span class="number">3</span>||i==<span class="number">5</span>||i==<span class="number">7</span>||i==<span class="number">8</span>||i==<span class="number">10</span>||i==<span class="number">12</span>)     </span><br><span class="line">			mde+=<span class="number">31</span>;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">4</span>||i==<span class="number">6</span>||i==<span class="number">9</span>||i==<span class="number">11</span>)</span><br><span class="line">			mde+=<span class="number">30</span>;</span><br><span class="line">		<span class="keyword">if</span>(i==<span class="number">2</span>&amp;&amp;rn(yeare))</span><br><span class="line">			mde+=<span class="number">29</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(i==<span class="number">2</span>&amp;&amp;!rn(yeare))</span><br><span class="line">			mde+=<span class="number">28</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	day=(yeare-years)*<span class="number">365</span>+(mde-mds)+<span class="number">10</span>*e[<span class="number">7</span>]+e[<span class="number">8</span>]<span class="number">-10</span>*s[<span class="number">7</span>]-s[<span class="number">8</span>]; <span class="comment">//用结束减开始算出总天数</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=day;i++)  <span class="comment">//循环总天数遍</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">int</span> temp=<span class="number">8</span>;  <span class="comment">//记录下标</span></span><br><span class="line">		<span class="keyword">bool</span> rb=<span class="literal">true</span>; <span class="comment">//定义一个判断 如同上面的特判</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">			<span class="keyword">if</span>(s[i]!=s[temp--])</span><br><span class="line">				rb=<span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">if</span>(rb==<span class="literal">true</span>) <span class="comment">//如果回文答案加1</span></span><br><span class="line">			cnt++;</span><br><span class="line">		s[<span class="number">8</span>]+=<span class="number">1</span>; <span class="comment">//s[8]为天数 天数加1</span></span><br><span class="line">		<span class="keyword">if</span>(s[<span class="number">8</span>]&gt;<span class="number">9</span>)  <span class="comment">//下面为进位判断(不具体说明了)</span></span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">8</span>]-=<span class="number">10</span>;  <span class="comment">//就是9变成10本身减9</span></span><br><span class="line">			s[<span class="number">7</span>]++;    <span class="comment">//上一位加1</span></span><br><span class="line">		&#125;              <span class="comment">//或12变13减12</span></span><br><span class="line">		<span class="keyword">int</span> mo;        <span class="comment">//年份加1</span></span><br><span class="line">		<span class="keyword">int</span> ye;       <span class="comment">//天数到达一定的数量月份加1</span></span><br><span class="line">		ye=s[<span class="number">1</span>]*<span class="number">1000</span>+s[<span class="number">2</span>]*<span class="number">100</span>+s[<span class="number">3</span>]*<span class="number">10</span>+s[<span class="number">4</span>];<span class="comment">//天数为1</span></span><br><span class="line">		mo=s[<span class="number">5</span>]*<span class="number">10</span>+s[<span class="number">6</span>];  <span class="comment">//天数较难判断</span></span><br><span class="line">                       <span class="comment">//因为有大小月和闰平年</span></span><br><span class="line">        <span class="keyword">if</span>((mo==<span class="number">1</span>||mo==<span class="number">3</span>||mo==<span class="number">5</span>||mo==<span class="number">7</span>||mo==<span class="number">8</span>||mo==<span class="number">10</span>||mo==<span class="number">12</span>)&amp;&amp;(s[<span class="number">7</span>]*<span class="number">10</span>+s[<span class="number">8</span>])&gt;<span class="number">31</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">6</span>]++;</span><br><span class="line">			s[<span class="number">7</span>]-=<span class="number">3</span>;</span><br><span class="line">			s[<span class="number">8</span>]--;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>((mo==<span class="number">4</span>||mo==<span class="number">6</span>||mo==<span class="number">9</span>||mo==<span class="number">11</span>)&amp;&amp;(s[<span class="number">7</span>]*<span class="number">10</span>+s[<span class="number">8</span>])&gt;<span class="number">30</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">6</span>]++;</span><br><span class="line">			s[<span class="number">7</span>]-=<span class="number">3</span>; </span><br><span class="line">		&#125; </span><br><span class="line">		<span class="keyword">if</span>((mo==<span class="number">2</span>)&amp;&amp;rn(ye)&amp;&amp;(s[<span class="number">7</span>]*<span class="number">10</span>+s[<span class="number">8</span>])&gt;<span class="number">29</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">6</span>]++;</span><br><span class="line">			s[<span class="number">7</span>]-=<span class="number">3</span>;</span><br><span class="line">			s[<span class="number">8</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>((mo==<span class="number">2</span>)&amp;&amp;!rn(ye)&amp;&amp;(s[<span class="number">7</span>]*<span class="number">10</span>+s[<span class="number">8</span>])&gt;<span class="number">28</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">6</span>]++;</span><br><span class="line">			s[<span class="number">7</span>]-=<span class="number">2</span>;</span><br><span class="line">			s[<span class="number">8</span>]-=<span class="number">8</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(s[<span class="number">6</span>]&gt;<span class="number">9</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">6</span>]-=<span class="number">10</span>;</span><br><span class="line">			s[<span class="number">5</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>((s[<span class="number">5</span>]*<span class="number">10</span>+s[<span class="number">6</span>])&gt;<span class="number">12</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">4</span>]++;</span><br><span class="line">			s[<span class="number">5</span>]--;</span><br><span class="line">			s[<span class="number">6</span>]-=<span class="number">2</span>; </span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(s[<span class="number">4</span>]&gt;<span class="number">9</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">4</span>]-=<span class="number">10</span>;</span><br><span class="line">			s[<span class="number">3</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(s[<span class="number">3</span>]&gt;<span class="number">9</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">3</span>]-=<span class="number">10</span>;</span><br><span class="line">			s[<span class="number">2</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(s[<span class="number">2</span>]&gt;<span class="number">9</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			s[<span class="number">2</span>]-=<span class="number">10</span>;</span><br><span class="line">			s[<span class="number">1</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125; <span class="comment">//退出循环</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;cnt; <span class="comment">//输出回文日期的个数</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rn</span><span class="params">(<span class="keyword">int</span> y)</span>  <span class="comment">//判断是否为闰年函数(上面讲过)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(y%<span class="number">400</span>==<span class="number">0</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(y%<span class="number">4</span>==<span class="number">0</span>&amp;&amp;y%<span class="number">100</span>!=<span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">//结束啦！！ヾ(◍°∇°◍)ﾉﾞヾ(ﾟ∀ﾟゞ)</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="所以这个困难又麻烦的题就结束了"><a href="#所以这个困难又麻烦的题就结束了" class="headerlink" title="所以这个困难又麻烦的题就结束了"></a>所以这个<del>困难</del>又麻烦的题就结束了</h4>
+        </div>
+        
+          <div id="reward">
+  
+  <div>您的喜欢是作者写作最大的动力！❤️</div>
+  
+  <div class="reward">
+    <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class=" tr3" title="Github"><span
+        id="github"></span></a>
+    <ul id="RewardBox" class="list pos-f tr3">
+      
+      
+      <li id="AliPayOR" title="支付宝打赏">AliPay</li>
+      
+      
+      <li id="WeChatPayOR" title="微信打赏">WeChatPay</li>
+      
+      
+      <li id="QQPayOR" title="QQ打赏">QQPay</li>
+      
+    </ul>
+    <div id="RewardText" class="tr3">Donate</div>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    var QRBox = $('#QRBox');
+    var MainBox = $('#MainBox');
+    var AliPayOR = 'https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img1582169418.png';
+    var WeChatPayOR = 'https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img1582169058.png';
+    var QQPayOR = 'https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgQQ转账.png';
+
+    function showQR(QR) {
+      if (QR) {
+        MainBox.css('background-image', 'url(' + QR + ')');
+      }
+      $('#RewardText,#RewardBox,#github').addClass('blur');
+      QRBox.fadeIn(300, function (argument) {
+        MainBox.addClass('showQR');
+      });
+    }
+
+    $('#RewardBox>li').click(function (event) {
+      var thisID = $(this).attr('id');
+      if (thisID === 'AliPayOR') {
+        showQR(AliPayOR);
+      } else if (thisID === 'WeChatPayOR') {
+        showQR(WeChatPayOR);
+      } else if (thisID === 'QQPayOR') {
+        showQR(QQPayOR);
+      }
+    });
+
+    MainBox.click(function (event) {
+      MainBox.removeClass('showQR').addClass('hideQR');
+      setTimeout(function (a) {
+        QRBox.fadeOut(300, function (argument) {
+          MainBox.removeClass('hideQR');
+        });
+        $('#RewardText,#RewardBox,#github').removeClass('blur');
+      }, 600);
+
+    });
+  });
+</script>
+
+        
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-03T22:00:39+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2019年10月3日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>C++</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/题解/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>题解</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.github.io/2019/08/15/题解-lg2010 回文日期/&title=洛谷题解 P2010 【(2016年普及组第二题)回文日期】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg2010传送门"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.github.io/2019/08/15/题解-lg2010 回文日期/&title=洛谷题解 P2010 【(2016年普及组第二题)回文日期】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg2010传送门"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aS27cQAwFwLn/pceAVwYMyY+fHnlRWgWyI6kYoMmQfL3i6/19JXd+3n//uq6e8L647t+4duHh4eG1Pv3+BTkvCVBOzQN3FRQ8PDy8c7ytD6oG6/538nBf3sfDw8N7lHd5+AbhqN5PgoKHh4f3/3l5IR4Vu3ECeCzv4eHh4d3yqq/JmxG9Uvs+xEd6LXh4eHi187kwAPsPfz4438PDw8MbTNUnrdjkU5KnTb4WDw8P7wTv/nG72015EZz/NEoYeHh4eKu83ljrPhB5CpmkhKj4xsPDwzvAS5qn1ZO21+DIw5QnDDw8PLxzvDwNVA/xfK2qV0Y3G7t4eHh4A161UZsf60nIeoErlPt4eHh4B3hVRrKSlZ/MkyK70PzFw8PDW+VNRlO92rWXZpppCQ8PD+8Abz5kqv7mPAk1kXh4eHirvF7jtbdkUB1oJX+r0HHBw8PDG/OSYzpvKOQvTqK+MH7Dw8PDO8DrjZeqn7J7p7kKhoeHh7fEq7YPqoV1cujnBX2ewPDw8PDO8Xqlal40Jw2LUe85CRYeHh7eKq/6svzQrxbEk0TSbOPi4eHhDXjV4jVvVVSXuvJ3RaHEw8PDO8DrFc29Ju9WykmC8se/JB4eHt4SL28K9Faptj63l2bw8PDwTvMmzdleO7j33nychoeHh3eaN0kVvWZBvkBQLdzx8PDwTvCiYVJryaB6fFeR0Vfh4eHhfYRXXRHIl6KSI773/Ms7eHh4eKu8yZg/abBOmh358/Hw8PA+yeu1IfKh1LypUV1cwMPDw/sMb7Ju1Wu59pYAqikEDw8P7zQvnxztFtBbzYhoAIaHh4f3EK/Xwpgsco0WCPDw8PAe5eXF7mQJIIdF6QEPDw/vGC851qsN3N5PJynn1Ys9Hh4e3njclf+Pfutw3yrNm1Q8PDy8lPcF7v3QdRFuB5oAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://mcmohen.github.io/2019/08/15/题解-lg2010 回文日期/&title=洛谷题解 P2010 【(2016年普及组第二题)回文日期】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg2010传送门"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aS27cQAwFwLn/pceAVwYMyY+fHnlRWgWyI6kYoMmQfL3i6/19JXd+3n//uq6e8L647t+4duHh4eG1Pv3+BTkvCVBOzQN3FRQ8PDy8c7ytD6oG6/538nBf3sfDw8N7lHd5+AbhqN5PgoKHh4f3/3l5IR4Vu3ECeCzv4eHh4d3yqq/JmxG9Uvs+xEd6LXh4eHi187kwAPsPfz4438PDw8MbTNUnrdjkU5KnTb4WDw8P7wTv/nG72015EZz/NEoYeHh4eKu83ljrPhB5CpmkhKj4xsPDwzvAS5qn1ZO21+DIw5QnDDw8PLxzvDwNVA/xfK2qV0Y3G7t4eHh4A161UZsf60nIeoErlPt4eHh4B3hVRrKSlZ/MkyK70PzFw8PDW+VNRlO92rWXZpppCQ8PD+8Abz5kqv7mPAk1kXh4eHirvF7jtbdkUB1oJX+r0HHBw8PDG/OSYzpvKOQvTqK+MH7Dw8PDO8DrjZeqn7J7p7kKhoeHh7fEq7YPqoV1cujnBX2ewPDw8PDO8Xqlal40Jw2LUe85CRYeHh7eKq/6svzQrxbEk0TSbOPi4eHhDXjV4jVvVVSXuvJ3RaHEw8PDO8DrFc29Ju9WykmC8se/JB4eHt4SL28K9Faptj63l2bw8PDwTvMmzdleO7j33nychoeHh3eaN0kVvWZBvkBQLdzx8PDwTvCiYVJryaB6fFeR0Vfh4eHhfYRXXRHIl6KSI773/Ms7eHh4eKu8yZg/abBOmh358/Hw8PA+yeu1IfKh1LypUV1cwMPDw/sMb7Ju1Wu59pYAqikEDw8P7zQvnxztFtBbzYhoAIaHh4f3EK/Xwpgsco0WCPDw8PAe5eXF7mQJIIdF6QEPDw/vGC851qsN3N5PJynn1Ys9Hh4e3njclf+Pfutw3yrNm1Q8PDy8lPcF7v3QdRFuB5oAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+        
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/2019/08/16/资讯-NOIP取消/" rel="prev" title="NOIP取消了!">
+                                  
+                                      NOIP取消了!
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/资讯/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;资讯</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2019/08/13/文学-吴宪霖大作/" rel="prev" title="吴宪霖三部曲">
+                                    
+                                        吴宪霖三部曲
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/文学/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;文学</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+      
+        <section id="comments">
+          <div id="valine_container" class="valine_thread">
+            <i class="fas fa-spinner fa-spin fa-fw"></i>
+          </div>
+        </section>
+      
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '洛谷题解 P2010 【(2016年普及组第二题)回文日期】',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+    
+      
+      
+        
+          
+            
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+        
+          <h2> MOHEN'S BLOG </h2>
+        
+        
+        <!--以下为今日诗词-->
+        
+        <!--以下为一言-->
+        
+        <!--以下为彩色滚动变换字体-->
+        
+          <div id="binft" align="center"></div>
+          <script>
+            var binft = function (r) {
+              function t() {
+                return b[Math.floor(Math.random() * b.length)]
+              }  
+              function e() {
+                return String.fromCharCode(94 * Math.random() + 33)
+              }
+              function n(r) {
+                for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                  var l = document.createElement("span");
+                  l.textContent = e(), l.style.color = t(), n.appendChild(l)
+                }
+                return n
+              }
+              function i() {
+                var t = o[c.skillI];
+                c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+              }
+              var l = "",
+              o = ["深圳实验精神：", "团结奋斗 开拓前进 不断进取 永不满足","深圳实验校风：严格 勤奋 团结 文明", "深圳实验教风：敬业 创新 严谨 精深","深圳实验学风：尊师 刻苦 活泼 求实","深圳实验校训：励精图治","深圳实验师生倡导性价值观：","实验师生应有成为中华民族脊梁的追求"].map(function (r) {
+              return r + ""
+              }),
+              a = 2,
+              g = 1,
+              s = 5,
+              d = 75,
+              b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+              c = {
+                text: "",
+                prefixP: -s,
+                skillI: 0,
+                skillP: 0,
+                direction: "forward",
+                delay: a,
+                step: g
+              };
+              i()
+              };
+              binft(document.getElementById('binft'));
+          </script>
+        
+
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/atom.xml"
+              class="social fas fa-rss flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgqrcode_1568813101731.jpg"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=Czo5Pz4zPzk-OzlLenolaGRm"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://github.com/mcmohen"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=1940296917"
+              class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+            
+            
+              <section class='widget author'>
+  <div class='content pure'>
+    
+    
+      <div class='text'>
+        
+        
+        
+        <!--以下为今日诗词-->
+        
+        <!--以下为一言-->
+        
+          <script defre="defer">
+          fetch('https://v1.hitokoto.cn/')
+          .then(function(res) {
+            return res.json();
+            })
+          .then(function(data) {
+            const hitokotoContent = document.getElementById('hitokoto-content');
+            const hitokotoFrom = document.getElementById('hitokoto-from');
+            hitokotoContent.innerText = data.hitokoto;
+            hitokotoFrom.innerText = '——' + data.from;
+            })
+            .catch(function(err) {
+              console.error(err);
+            })
+          </script>
+          <section class="hitokoto">
+            <header>
+              <div>
+                  <i class="fa fa-quote-left fa-fw" aria-hidden="true"></i> 
+                  Mohen's 一言
+              </div>
+            </header>
+            <div class="content">
+              <p style="text-align:center" id="hitokoto-content"></p>
+              <p style="text-align:right;margin-top:15px" id="hitokoto-from"></p>
+            </div>
+          </section>
+        
+        
+        <!--以下为彩色滚动变换字体-->
+        
+
+      </div>
+    
+    
+  </div>
+</section>
+
+            
+          
+        
+          
+            
+            
+              <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-handshake fa-fw fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎</div>
+  
+</header>
+
+  <div class='content pure'>
+    <div class="content pure"><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script>var getOSAndBrowser=function(){var os=navigator.platform;var userAgent=navigator.userAgent;var info="";var tempArray="";if(os.indexOf("Win")>-1){if(userAgent.indexOf("Windows NT 5.0")>-1){info+="Win2000"}else if(userAgent.indexOf("Windows NT 5.1")>-1){info+="WinXP"}else if(userAgent.indexOf("Windows NT 5.2")>-1){info+="Win2003"}else if(userAgent.indexOf("Windows NT 6.0")>-1){info+="WindowsVista"}else if(userAgent.indexOf("Windows NT 6.1")>-1||userAgent.indexOf("Windows 7")>-1){info+="Win7"}else if(userAgent.indexOf("Windows NT 6.2")>-1||userAgent.indexOf("Windows 8")>-1){info+="Win8"}else if(userAgent.indexOf("Windows NT 6.3")>-1||userAgent.indexOf("Windows 8.1")>-1){info+="Win8.1"}else if(userAgent.indexOf("Windows NT 10.0")>-1||userAgent.indexOf("Windows 10")>-1){info+="Win10"}else{info+="Other"}}else if(os.indexOf("Mac")>-1){info+="Mac"}else if(os.indexOf("X11")>-1){info+="Unix"}else if(os.indexOf("Linux")>-1){info+="Linux"}else{info+="Other"}info+="/";var isOpera=userAgent.indexOf("Opera")>-1;var isIE=userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1&&!isOpera;var isEdge=userAgent.toLowerCase().indexOf("edge")>-1&&!isIE;var isIE11=(userAgent.toLowerCase().indexOf("trident")>-1&&userAgent.indexOf("rv")>-1);if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(isIE){var version="";var reIE=new RegExp("MSIE (\\d+\\.\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion==7){version="IE7"}else if(fIEVersion==8){version="IE8"}else if(fIEVersion==9){version="IE9"}else if(fIEVersion==10){version="IE10"}else{version="0"}info+=version}else if(isEdge){info+="Edge"}else if(isIE11){info+="IE11"}else if(/[Cc]hrome\/\d+/.test(userAgent)){tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);info+=tempArray[3]+tempArray[1]}else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);info+=tempArray[1]+tempArray[2]}else{info+="unknown"}return info};document.write("欢迎,来自"+returnCitySN["cname"]+"的朋友");document.write("<br>您的IP是："+returnCitySN["cip"]);document.write("<br>您使用的是："+getOSAndBrowser());</script></div>  <div class="content pure"><iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tm&skin=sogou" frameborder="0" width="270" height="24" allowtransparency="true"></iframe></div>
+  </div>
+</section>
+
+            
+          
+        
+          
+            
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目大意"><span class="toc-text">题目大意:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#给出两个时间点"><span class="toc-text">给出两个时间点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#如-20190815-正好今天"><span class="toc-text">如:20190815(正好今天)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20001201-随便取的"><span class="toc-text">20001201(随便取的)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#求出两个时间点之间-包括这两个时间点-的时间有几个是回文的"><span class="toc-text">求出两个时间点之间(包括这两个时间点)的时间有几个是回文的</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#如-20111102-当然还有其它"><span class="toc-text">如:20111102(当然还有其它)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0"><span class="toc-text">而且题目保证两个时间点都为真实年份，也就是年份一定为4位数，月份和日期不到2位前都会补0</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#需要注意的点"><span class="toc-text">需要注意的点:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-保证输入的第一个年份小于等于第二个-废话"><span class="toc-text">1.  保证输入的第一个年份小于等于第二个(废话)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-要判断闰年与平年-还要判断大月与小月和2月-1月大-2月小-3月大-4月小……-咳咳，是人都知道，但还是要讲一下"><span class="toc-text">2.  要判断闰年与平年,还要判断大月与小月和2月(1月大,2月小,3月大,4月小……)    咳咳，是人都知道，但还是要讲一下</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#它们的区别"><span class="toc-text">它们的区别:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#其中"><span class="toc-text">其中:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-5-7-8-10-12月每个月有31天；"><span class="toc-text">1,3,5,7,8,10,12月每个月有31天；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-6-9-11月每个月有30天；"><span class="toc-text">4,6,9,11月每个月有30天；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#而对于2月，闰年时有29天，平年时有28天。"><span class="toc-text">而对于2月，闰年时有29天，平年时有28天。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#一个年份是闰年当且仅当它满足下列两种情况其中的一种："><span class="toc-text">一个年份是闰年当且仅当它满足下列两种情况其中的一种：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#这个年份是4的整数倍，但不是100的整数倍；"><span class="toc-text">这个年份是4的整数倍，但不是100的整数倍；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#这个年份是400的整数倍。"><span class="toc-text">这个年份是400的整数倍。</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#例如："><span class="toc-text">例如：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#以下几个年份都是闰年：2000-2012-2016"><span class="toc-text">以下几个年份都是闰年：2000,2012,2016</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#以下几个年份是平年：1900-2011-2014"><span class="toc-text">以下几个年份是平年：1900,2011,2014</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#所以可以得出如下判断闰年的代码"><span class="toc-text">所以可以得出如下判断闰年的代码:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#很好理解！"><span class="toc-text">很好理解！</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接下来就是思路了"><span class="toc-text">接下来就是思路了:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#总体思路就是暴力枚举！-D"><span class="toc-text">总体思路就是暴力枚举！:D</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过"><span class="toc-text">反正我是枚举每一天，判断那一天的日期是不是回文的，如果是结果就加1，不是就跳过</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#这样的枚举代码肯定很长-我的就是"><span class="toc-text">这样的枚举代码肯定很长(我的就是)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#所以一定要细心！"><span class="toc-text">所以一定要细心！</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#细心！"><span class="toc-text">细心！</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#细心！-1"><span class="toc-text">细心！</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#代码如下"><span class="toc-text">代码如下:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#所以这个困难又麻烦的题就结束了"><span class="toc-text">所以这个困难又麻烦的题就结束了</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+            
+            
+              <section class='widget grid'>
+  
+<header class='pure'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content pure'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+          
+          时间目录
+        </a></li>
+      
+        <li><a class="flat-box" title="http://mcmohen.top/" href="http://mcmohen.top/"
+          
+          
+          id="http:mcmohen.top">
+          
+            <i class="fas fa-cubes fa-fw fa-fw" aria-hidden="true"></i>
+          
+          资源分享
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="/music/" href="/music/"
+          
+            rel="nofollow"
+          
+          
+          id="music">
+          
+            <i class="fas fa-music fa-fw" aria-hidden="true"></i>
+          
+          神奇音乐
+        </a></li>
+      
+        <li><a class="flat-box" title="/comments/" href="/comments/"
+          
+            rel="nofollow"
+          
+          
+          id="comments">
+          
+            <i class="fas fa-comments fa-fw fa-fw" aria-hidden="true"></i>
+          
+          留言板
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+            
+          
+        
+          
+            
+            
+              
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+            
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/PUBG/" style="font-size: 14px; color: #999">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/游戏/" style="font-size: 16px; color: #8b8b8b">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+            
+            
+              
+
+
+  <section class='widget music'>
+    
+<header class='pure'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;哲之音乐</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/song?id=561493928"
+    title="https://music.163.com/#/song?id=561493928">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="2929037570"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+            
+            
+              <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-globe fa-fw fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;访客地球</div>
+  
+</header>
+
+  <div class='content pure'>
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5s0uhrcxkch&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+  </div>
+</section>
+
+            
+          
+        
+      
+  
+    
+  </aside>
+  
+<style>.github-badge {
+	display: inline-block;
+	border-radius: 4px;
+	text-shadow: none;
+	font-size: 12px;
+	color: #fff;
+	line-height: 15px;
+	background-color: #ABBAC3;
+  margin-bottom: 5px;
+}
+.github-badge .badge-subject {
+	display: inline-block;
+	background-color: #4D4D4D;
+	padding: 4px 4px 4px 6px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.github-badge .badge-value {
+	display: inline-block;
+	padding: 4px 6px 4px 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.github-badge .bg-brightgreen {
+	background-color: #4DC820 !important;
+}
+.github-badge .bg-orange {
+	background-color: #FFA500 !important;
+}
+.github-badge .bg-yellow {
+	background-color: #D8B024 !important;
+}
+.github-badge .bg-blueviolet {
+	background-color: #8833D7 !important;
+}
+.github-badge .bg-pink {
+	background-color: #F26BAE !important;
+}
+.github-badge .bg-red {
+	background-color: #e05d44 !important;
+}
+.github-badge .bg-blue {
+	background-color: #007EC6 !important;
+}
+.github-badge .bg-lightgrey {
+	background-color: #9F9F9F !important;
+}
+.github-badge .bg-grey, .github-badge .bg-gray {
+	background-color: #555 !important;
+}
+.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
+	background-color: #9f9f9f !important;
+}
+</style>
+<!--以上为github-badge内容-->
+<footer id="footer" class="clearfix">
+  
+  
+    <div class="social-wrapper">
+      
+        
+          <a href="/atom.xml"
+            class="social fas fa-rss flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgqrcode_1568813101731.jpg"
+            class="social fab fa-qq flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=Czo5Pz4zPzk-OzlLenolaGRm"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://github.com/mcmohen"
+            class="social fab fa-github flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=1940296917"
+            class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+    </div>
+  
+  <br>
+  <div>
+  <!--自定义-->
+  <span>Copyright <i class="far fa-copyright"></i>2019<a href="https://mcmohen.github.io/" target="_blank"> Mohen's blog </a>   |   博客内容仅供学习和研究使用,版权归作者所有</span>
+  <p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  
+  <div>
+    <!--
+    本站使用
+    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
+    作为主题
+    
+      ，
+      总访问量为
+      
+      
+      次
+    
+    。
+    -->
+    
+    <!--访问人数与次数-->
+    <i class="fas fa-eye"><span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></i>次访问   |   <i class="fas fa-user"><span id="busuanzi_value_site_uv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></i>人次
+
+    <script>setLoadingBarProgress(80);</script>
+      <span class="post-count"> | 字数统计：14.1k</span>
+      <br>
+      <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+      <script>
+          var now = new Date(); 
+          function createtime() { 
+              var grt= new Date("08/09/2019 17:38:00");//在此处修改你的建站时间
+              now.setTime(now.getTime()+250); 
+              days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+              hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+              if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+              mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+              seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+              snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+              document.getElementById("timeDate").innerHTML = "Mohen's blog已苟且偷生 "+dnum+" 天 "; 
+              document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+          } 
+      setInterval("createtime()",250);
+    
+    </script>
+    </br>
+  </div>
+  
+</footer>
+<p align="center">
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://mcmohen.github.io" target="_blank" title="Mohen的博客">
+    <span class="badge-subject">Coding by</span><span class="badge-value bg-blue">Mohen</span></a>
+  </div>
+
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+    <span class="badge-subject">Powered</span><span class="badge-value bg-gray">Hexo</span></a>
+  </div>
+
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://www.aliyun.com/?spm=5176.12825654.amxosvpfn.2.7b652c4aTcc8eY" target="_blank" title="域名提供方">
+    <span class="badge-subject">DNR</span><span class="badge-value bg-blueviolet">Aliyun</span></a>
+  </div>
+
+  <div class="github-badge">
+    <a style="color: #fff" rel="license" href="https://xaoxuu.com/wiki/material-x/" target="_blank" title="感谢xaoxuu提供的主题">
+    <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material-X</span></a>
+  </div>
+
+  <div class="github-badge">
+    <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span>
+  </div>
+</p>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        if ('.cover') {
+          $('.cover').backstretch(
+          ["https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/f87f9c74efbc681b74af7e5ac550e1f0910aa5.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        } else {
+          $.backstretch(
+          ["https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/f87f9c74efbc681b74af7e5ac550e1f0910aa5.jpg"],
+          {
+            duration: "6000",
+            fade: "2500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+    
+      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+    
+  
+  <script>
+  var GUEST_INFO = ['nick','mail','link'];
+  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var notify = 'true' == true;
+  var verify = 'true' == true;
+  var valine = new Valine();
+  valine.init({
+    el: '#valine_container',
+    notify: true,
+    verify: true,
+    //notify: notify,
+    //verify: verify,
+    guest_info: guest_info,
+    
+    appId: "9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va",
+    appKey: "bKi3TGPyBfy9j6gPFKoiHrNX",
+    placeholder: "来啊(づ●─●)づ快活啊~~",
+    pageSize:'10',
+    avatar:'mp',
+    lang:'zh-cn',
+    highlight:'true'
+  })
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"mobile":{"show":false},"log":false});</script></body>
+</html>
+
+<!--打字特效-->
+<script src="\js\activate-power-mode.js"></script>
+<script>
+POWERMODE.colorful = true; // make power mode colorful
+POWERMODE.shake = false; // turn off shake
+document.body.addEventListener('input', POWERMODE);
+</script>
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="0,0,0" opacity='0.5' zIndex="-2" count="40" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="\js\FunnyTitle.js"></script>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/love.js"></script>
+
+<!-- 雪花特效 -->
+<script type="text/javascript" src="\js\snow.js"></script>
+
+<!--爆炸效果-->
+<!--<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> -->
+<!--<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> -->
+<!--<script type="text/javascript" src="/js/fireworks.js"></script>-->
+
+ <!--单击显示文字-->
+<!--<script type="text/javascript" src="/js/click_show_text.js"></script>-->
