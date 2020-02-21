@@ -21,7 +21,7 @@ links:
       backgroundColor: '#696969' 
       textColor: '#fff'
     - name: 3D元素周期表
-      avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img氢.PNG
+      avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20200221124740.png  # https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img氢.PNG
       url: /tools/all/元素周期表.html
       backgroundColor: '#696969' 
       textColor: '#fff'
@@ -33,6 +33,14 @@ links:
     - name: 联系人二维码生成器
       avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgweiixin.png
       url: /tools/all/联系人二维码生成器.html
+      backgroundColor: '#696969' 
+      textColor: '#fff'
+  - group: 网页游戏
+    icon: fas fa-gamepad fa-fw
+    items:
+    - name: 圈小猫
+      avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20200221124639.png
+      url: /tools/all/圈小猫.html
       backgroundColor: '#696969' 
       textColor: '#fff'
 ---

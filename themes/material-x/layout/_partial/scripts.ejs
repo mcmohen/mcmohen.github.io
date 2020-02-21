@@ -177,8 +177,10 @@
   var valine = new Valine();
   valine.init({
     el: '#valine_container',
-    notify: notify,
-    verify: verify,
+    notify: true,
+    verify: true,
+    //notify: notify,
+    //verify: verify,
     guest_info: guest_info,
     <% if(page.valine && page.valine.path) { %>
       path: "<%= page.valine.path %>",

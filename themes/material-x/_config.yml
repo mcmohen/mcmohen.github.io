@@ -113,14 +113,14 @@ menu_desktop:
   - name: 文章
     icon: fas fa-book-open # fas fa-grin
     url: /
-  - name: 分类
-    icon: fas fa-folder-open
-    url: categories/
-    rel: nofollow
-  - name: 标签
-    icon: fas fa-tags fa-fw # fas fa-hashtag
-    url: tags/
-    rel: nofollow
+  #- name: 分类
+  #  icon: fas fa-folder-open
+  #  url: categories/
+  #  rel: nofollow
+  #- name: 标签
+  #  icon: fas fa-tags fa-fw # fas fa-hashtag
+  #  url: tags/
+  #  rel: nofollow
   - name: 时间轴 # 归档
     icon: fas fa-calendar-alt # fas fa-archive
     url: archives/
@@ -140,6 +140,10 @@ menu_desktop:
   - name: 留言板
     icon: fas fa-comments fa-fw
     url: comments/
+    rel: nofollow
+  - name: 肺炎疫情图
+    icon: fas fa-heart fa-fw
+    url: COVID-19/
     rel: nofollow
 
 # 手机端导航菜单（从右上角的按钮点击展开）

@@ -10,5 +10,5 @@ gitalk:
 
 ## [文件上传](http://inbox.weiyun.com/5vpx9vP) <---传给墨痕哦QAQ！
 
-## [文件浏览](https://share.weiyun.com/5QqQd7F) <---可以看大家传给我的文件！
+## 文件浏览功能暂时关闭~~(原因:违反国家相关法律)~~
 
