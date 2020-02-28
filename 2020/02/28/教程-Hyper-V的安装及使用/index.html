@@ -495,12 +495,13 @@
 <p>然后看一下有没有Hyper-V文件夹，如果有就打上勾并<strong>点击确定</strong>（跳过以下安装Hyper-V的教程）</p>
 <p>如果没有则直接<strong>点击确定</strong>（通常家庭版windows是没有的）</p>
 <p><img src="https://i.loli.net/2020/02/28/uXEA4m3yk2LFMCd.png" alt="微信图片_20200228102723.png"></p>
+<p>如果没有自带Hyper-V请看这里（如果有Hyper-V的则立即重启后看第二步教程）</p>
+<p>在桌面右键新建一个文本文档，将以下代码复制进去：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line">   dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class="line">   for /f %%i in (&apos;findstr /i . hyper-v.txt 2^&gt;nul&apos;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br><span class="line">   del hyper-v.txt</span><br><span class="line">   Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure>
+
+
 </li>
 </ol>
-<p>   如果没有自带Hyper-V请看这里（如果有Hyper-V的则立即重启后看第二步教程）</p>
-<p>   在桌面右键新建一个文本文档，将以下代码复制进去：</p>
-   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line">dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class="line">for /f %%i in (&apos;findstr /i . hyper-v.txt 2^&gt;nul&apos;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br><span class="line">del hyper-v.txt</span><br><span class="line">Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure>
-
 <p>   保存并退出，重命名为Hyper-V.cmd文件(其实把后缀改为cmd就好了)</p>
 <p>   然后右键选择<strong>以管理员身份运行</strong></p>
 <p>   <img src="https://i.loli.net/2020/02/28/1HZuiACFejXaQJ6.png" alt="微信图片_20200228112337.png"></p>
@@ -637,7 +638,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-28T16:41:14+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-28T16:47:01+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>更新于 2020年2月28日</p>
