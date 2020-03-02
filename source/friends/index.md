@@ -100,6 +100,15 @@ links:
       tags:
       - 朋友
       - 哲人
+    - name: 花葵日记
+      avatar: https://cdn.jsdelivr.net/gh/huakaidaojia/huakaidaojia.github.io@master/image/bd315c6034a85edfea3fec3646540923dd547577.jpg
+      url: https://www.hkdj.site/
+      backgroundColor: '#169bdf'
+      textColor: '#fff'
+      tags:
+      - 95后
+      - 热爱互联网技术
+      - 崇尚三民主义
 
   - group: 特殊嘉宾
     icon: fas fa-user-tie
