@@ -497,22 +497,19 @@
 <p><img src="https://i.loli.net/2020/02/28/uXEA4m3yk2LFMCd.png" alt="微信图片_20200228102723.png"></p>
 <p>如果没有自带Hyper-V请看这里（如果有Hyper-V的则立即重启后看第二步教程）</p>
 <p>在桌面右键新建一个文本文档，将以下代码复制进去：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line">   dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class="line">   for /f %%i in (&apos;findstr /i . hyper-v.txt 2^&gt;nul&apos;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br><span class="line">   del hyper-v.txt</span><br><span class="line">   Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line">dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class="line">for /f %%i in (&apos;findstr /i . hyper-v.txt 2^&gt;nul&apos;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br><span class="line">del hyper-v.txt</span><br><span class="line">Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure>
 
-
+<p>保存并退出，重命名为Hyper-V.cmd文件(其实把后缀改为cmd就好了)</p>
+<p>然后右键选择<strong>以管理员身份运行</strong></p>
+<p><img src="https://i.loli.net/2020/02/28/1HZuiACFejXaQJ6.png" alt="微信图片_20200228112337.png"></p>
+<p>如果弹出一个 用户帐户控制 - Windows命令处理程序 的对话框，我们点击：是</p>
+<p>然后系统自动进行Windows命令处理，我们等待处理完成以后，<strong>【这个过程中不要关闭窗口或者关机】</strong>在最末处输入：Y，电脑自动重启，进行配置更新（大概要等个5到10分钟左右）</p>
+<p><img src="https://i.loli.net/2020/02/28/tR9vHlfUVEGFaAx.png" alt="微信截图_20200228112407.png"></p>
+<p>电脑重启之后，在window管理工具中可以看到已经成功安装了Hyper-V。这样就可以在不用重装专业版系统的情况下，使用Hyper-V虚拟机了</p>
+<p><img src="https://i.loli.net/2020/02/28/iryPhScakbRCgFA.png" alt="微信截图_20200228112422.png"></p>
+<p>如果还是没有Hyper-V,请回到启用或关闭Windows功能里面找到Hyper-V并打上勾点击确定（然后重启电脑）</p>
+<p><img src="https://i.loli.net/2020/02/28/uXEA4m3yk2LFMCd.png" alt="微信图片_20200228102723.png"></p>
 </li>
-</ol>
-<p>   保存并退出，重命名为Hyper-V.cmd文件(其实把后缀改为cmd就好了)</p>
-<p>   然后右键选择<strong>以管理员身份运行</strong></p>
-<p>   <img src="https://i.loli.net/2020/02/28/1HZuiACFejXaQJ6.png" alt="微信图片_20200228112337.png"></p>
-<p>   如果弹出一个 用户帐户控制 - Windows命令处理程序 的对话框，我们点击：是</p>
-<p>   然后系统自动进行Windows命令处理，我们等待处理完成以后，<strong>【这个过程中不要关闭窗口或者关机】</strong>在最末处输入：Y，电脑自动重启，进行配置更新（大概要等个5到10分钟左右）</p>
-<p>   <img src="https://i.loli.net/2020/02/28/tR9vHlfUVEGFaAx.png" alt="微信截图_20200228112407.png"></p>
-<p>   电脑重启之后，在window管理工具中可以看到已经成功安装了Hyper-V。这样就可以在不用重装专业版系统的情况下，使用Hyper-V虚拟机了</p>
-<p>   <img src="https://i.loli.net/2020/02/28/iryPhScakbRCgFA.png" alt="微信截图_20200228112422.png"></p>
-<p>   如果还是没有Hyper-V,请回到启用或关闭Windows功能里面找到Hyper-V并打上勾点击确定（然后重启电脑）</p>
-<p>   <img src="https://i.loli.net/2020/02/28/uXEA4m3yk2LFMCd.png" alt="微信图片_20200228102723.png"></p>
-<ol start="2">
 <li><h3 id="Hyper-V的配置"><a href="#Hyper-V的配置" class="headerlink" title="Hyper-V的配置"></a>Hyper-V的配置</h3><p>看到这里想必你们都已经安装好Hyper-V了</p>
 <p>那就开始配置一个虚拟机出来吧！</p>
 <p>打开Hyper-V，在左边栏右键你的计算机（我的是LAPTOP-xxxxxx），选择新建-虚拟机</p>
@@ -529,6 +526,7 @@
 <p>这一部不用动，直接进行下一步！</p>
 <p><img src="https://i.loli.net/2020/02/28/lMSJBnhUHOi759Z.png" alt="微信截图_20200228114002.png"></p>
 <p>这时候你要有iso镜像文件（也就是你选择的系统，网上随便都可以下载，我选择的是win10 64位镜像）</p>
+<p>没有的可以用我的–&gt;<a href="http://mcmohen.top/?/%E5%85%B6%E5%AE%83/iso%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6/win10-64%E4%BD%8D-2019.iso" target="_blank" rel="noopener">win10 64位镜像</a></p>
 <p><img src="https://i.loli.net/2020/02/28/EA4x98nCslwbMeP.png" alt="微信截图_20200228114035.png"></p>
 <p>点击完成，完成虚拟机的创建</p>
 <p><img src="https://i.loli.net/2020/02/28/wqVX6tuAfg8LdzU.png" alt="微信截图_20200228114047.png"></p>
@@ -638,10 +636,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-28T16:47:01+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-02T09:46:37+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年2月28日</p>
+    <p>更新于 2020年3月2日</p>
   </a>
 </div>
 
