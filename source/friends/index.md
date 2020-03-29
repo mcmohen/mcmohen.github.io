@@ -20,8 +20,8 @@ links:
       - 主题作者
      
     - name: 深圳实验初中部ljr    # 博客名
-      avatar: //www.17shou.vip/images/avatar.png  # 头像链接
-      url: //www.17shou.vip/     # 博客链接
+      avatar: https://cdn.17shou.vip/avatar.jpg  # 头像链接
+      url: https://snowflake.pink/     # 博客链接
       backgroundColor: '#EE82EE' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
       tags:     # 标签
@@ -109,6 +109,20 @@ links:
       - 95后
       - 热爱互联网技术
       - 崇尚三民主义
+    - name: lxxs
+      avatar: https://i.loli.net/2020/02/28/wGs1FJE8drgpomU.jpg
+      url: https://lxxs.xyz
+      backgroundColor: '#169bdf'
+      textColor: '#fff'
+      tags:
+      - I pray to myself.
+    - name: 优客-blog
+      avatar: https://cdn.jsdelivr.net/gh/Wbiubiu/ImgHosting/biu/优.ico
+      url: https://youkeblog.com/
+      backgroundColor: '#696969'
+      textColor: '#fff'
+      tags:
+      - 一定要比从前的自己更加优秀！
 
   - group: 特殊嘉宾
     icon: fas fa-user-tie

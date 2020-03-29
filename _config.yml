@@ -18,7 +18,7 @@ language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mcmohen.github.io
+url: https://mcmohen.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -83,13 +83,13 @@ theme: material-x
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: 
+- type: git
+  repository:
     github: https://github.com/mcmohen/mcmohen.github.io.git # git@github.com:mcmohen/mcmohen.github.io.git
-    # coding: git@e.coding.net:mcmohen-01/mcmohen.coding.me.git # 你的coding仓库地址
-    # github: https://github.com/mcmohen/mcmohen.github.io # 你的GitHub仓库地址
-    branch: master
+    # coding: git@e.coding.net:mcmohen/mcmohen/mcmohen.coding.me.git   # 这是原来的 coding 配置
+  branch: master
   message:  # 提交信息可以自定义，不填的则默认为提交时间
+- type: baidu_url_submitter          # 这是新加的主动推送
 
 shortcut_icon: "https://xaoxuu.com/assets/img/favicon.ico"
 favicon: https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico #/images/favicon.ico
@@ -153,3 +153,9 @@ backup:
     github: git@github.com:mcmohen/mcmohen.github.io.git,backup
     # coding: git@e.coding.net:mcmohen-01/mcmohen.coding.me.git,backup
 
+###################百度收录#################################
+baidu_url_submit:
+  count: 200               # 提交最新的多少个链接
+  host: https://mcmohen.com    # 在百度站长平台中添加的域名
+  token: ZmQ8UwWQJ9wMdRL0      # 秘钥
+  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
