@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mcmohen.com/comments/index.html</loc>
+    
+    <lastmod>2020-03-31T10:53:59.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mcmohen.com/comments/indexx.html</loc>
+    
+    <lastmod>2020-03-31T10:51:26.708Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mcmohen.com/friends/index.html</loc>
     
     <lastmod>2020-03-29T04:50:11.622Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>https://mcmohen.com/tools/all/%E9%9A%8F%E6%9C%BA%E5%AF%86%E7%A0%81%E7%94%9F%E6%88%90.html</loc>
     
     <lastmod>2020-02-21T03:25:36.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mcmohen.com/comments/index.html</loc>
-    
-    <lastmod>2020-02-20T12:55:37.856Z</lastmod>
     
   </url>
   
@@ -201,13 +208,6 @@
     <loc>https://mcmohen.com/404.html</loc>
     
     <lastmod>2019-10-04T03:53:07.151Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mcmohen.com/comments/indexx.html</loc>
-    
-    <lastmod>2019-10-04T03:30:42.053Z</lastmod>
     
   </url>
   
