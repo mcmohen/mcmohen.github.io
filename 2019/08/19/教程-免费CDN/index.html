@@ -500,6 +500,9 @@
           <p>前言：国内加载github的资源比较慢，需要使用<strong>CDN加速</strong>来优化网站打开速度，于是使用jsDelivr+github搭建<strong>免费</strong>的CDN。</p>
 <a id="more"></a>
 
+<blockquote>
+<p>声明：本文参考了<a href="https://www.cnblogs.com/zhsh666/p/11432956.html" target="_blank" rel="noopener">《jsDeliver+github使用教程》</a></p>
+</blockquote>
 <p>jsDelivr 是一个<strong>免费开源</strong>的 CDN 解决方案，用于帮助开发者和站长。包含 JavaScript 库、jQuery 插件、CSS 框架、字体等等 Web 上常用的<strong>静态资源</strong>。</p>
 <p>我们来到其官网，可以看到它的介绍Open Source CDN free, fast, and reliable（<strong>免费、快速、可靠</strong>，<del>不过据说可能会投毒广告，表示目前还没见过广告</del>）<br>下图我们可以看到他似乎和npm,github,wordpress有某种xx关系。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/jsdelivr.PNG" alt></p>
@@ -608,10 +611,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-03T17:12:25+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-01T08:42:49+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2019年10月3日</p>
+    <p>更新于 2020年4月1日</p>
   </a>
 </div>
 
@@ -753,12 +756,10 @@
       
       
       
-      
         <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
-          </div>
+          <div id="gitalk-container"></div>
         </section>
+      
       
     </section>
   </article>
@@ -1431,39 +1432,25 @@
 
 
 
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: true,
-    verify: true,
-    //notify: notify,
-    //verify: verify,
-    guest_info: guest_info,
-    
-    appId: "9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va",
-    appKey: "bKi3TGPyBfy9j6gPFKoiHrNX",
-    placeholder: "来啊(づ●─●)づ快活啊~~",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    highlight:'true'
-  })
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "524d4220f2f9720a3da2",
+      clientSecret: "a8f8bb2a8349b10f77e98599f89447b9bca738bf",
+      repo: "comments.github.io",
+      owner: "mcmohen",
+      admin: "mcmohen",
+      
+        id: "免费CDN：jsDelivr+Github",
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
   </script>
+
+
 
 
 

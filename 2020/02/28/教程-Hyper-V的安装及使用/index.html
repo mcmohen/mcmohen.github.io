@@ -500,6 +500,9 @@
           <h3 id="Hyper-V，一款win10自带的虚拟机平台，你确定不看看？"><a href="#Hyper-V，一款win10自带的虚拟机平台，你确定不看看？" class="headerlink" title="Hyper-V，一款win10自带的虚拟机平台，你确定不看看？"></a>Hyper-V，一款win10自带的虚拟机平台，你确定不看看？</h3><a id="more"></a>
 
 <p><del>不是windows系统的可以byebye了！</del></p>
+<blockquote>
+<p>声明：本文参考了<a href="https://blog.csdn.net/weixin_37695006/article/details/91589895" target="_blank" rel="noopener">《win10 家庭中文版没有Hyper-V，这样安装一步搞定》</a></p>
+</blockquote>
 <ol>
 <li><h3 id="Hyper-V的安装"><a href="#Hyper-V的安装" class="headerlink" title="Hyper-V的安装"></a>Hyper-V的安装</h3><p>首先呢，你要确定你的windows有没有自带Hyper-V</p>
 <p>打开控制面板-点击程序-启用或关闭Windows功能</p>
@@ -650,10 +653,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-02T09:46:37+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-01T08:34:55+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年3月2日</p>
+    <p>更新于 2020年4月1日</p>
   </a>
 </div>
 
@@ -776,12 +779,10 @@
       
       
       
-      
         <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
-          </div>
+          <div id="gitalk-container"></div>
         </section>
+      
       
     </section>
   </article>
@@ -1454,39 +1455,25 @@
 
 
 
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: true,
-    verify: true,
-    //notify: notify,
-    //verify: verify,
-    guest_info: guest_info,
-    
-    appId: "9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va",
-    appKey: "bKi3TGPyBfy9j6gPFKoiHrNX",
-    placeholder: "来啊(づ●─●)づ快活啊~~",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    highlight:'true'
-  })
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "524d4220f2f9720a3da2",
+      clientSecret: "a8f8bb2a8349b10f77e98599f89447b9bca738bf",
+      repo: "comments.github.io",
+      owner: "mcmohen",
+      admin: "mcmohen",
+      
+        id: "Hyper-V的安装及使用",
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
   </script>
+
+
 
 
 

@@ -500,6 +500,9 @@
           <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img%E5%85%A8%E6%88%98%E5%B0%81%E9%9D%A2.jpg" alt></p>
 <a id="more"></a>
 
+<blockquote>
+<p>声明：本文参考了<a href="http://www.5you.com/news/214683.html" target="_blank" rel="noopener">《TABS隐藏兵种解锁方法》</a></p>
+</blockquote>
 <h1 id="解锁方式"><a href="#解锁方式" class="headerlink" title="解锁方式"></a>解锁方式</h1><p>找到特殊物品并盯着他看，过几秒便能解锁！</p>
 <h2 id="1-弄臣-小丑"><a href="#1-弄臣-小丑" class="headerlink" title="1. 弄臣(小丑)"></a>1. 弄臣(小丑)</h2><p>在Medieval 1地图，蓝方有很多木桶，其中一个是破的，里面就有。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20191210212219.png" alt></p>
@@ -662,10 +665,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-27T10:53:26+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-01T08:38:30+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020年2月27日</p>
+    <p>更新于 2020年4月1日</p>
   </a>
 </div>
 
@@ -807,12 +810,10 @@
       
       
       
-      
         <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
-          </div>
+          <div id="gitalk-container"></div>
         </section>
+      
       
     </section>
   </article>
@@ -1485,39 +1486,25 @@
 
 
 
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: true,
-    verify: true,
-    //notify: notify,
-    //verify: verify,
-    guest_info: guest_info,
-    
-    appId: "9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va",
-    appKey: "bKi3TGPyBfy9j6gPFKoiHrNX",
-    placeholder: "来啊(づ●─●)づ快活啊~~",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    highlight:'true'
-  })
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.2/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "524d4220f2f9720a3da2",
+      clientSecret: "a8f8bb2a8349b10f77e98599f89447b9bca738bf",
+      repo: "comments.github.io",
+      owner: "mcmohen",
+      admin: "mcmohen",
+      
+        id: "全战模拟隐藏兵种(会更新)",
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
   </script>
+
+
 
 
 
