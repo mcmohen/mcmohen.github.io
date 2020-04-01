@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mcmohen.com/comments/index.html</loc>
+    
+    <lastmod>2020-04-01T02:00:26.270Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mcmohen.com/share/all/branch/Totally.Accurate.Battle.Simulator.html</loc>
     
     <lastmod>2020-04-01T01:39:58.951Z</lastmod>
@@ -240,16 +247,9 @@
   </url>
   
   <url>
-    <loc>https://mcmohen.com/comments/index.html</loc>
+    <loc>https://mcmohen.com/comments/index(%E5%89%AF%E6%9C%AC).html</loc>
     
     <lastmod>2020-03-31T11:24:15.767Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mcmohen.com/comments/indexx.html</loc>
-    
-    <lastmod>2020-03-31T10:51:26.708Z</lastmod>
     
   </url>
   
