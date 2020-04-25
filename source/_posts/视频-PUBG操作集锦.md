@@ -7,8 +7,6 @@ tags:
 	- 游戏
 	- PUBG
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg
-gitalk:
-  id: /wiki/material-x/
 ---
 
 ![](https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imglogo_b.png)

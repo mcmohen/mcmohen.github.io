@@ -7,9 +7,6 @@ tags:
 date: 2019-08-16 20:30:18
 
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img喇叭2.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 ##### 2019-08-16   中山纪念中学   下午   雨

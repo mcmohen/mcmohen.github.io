@@ -6,9 +6,6 @@ tags:
 	- 教程
 	- Markdown
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 # 表格篇

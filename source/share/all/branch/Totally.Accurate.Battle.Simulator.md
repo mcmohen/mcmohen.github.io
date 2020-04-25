@@ -1,7 +1,5 @@
 ---
 title: Totally Accurate Battle Simulator
-gitalk:
-  id: /wiki/material-x/
 sage: true
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: C++
 date: 2019-08-19 16:50:20
-gitalk:
-  id: /wiki/material-x/
 sage: true
 ---
 

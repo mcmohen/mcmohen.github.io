@@ -1,7 +1,5 @@
 ---
 title: 文件收集
-gitalk:
-  id: /wiki/material-x/
 ---
 
 

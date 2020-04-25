@@ -99,16 +99,19 @@ encrypt:
   enable: true
 
 #Valine#####################################################################
-leancloud:
-  app_id: 9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va # 9PHbPEohyV67S3TJiBnzvHMA-MdYXbMMI
-  app_key: bKi3TGPyBfy9j6gPFKoiHrNX # OfqOSxdXAtP1H4LBTNGepcYQ
+#leancloud:
+#  app_id: 9p3pRbKUmCDKw7shPdYFCRwk-9Nh9j0Va # 9PHbPEohyV67S3TJiBnzvHMA-MdYXbMMI
+#  app_key: bKi3TGPyBfy9j6gPFKoiHrNX # OfqOSxdXAtP1H4LBTNGepcYQ
 
-#gitalk: # 要使用哪个请复制到根目录配置文件！
-#  clientID: 524d4220f2f9720a3da2
-#  clientSecret: a8f8bb2a8349b10f77e98599f89447b9bca738bf
-#  repo: comments.github.io
-#  owner: mcmohen
-#  admin: [mcmohen]
+gitalk: # 要使用哪个请复制到根目录配置文件！
+  enable: true # 是否启用
+  owner: mcmohen # 用户名
+  repo: comments.github.io # 存放评论的仓库名
+  clientID: 524d4220f2f9720a3da2 # Github Application 的 clientID
+  clientSecret: a8f8bb2a8349b10f77e98599f89447b9bca738bf # Github Application 的 clientSecret
+  admin: [mcmohen] # 用户名
+  distractionFreeMode: false # 评论时遮照效果的开关
+  id: location.pathname
 
 ###############################live2D#######################################
 # Live2D

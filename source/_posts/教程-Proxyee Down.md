@@ -8,9 +8,6 @@ tags:
 	- 百度云
 
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 ### Proxyee Down的使用

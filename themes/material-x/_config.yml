@@ -83,9 +83,9 @@ cover:
     - name: 文章
       icon: fas fa-book-open # fas fa-rss
       url: /
-    - name: "资源"
-      icon: fas fa-cubes fa-fw # fas fa-code-branch
-      url: http://mcmohen.top/ # share/
+    - name: "分享站"
+      icon: fas fa-cloud-download-alt # fas fa-code-branch
+      url: https://share.mcmohen.com/ # share/
     - name: 友链
       icon: fas fa-link
       url: friends/
@@ -129,8 +129,8 @@ menu_desktop:
     icon: fas fa-toolbox fa-fw
     url: tools/
     rel: nofollow
-  - name: 文件收集
-    icon: fas fa-cloud-upload-alt
+  - name: 分享站
+    icon: fas fa-cloud-download-alt
     url: share/
     rel: nofollow
   - name: 关于

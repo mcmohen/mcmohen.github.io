@@ -6,14 +6,13 @@ tags:
 	- 教程
 	- CDN
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 前言：国内加载github的资源比较慢，需要使用**CDN加速**来优化网站打开速度，于是使用jsDelivr+github搭建**免费**的CDN。
 
 <!-- more -->
+
+> 声明：本文参考了[《jsDeliver+github使用教程》](https://www.cnblogs.com/zhsh666/p/11432956.html)
 
 jsDelivr 是一个**免费开源**的 CDN 解决方案，用于帮助开发者和站长。包含 JavaScript 库、jQuery 插件、CSS 框架、字体等等 Web 上常用的**静态资源**。
 

@@ -1,8 +1,6 @@
 ---
 title: 实时疫情图
 layout: false
-gitalk:
-  id: /wiki/material-x/
 ---
 
 {% raw %}

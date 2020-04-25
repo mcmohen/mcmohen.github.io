@@ -6,8 +6,6 @@ categories:
 	- test
 tags: test
 date: 2019-08-09 20:03:18
-gitalk:
-  id: /wiki/material-x/
 ---
 
 欢迎来到墨痕的[Hexo](https://hexo.io/)!这是一个基本教程. 按这里 $ \to $ [documentation](https://hexo.io/docs/) 了解更多资讯.如果你有问题,来这里找答案 $ \to $ [troubleshooting](https://hexo.io/docs/troubleshooting.html) 或来GitHub上找 $ \to $ [GitHub](https://github.com/hexojs/hexo/issues).

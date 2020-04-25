@@ -7,9 +7,6 @@ tags:
 	- 虚拟机
 	- Hyper-V
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 ### Hyper-V，一款win10自带的虚拟机平台，你确定不看看？
@@ -17,6 +14,8 @@ gitalk:
 <!--more-->
 
 ~~不是windows系统的可以byebye了！~~
+
+> 声明：本文参考了[《win10 家庭中文版没有Hyper-V，这样安装一步搞定》](https://blog.csdn.net/weixin_37695006/article/details/91589895)
 
 1. ### Hyper-V的安装
 

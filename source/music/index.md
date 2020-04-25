@@ -1,7 +1,5 @@
 ---
 title: 音乐
-gitalk:
-  id: /wiki/material-x/
 ---
 
 1. 《A little story》

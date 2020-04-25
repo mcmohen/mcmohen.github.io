@@ -5,8 +5,6 @@ categories:
 	- 作者专用
 	- test
 tags: test
-gitalk:
-  id: /wiki/material-x/
 ---
 
 

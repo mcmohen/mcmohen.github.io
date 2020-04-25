@@ -78,7 +78,7 @@ links:
       
     - name: 暗影
       avatar: https://cdn.jsdelivr.net/gh/anbujingying/ImgHosting/avatar.jpg
-      url: https://dsanying.coding.me/
+      url: https://dsanying.github.io/
       backgroundColor: '#808080'
       textColor: '#fff'
       tags:
@@ -123,6 +123,24 @@ links:
       textColor: '#fff'
       tags:
       - 一定要比从前的自己更加优秀！
+    - name: OI论坛
+      avatar: https://cdn.jsdelivr.net/gh/mlxxs/photos/backg/anonymous/OI.png
+      url: https://oi.yzoj.tk
+      backgroundColor: '#04B404'
+      textColor: '#fff'
+      tags:
+      - 专注于讨论与分享
+
+  - group: 微信公众号
+    icon: fab fa-weixin
+    items:
+    - name: 叮当资源喵    # 博客名
+      avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/QQ图片20200425105353.jpg  # 头像链接
+      url: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/微信图片_20200425105506.png    # 博客链接
+      backgroundColor: '#6495ED' # 卡片背景颜色
+      textColor: '#fff'  # 卡片文字颜色
+      tags:     # 标签
+      - 佛系订阅号，有一个就够了~ 只为分享
 
   - group: 特殊嘉宾
     icon: fas fa-user-tie
@@ -135,5 +153,17 @@ links:
       tags:     # 标签
       - 香蕉君
 ---
+
+### 如需加友链或更改友链请在评论区写下贵站信息，谢谢！
+
+> ### **名字**：
+>
+> ### **地址**：
+>
+> ### **头像**：
+>
+> ### **简介(标签)**：
+
+### 如有需要也可以将卡片背景的十六进制颜色码备注，我会更改颜色。
 
 <!-- 这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。 -->

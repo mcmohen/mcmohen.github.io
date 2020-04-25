@@ -1,7 +1,5 @@
 ---
 title: Ravenfield 64位最新版
-gitalk:
-  id: /wiki/material-x/
 sage: true
 ---
 

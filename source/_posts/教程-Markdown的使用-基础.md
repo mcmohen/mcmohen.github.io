@@ -7,9 +7,6 @@ tags:
     - Markdown
 
 thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg
-
-gitalk:
-  id: /wiki/material-x/
 ---
 
 # 基础篇
