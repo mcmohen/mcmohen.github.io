@@ -79,9 +79,279 @@
 
   
   
-</head>
+<style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
 
-<body>
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script><style type="text/css" lang="css">
+    #loading-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        width: 100vw;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #FFF;
+        text-align: center;
+        /* loader页面消失采用渐隐的方式*/
+        -webkit-transition: opacity 1s ease;
+        -moz-transition: opacity 1s ease;
+        -o-transition: opacity 1s ease;
+        transition: opacity 1s ease;
+    }
+    .loading-image{
+        width: 120px;
+        height: 50px;
+        transform: translate(-50%);
+    }
+
+    .loading-image div:nth-child(2) {
+        -webkit-animation: pacman-balls 1s linear 0s infinite;
+        animation: pacman-balls 1s linear 0s infinite
+    }
+
+    .loading-image div:nth-child(3) {
+        -webkit-animation: pacman-balls 1s linear .33s infinite;
+        animation: pacman-balls 1s linear .33s infinite
+    }
+
+    .loading-image div:nth-child(4) {
+        -webkit-animation: pacman-balls 1s linear .66s infinite;
+        animation: pacman-balls 1s linear .66s infinite
+    }
+
+    .loading-image div:nth-child(5) {
+        -webkit-animation: pacman-balls 1s linear .99s infinite;
+        animation: pacman-balls 1s linear .99s infinite
+    }
+
+   .loading-image div:first-of-type {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
+        animation: rotate_pacman_half_up .5s 0s infinite;
+    }
+    .loading-image div:nth-child(2) {
+        width: 0;
+        height: 0;
+        border: 25px solid #49b1f5;
+        border-right-color: transparent;
+        border-radius: 25px;
+        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
+        animation: rotate_pacman_half_down .5s 0s infinite;
+        margin-top: -50px;
+    }
+    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
+
+    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
+
+    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
+
+
+    .loading-image div:nth-child(3),
+    .loading-image div:nth-child(4),
+    .loading-image div:nth-child(5),
+    .loading-image div:nth-child(6){
+        background-color: #49b1f5;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-6.25px);
+        top: 25px;
+        left: 100px;
+    }
+    .loading-text{
+        margin-bottom: 20vh;
+        text-align: center;
+        color: #2c3e50;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media only screen and (max-width: 500px) {
+         .loading-text{
+            font-size: 1.5rem;
+         }
+    }
+    .fadeout {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    /* logo出现动画 */
+    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
+    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
+ </style>
+ <script>
+(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },1000); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()
+ </script></head>
+
+
+ <div id="loading-container">
+     <p class="loading-text">墨痕正在帮你高速加载哦 . . . </p> 
+     <div class="loading-image">
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div> 
+         <div></div>
+     </div>
+ </div><body>
   
   
 <header class="l_header pure">
@@ -360,6 +630,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">3k字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">10分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -466,6 +760,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">655字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">2分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -495,114 +813,6 @@
           <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
           <a href="/tags/CDN/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;CDN</a>
-        
-      </div>
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-      <a title='Markdown的使用-分割线' href='/2019/08/17/教程-Markdown的使用-分割线/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2019/08/17/教程-Markdown的使用-分割线/">
-      Markdown的使用-分割线
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    <a href="https://mcmohen.com" rel="nofollow">
-      
-        <img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg">
-      
-      <p>mcmohen</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-17</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>教程</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-
-          
-        
-          
-            
-
-          
-        
-      </div>
-      
-        <hr>
-      
-    </div>
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      <h1 id="分割线篇"><a href="#分割线篇" class="headerlink" title="分割线篇"></a>分割线篇</h1>
-      
-        <div class="readmore">
-          <a href="/2019/08/17/教程-Markdown的使用-分割线/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
-        
-          <a href="/tags/Markdown/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;Markdown</a>
         
       </div>
     
@@ -682,6 +892,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">774字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">2分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -699,6 +933,138 @@
       
         <div class="readmore">
           <a href="/2019/08/17/教程-Markdown的使用-表格/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+        
+          <a href="/tags/Markdown/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;Markdown</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+      <a title='Markdown的使用-分割线' href='/2019/08/17/教程-Markdown的使用-分割线/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/08/17/教程-Markdown的使用-分割线/">
+      Markdown的使用-分割线
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://mcmohen.com" rel="nofollow">
+      
+        <img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg">
+      
+      <p>mcmohen</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2019-08-17</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/教程/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>教程</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">302字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">1分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <h1 id="分割线篇"><a href="#分割线篇" class="headerlink" title="分割线篇"></a>分割线篇</h1>
+      
+        <div class="readmore">
+          <a href="/2019/08/17/教程-Markdown的使用-分割线/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -786,6 +1152,30 @@
           
             
 
+          
+        
+          
+            
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">266字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">1分</span>
+          </span>
+        </span>
+      </div>
+    
+  
           
         
           
@@ -898,6 +1288,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">897字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">3分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -1002,6 +1416,30 @@
           
             
 
+          
+        
+          
+            
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">83字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">1分</span>
+          </span>
+        </span>
+      </div>
+    
+  
           
         
           
@@ -1114,6 +1552,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">1.4k字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">6分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -1222,6 +1684,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">1.5k字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">5分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -1267,14 +1753,14 @@
   <section class='meta'>
     
     
-      <a title='洛谷题解 P4305 【[JLOI2011]不重复数字】' href='/2019/08/12/题解-lg4305 不重复数字/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgans.jpg'></a>
+      <a title='洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】' href='/2019/08/12/题解-lg1055 ISBN号码/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgans.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/08/12/题解-lg4305 不重复数字/">
-      洛谷题解 P4305 【[JLOI2011]不重复数字】
+    <a href="/2019/08/12/题解-lg1055 ISBN号码/">
+      洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】
     </a>
   </h2>
 
@@ -1328,6 +1814,30 @@
         
           
             
+    
+      <div style="margin-right: 10px;">
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard"></i>
+            <span class="post-meta-item-text">  字数统计: </span>
+            <span class="post-count">351字</span>
+          </span>
+        </span>
+        &nbsp; | &nbsp;
+        <span class="post-time">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text">  阅读时长≈</span>
+            <span class="post-count">1分</span>
+          </span>
+        </span>
+      </div>
+    
+  
+          
+        
+          
+            
 
           
         
@@ -1341,10 +1851,10 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p><a href="https://www.luogu.org/problem/P4305" target="_blank" rel="noopener">lg4305传送门</a></p>
+      <p><a href="https://www.luogu.org/problem/P1055" target="_blank" rel="noopener">lg1055传送门</a></p>
       
         <div class="readmore">
-          <a href="/2019/08/12/题解-lg4305 不重复数字/" class="flat-box">
+          <a href="/2019/08/12/题解-lg1055 ISBN号码/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1947,7 +2457,7 @@
       <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
     </div>
     <div class="github-badge">
-      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">15.8k</span>
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">15.7k</span>
     </div>
 </footer>
 
