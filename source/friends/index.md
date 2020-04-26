@@ -37,7 +37,7 @@ links:
 
     - name: lal    # 博客名
       avatar: https://public-lu-anlai-china-hong-kong.oss-cn-hongkong.aliyuncs.com/avatar/avatar-128px.jpg  # 头像链接
-      url: http://www.lu-anlai.com/     # 博客链接
+      url: https://www.lu-anlai.com/     # 博客链接
       backgroundColor: '#013ADF' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
       tags:     # 标签
@@ -101,7 +101,7 @@ links:
       - 朋友
       - 哲人
     - name: 花葵日记
-      avatar: https://cdn.jsdelivr.net/gh/huakaidaojia/huakaidaojia.github.io@master/image/bd315c6034a85edfea3fec3646540923dd547577.jpg
+      avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgd570170f4f12e1ee829ca0e85a7dffeb77343a.svg
       url: https://www.hkdj.site/
       backgroundColor: '#169bdf'
       textColor: '#fff'
@@ -147,7 +147,7 @@ links:
     items:
     - name: Ricardo Milos    # 博客名
       avatar: //i.loli.net/2019/08/14/pKFr2bgo1SWTXJh.png  # 头像链接
-      url: http://www.jockbutt.com    # 博客链接
+      url: https://www.jockbutt.com    # 博客链接
       backgroundColor: '#000000' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
       tags:     # 标签
