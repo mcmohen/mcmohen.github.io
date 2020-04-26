@@ -130,6 +130,16 @@ links:
       textColor: '#fff'
       tags:
       - 专注于讨论与分享
+    - name: HuqiA
+      avatar:  https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/11.jpg
+      url: https://www.huqifa.com/
+      backgroundColor: '#04B404'
+      textColor: '#fff'
+      tags:
+      - 不怕念起
+      - 就怕觉迟
+      - 理可顿悟
+      - 事须渐修
 
   - group: 微信公众号
     icon: fab fa-weixin
@@ -156,14 +166,16 @@ links:
 
 ### 如需加友链或更改友链请在评论区写下贵站信息，谢谢！
 
-> ### **名字**：
->
-> ### **地址**：
->
-> ### **头像**：
->
-> ### **简介(标签)**：
-
 ### 如有需要也可以将卡片背景的十六进制颜色码备注，我会更改颜色。
+
+## 我的Blog资料：
+
+> ### **名字**：Mohen's Blog
+>
+> ### **地址**：https://mcmohen.com/
+>
+> ### **头像**：https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg
+>
+> ### **简介(标签)**：一个爱学习的中学生
 
 <!-- 这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。 -->
