@@ -313,14 +313,14 @@ int main(void){
 ```
 [链接描述](链接地址)
 
-[墨痕博客](https://mcmohen.github.io/)
+[墨痕博客](https://mcmohen.top/)
 ```
 
 ### 效果:
 
 [链接描述](链接地址)
 
-[墨痕博客](https://mcmohen.github.io/)
+[墨痕博客](https://mcmohen.top/)
 
 ## 图片
 
@@ -346,14 +346,14 @@ int main(void){
 
 ```
 [![图片描述（选填）](图片地址)](链接地址)
-[![作者头像](https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg)](https://mcmohen.github.io/)
+[![作者头像](https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg)](https://mcmohen.top/)
 点击以进入墨痕的博客
 ```
 
 ### 效果:
 
 [![图片描述（选填）](图片地址)](链接地址)
-[![作者头像](https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg)](https://mcmohen.github.io/)
+[![作者头像](https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg)](https://mcmohen.top/)
 点击以进入墨痕的博客
 
 

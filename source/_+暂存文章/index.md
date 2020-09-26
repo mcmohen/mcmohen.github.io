@@ -9,7 +9,7 @@ layout: false
 
 ## ~~所以更新博文会不定期且较慢QAQ，别打我！~~ 
 
-<h3><a href="https://mcmohen.github.io"> 点击我返回首页 </a></h3>
+<h3><a href="https://mcmohen.top"> 点击我返回首页 </a></h3>
 
 <!--
 <h1 align="left">头像在此↓↓↓</h1>

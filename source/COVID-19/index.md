@@ -21,10 +21,10 @@ layout: false
 　　<div id="footer">
         <footer id="footer" class="clearfix" align="center">
             <div class="copyright" style="font-size:13px;">
-                Copyright&nbsp;©&nbsp;2019-2020&nbsp;<a href="https://mcmohen.github.io/" target="_blank">Mohen's blog</a><br><br>
+                Copyright&nbsp;©&nbsp;2019-2020&nbsp;<a href="https://mcmohen.top/" target="_blank">Mohen's blog</a><br><br>
                 推荐使用1920*1080分辨率、谷歌或者火狐浏览器浏览此页&nbsp;|&nbsp;
-                <a href="https://mcmohen.com/atom.xml" target="_blank">RSS订阅</a>&nbsp;|&nbsp;
-                <a href="https://mcmohen.github.io/friends/" target="_blank">申请友链</a>&nbsp;|&nbsp;
+                <a href="https://mcmohen.top/atom.xml" target="_blank">RSS订阅</a>&nbsp;|&nbsp;
+                <a href="https://mcmohen.top/friends/" target="_blank">申请友链</a>&nbsp;|&nbsp;
                 Powered By <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;|&nbsp;
                 Hosted By <a href="https://github.com/" target="_blank">GitHub Pages</a>
             </div>

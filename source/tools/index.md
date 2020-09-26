@@ -7,7 +7,7 @@ links:
     items:
     - name: 个人简历
       avatar: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20191116223015.png
-      url: https://mcmohen.github.io/anires/public/
+      url: https://mcmohen.top/anires/public/
       backgroundColor: '#696969' 
       textColor: '#fff' 
     - name: base64加密/解密

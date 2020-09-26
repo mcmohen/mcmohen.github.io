@@ -27,7 +27,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg
 <html>
 <body>
 
-<video src="http://mcmohen.top/?/%E8%A7%86%E9%A2%91/SLR.mp4" width="350" height="200" controls="controls">
+<video src="http://share.mcmohen.top/?/%E8%A7%86%E9%A2%91/SLR.mp4" width="350" height="200" controls="controls">
 您的浏览器不支持 video 标签。
 </video>
 </body>

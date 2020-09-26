@@ -1,12 +1,12 @@
 ---
-music:
-  enable: true      # true（文章内和文章列表都显示） internal（只在文章内显示）
-  server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
-  type: song        # song （单曲） album （专辑） playlist （歌单） search （搜索）
-  id: 30953009      # 歌曲/专辑/歌单 ID
+#music:
+#  enable: true      # true（文章内和文章列表都显示） internal（只在文章内显示）
+#  server: netease   # netease（网易云音乐）tencent（QQ音乐） xiami（虾米） kugou（酷狗）
+#  type: song        # song （单曲） album （专辑） playlist （歌单） search （搜索）
+#  id: 30953009      # 歌曲/专辑/歌单 ID
 
 layout: links     # 必须
-title: 友链   # 可选，这是友链页的标题
+title: -友人帐-   # 可选，这是友链页的标题
 links:
   - group: 我的朋友
     icon: fas fa-user-tie
@@ -36,7 +36,7 @@ links:
       - bilibili某知名up主
 
     - name: lal    # 博客名
-      avatar: https://public-lu-anlai-china-hong-kong.oss-cn-hongkong.aliyuncs.com/avatar/avatar-128px.jpg  # 头像链接
+      avatar: https://www.lu-anlai.com/wp-content/uploads/2020/09/avatar-512px.png  # 头像链接
       url: https://www.lu-anlai.com/     # 博客链接
       backgroundColor: '#013ADF' # 卡片背景颜色
       textColor: '#fff'  # 卡片文字颜色
@@ -172,10 +172,13 @@ links:
 
 > ### **名字**：Mohen's Blog
 >
-> ### **地址**：https://mcmohen.com/
+> ### **地址**：https://mcmohen.top/
 >
 > ### **头像**：https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg
 >
 > ### **简介(标签)**：一个爱学习的中学生
+
+{% aplayer "See you again" "Wiz Khalifa / Charlie Puth" "https://mcmohen.coding.net/api/share/download/a799a4ef-e45a-4245-b308-6481285fe713.mp3" autoplay %}
+
 
 <!-- 这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。 -->

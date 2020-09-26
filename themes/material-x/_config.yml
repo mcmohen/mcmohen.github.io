@@ -88,7 +88,7 @@ cover:
       url: /
     - name: "分享站"
       icon: fas fa-cloud-download-alt # fas fa-code-branch
-      url: https://share.mcmohen.com/ # share/
+      url: https://share.mcmohen.top/ # share/
     - name: 友链
       icon: fas fa-link
       url: friends/
@@ -160,7 +160,7 @@ menu_mobile:
     rel: nofollow
   - name: "资源分享"
     icon: fas fa-cubes fa-fw  # fas fa-code-branch
-    url: https://share.mcmohen.com/ # share/
+    url: https://share.mcmohen.top/ # share/
   - name: 我的友链
     icon: fas fa-link
     url: friends/
@@ -212,7 +212,7 @@ sidebar:
         rel: nofollow
       - name: "资源分享" # 可能会出现玄学，若出现加双引号
         icon: fas fa-cubes fa-fw   # fas fa-code-branch
-        url: https://share.mcmohen.com/ # share/
+        url: https://share.mcmohen.top/ # share/
       - name: 我的友链
         icon: fas fa-link
         url: friends/

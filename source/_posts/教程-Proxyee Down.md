@@ -25,7 +25,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_i
 
 **软件下载**(我博客下载的Windows的)
 
-- [Mohen's Blog下载](http://mcmohen.top/?/%E5%B7%A5%E5%85%B7/%E3%80%90%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E3%80%91Proxyee%20Down.3.4.windows.x64.7z)
+- [Mohen's Blog下载](http://share.mcmohen.top/?/%E5%B7%A5%E5%85%B7/%E3%80%90%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E3%80%91Proxyee%20Down.3.4.windows.x64.7z)
 - [Github项目地址](https://github.com/proxyee-down-org/proxyee-down)
 
 
@@ -45,7 +45,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_i
 
 - Chrome扩展：[SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/releases/download/v2.5.20/SwitchyOmega_Chromium.crx) (这个要~~翻墙~~...)
 - [Github项目地址]( https://github.com/FelisCatus/SwitchyOmega/releases )
-- [Blog下载](http://mcmohen.top/?/%E6%8F%92%E4%BB%B6/SwitchyOmega_Chromium.crx)
+- [Blog下载](http://share.mcmohen.top/?/%E6%8F%92%E4%BB%B6/SwitchyOmega_Chromium.crx)
 
 下完后缀为.crx的插件后在浏览器中安装**(有些浏览器没有扩展程序安装，那就下个主流浏览器呗，如：Firefox Google ~~360~~ 等)**
 

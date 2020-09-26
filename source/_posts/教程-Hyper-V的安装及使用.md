@@ -101,7 +101,7 @@ thumbnail: https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_i
 
    这时候你要有iso镜像文件（也就是你选择的系统，网上随便都可以下载，我选择的是win10 64位镜像）
 
-   没有的可以用我的-->[win10 64位镜像](http://mcmohen.top/?/%E5%85%B6%E5%AE%83/iso%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6/win10-64%E4%BD%8D-2019.iso)
+   没有的可以用我的-->[win10 64位镜像](https://share.mcmohen.top/?/iso%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6/win10-64%E4%BD%8D-2019.iso)
 
    ![微信截图_20200228114035.png](https://i.loli.net/2020/02/28/EA4x98nCslwbMeP.png)
 
