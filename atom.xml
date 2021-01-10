@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mcmohen.top/"/>
-  <updated>2021-01-10T03:26:03.989Z</updated>
+  <updated>2021-01-10T04:17:00.721Z</updated>
   <id>https://mcmohen.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的世界开服教程</title>
+    <link href="https://mcmohen.top/2021/01/10/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/"/>
+    <id>https://mcmohen.top/2021/01/10/教程-我的世界开服/</id>
+    <published>2021-01-10T03:38:00.000Z</published>
+    <updated>2021-01-10T04:17:00.721Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="想必玩MC的人都希望拥有一台属于自己的服务器"><a href="#想必玩MC的人都希望拥有一台属于自己的服务器" class="headerlink" title="想必玩MC的人都希望拥有一台属于自己的服务器~"></a>想必玩MC的人都希望拥有一台属于自己的服务器~</h2><a id="more"></a><blockquote><p>先申明此教程只能搭建出基友服务器，也就是平时四五个小伙伴一起玩的服务器</p><p><del>（如果想搞商业服也不会进来看，是吧）</del></p></blockquote><h3 id="准备材料："><a href="#准备材料：" class="headerlink" title="准备材料："></a>准备材料：</h3><ol><li>一台电脑</li><li>一点耐心</li><li><del>一点灵性</del></li></ol><h4 id="首先嘞，想要开服务器，你需要有一个服务端核心，也就是选择开什么样的服务器。如：官服，插件服，模组服，插件-模组服"><a href="#首先嘞，想要开服务器，你需要有一个服务端核心，也就是选择开什么样的服务器。如：官服，插件服，模组服，插件-模组服" class="headerlink" title="首先嘞，想要开服务器，你需要有一个服务端核心，也就是选择开什么样的服务器。如：官服，插件服，模组服，插件+模组服"></a>首先嘞，想要开服务器，你需要有一个服务端核心，也就是选择开什么样的服务器。如：官服，插件服，模组服，插件+模组服</h4><h4 id="而这里我只讲官服（因为简单啊）"><a href="#而这里我只讲官服（因为简单啊）" class="headerlink" title="而这里我只讲官服（因为简单啊）"></a>而这里我只讲官服（因为简单啊）</h4><h4 id="官服的核心很好找，去MC维基上面搜就好了"><a href="#官服的核心很好找，去MC维基上面搜就好了" class="headerlink" title="官服的核心很好找，去MC维基上面搜就好了"></a>官服的核心很好找，去<a href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener">MC维基</a>上面搜就好了</h4><p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110115254.png" alt></p><h4 id="下完后新建个文件夹把以-jar结尾的文件拖进去"><a href="#下完后新建个文件夹把以-jar结尾的文件拖进去" class="headerlink" title="下完后新建个文件夹把以.jar结尾的文件拖进去"></a>下完后新建个文件夹把以.jar结尾的文件拖进去</h4><h4 id="在哪个文件夹里新建一个文本文档，写入这些："><a href="#在哪个文件夹里新建一个文本文档，写入这些：" class="headerlink" title="在哪个文件夹里新建一个文本文档，写入这些："></a>在哪个文件夹里新建一个文本文档，写入这些：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF</span><br><span class="line">java -Xmx1024M -Xms1024M -jar &quot;你的核心名称.jar&quot;</span><br><span class="line">PAUSE</span><br></pre></td></tr></table></figure><h4 id="将文本文档后缀改为-bat并运行"><a href="#将文本文档后缀改为-bat并运行" class="headerlink" title="将文本文档后缀改为.bat并运行"></a>将文本文档后缀改为.bat并运行</h4><h4 id="如果出现-‘Java’-不是内部或外部命令，也不是可运行的程序或批处理文件-的提示"><a href="#如果出现-‘Java’-不是内部或外部命令，也不是可运行的程序或批处理文件-的提示" class="headerlink" title="如果出现  ‘Java’ 不是内部或外部命令，也不是可运行的程序或批处理文件  的提示"></a>如果出现  <em>‘Java’ 不是内部或外部命令，也不是可运行的程序或批处理文件</em>  的提示</h4><h4 id="右键编辑批处理文件，全选并填入"><a href="#右键编辑批处理文件，全选并填入" class="headerlink" title="右键编辑批处理文件，全选并填入"></a>右键编辑批处理文件，全选并填入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF</span><br><span class="line">&quot;java地址&quot; -Xmx1024M -Xms1024M -jar &quot;你的核心名称.jar&quot;</span><br><span class="line">PAUSE</span><br></pre></td></tr></table></figure><blockquote><p>Java默认下载地址应该是在C:\Program Files(x86)\Java或者是C:\Program Files\Java</p></blockquote><p><strong>但是填入的地址要指向java.exe，如下图</strong></p><p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110120431.png" alt></p><h4 id="OK保存并运行你的批处理文件"><a href="#OK保存并运行你的批处理文件" class="headerlink" title="OK保存并运行你的批处理文件"></a>OK保存并运行你的批处理文件</h4><h4 id="等个几秒后你的小黑窗口会出现如下类似的提示"><a href="#等个几秒后你的小黑窗口会出现如下类似的提示" class="headerlink" title="等个几秒后你的小黑窗口会出现如下类似的提示"></a>等个几秒后你的小黑窗口会出现如下类似的提示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[12:04:47] [main/ERROR]: Failed to load properties from file: server.properties</span><br><span class="line">[12:04:47] [main/WARN]: Failed to load eula.txt</span><br><span class="line">[12:04:47] [main/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.</span><br></pre></td></tr></table></figure><h4 id="不要紧张，这是正常现象"><a href="#不要紧张，这是正常现象" class="headerlink" title="不要紧张，这是正常现象"></a>不要紧张，这是正常现象</h4><h4 id="只需要回到你的文件夹中找到eula-txt将其中的-eula-false-改成-eula-true-即可"><a href="#只需要回到你的文件夹中找到eula-txt将其中的-eula-false-改成-eula-true-即可" class="headerlink" title="只需要回到你的文件夹中找到eula.txt将其中的 eula=false  改成  eula=true  即可"></a>只需要回到你的文件夹中找到eula.txt将其中的 <strong>eula=false</strong>  改成  <strong>eula=true</strong>  即可</h4><h4 id="再次运行你的批处理文件是不是发现它跑起来了！"><a href="#再次运行你的批处理文件是不是发现它跑起来了！" class="headerlink" title="再次运行你的批处理文件是不是发现它跑起来了！"></a>再次运行你的批处理文件是不是发现它跑起来了！</h4><h4 id="直到控制台输出-Done-For-help-type-“help”-就说明成功了"><a href="#直到控制台输出-Done-For-help-type-“help”-就说明成功了" class="headerlink" title="直到控制台输出  Done ! For help, type “help”  就说明成功了"></a>直到控制台输出  <strong>Done ! For help, type “help”</strong>  就说明成功了</h4><h4 id="此时进入你的MC（版本要和服务端相同），在多人游戏里添加地址为127-0-0-1的服务器，就可以进去游玩了"><a href="#此时进入你的MC（版本要和服务端相同），在多人游戏里添加地址为127-0-0-1的服务器，就可以进去游玩了" class="headerlink" title="此时进入你的MC（版本要和服务端相同），在多人游戏里添加地址为127.0.0.1的服务器，就可以进去游玩了"></a>此时进入你的MC（版本要和服务端相同），在多人游戏里添加地址为127.0.0.1的服务器，就可以进去游玩了</h4><h3 id="常见问题："><a href="#常见问题：" class="headerlink" title="常见问题："></a>常见问题：</h3><ol><li>盗版进不去—-在文件夹里找到  <strong>server.properties</strong>  并将其中的  <strong>online-mode=true</strong>  改为  <strong>online-mode=false</strong>  重启服务器即可</li><li>朋友进不去—-呃。我还没有讲端口映射，目前只能局域网联机</li></ol><h4 id="最后安利一下我自己的基友服（版本1-16-x）："><a href="#最后安利一下我自己的基友服（版本1-16-x）：" class="headerlink" title="最后安利一下我自己的基友服（版本1.16.x）："></a>最后安利一下我自己的基友服（版本1.16.x）：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mc.mcmohen.top:10324</span><br></pre></td></tr></table></figure><h5 id="不会有人炸服吧QwQ"><a href="#不会有人炸服吧QwQ" class="headerlink" title="不会有人炸服吧QwQ"></a>不会有人炸服吧QwQ</h5>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;想必玩MC的人都希望拥有一台属于自己的服务器&quot;&gt;&lt;a href=&quot;#想必玩MC的人都希望拥有一台属于自己的服务器&quot; class=&quot;headerlink&quot; title=&quot;想必玩MC的人都希望拥有一台属于自己的服务器~&quot;&gt;&lt;/a&gt;想必玩MC的人都希望拥有一台属于自己的服务器~&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="教程" scheme="https://mcmohen.top/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="教程" scheme="https://mcmohen.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="游戏" scheme="https://mcmohen.top/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+      <category term="我的世界" scheme="https://mcmohen.top/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/"/>
+    
+      <category term="Minecraft" scheme="https://mcmohen.top/tags/Minecraft/"/>
+    
+  </entry>
   
   <entry>
     <title>深圳实验中学部校园学生指南</title>
@@ -476,28 +504,6 @@
       <category term="C++" scheme="https://mcmohen.top/tags/C/"/>
     
       <category term="题解" scheme="https://mcmohen.top/tags/%E9%A2%98%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>吴宪霖三部曲</title>
-    <link href="https://mcmohen.top/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/"/>
-    <id>https://mcmohen.top/2019/08/13/文学-吴宪霖大作/</id>
-    <published>2019-08-13T09:10:18.000Z</published>
-    <updated>2020-04-01T01:36:27.434Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="来自Mohen同学的哲学三部曲↓↓↓↓↓"><a href="#来自Mohen同学的哲学三部曲↓↓↓↓↓" class="headerlink" title="来自Mohen同学的哲学三部曲↓↓↓↓↓"></a>来自Mohen同学的哲学三部曲↓↓↓↓↓</h2>   <a id="more"></a><ol><li><h3 id="《从掰草园到三味书屋》"><a href="#《从掰草园到三味书屋》" class="headerlink" title="《从掰草园到三味书屋》"></a>《从掰草园到三味书屋》</h3><p>​        我家的后面有一个很大的更♂衣室， 相传叫作掰♂草园。现在是早已并屋子一起卖给<strong>比利</strong>的子孙了，连那最末次的相见也已经隔了七八年， 其中似乎确凿只有一些弱子 ；但那时却是我的乐♂园。</p><p>​       不必说暗黑的面具，光滑的铁柜，高大的身材，紫红的绳索；也不必说<strong>van樣</strong>在演播室里长♂吟，强壮的<strong>木吉</strong>伏在<strong>van樣</strong>上，黄色的衣服突然从<strong>金阁</strong>手上直窜向股间去了。单是周围的短短的泥墙根一带，就有无限趣♂味。<strong>哲人</strong>在这里低唱，平家<strong>boy</strong>在这里受刑。翻开断砖来，有时会遇见<strong>银阁</strong>；还有<strong>佟大为</strong>，倘若用手指按住它的脊梁，便会拍的一声，从后♂窍喷出一阵烟雾。<strong>比利藤</strong>和<strong>木吉藤</strong>缠络着，<strong>木吉</strong>有擎天柱一般的<strong>息子</strong>，<strong>比利</strong>有拥肿的根。有人说，<strong>比利</strong>根是有象人形的，吃了便可以成仙，我于是常常拔♂它起来，牵连不断地拔♂起来，也曾因此弄坏了铁柜，却从来没有见过有一块根象人样。如果不怕刺，还可以摘到<strong>弱子</strong>，象小珊瑚珠攒成的小球，又酸又甜，色味都比香蕉要好得远。</p><p>​       长的草里是不去的，因为相传这园里有一条很大的<strong>赤♂巾蛇</strong>。</p><p>​       长妈妈曾经讲给我一个故♂事听：先前，有一个平家<strong>boy</strong>住在古庙里用♂功，晚间，在院子里纳♂凉的时候，突然听到有人在叫他乖乖♂站好。答应着，四面看时，却见一个<strong>比利</strong>的脸露在墙头上，向他一笑，隐去了。他很高♂兴；但竟给那走来夜♂谈的老和尚识破了机关。说他脸上有点哲♂学气息，一定遇见“<strong>兄贵</strong>蛇”了；这是人首蛇身的怪物，能唤人名，倘一答应，夜间便要找这人摔♂跤的。他自然吓得要死，而那老和尚却道无妨，给他一个<strong>男♂魂</strong>，说只要放在枕边，便可高枕而卧。他虽然照样办，却总是睡不着，——当然睡不着的。到半夜，果然来了，啪啪啪！门外像是摔♂跤声。他正抖作一团时，却听得FA的一声，一位<strong>肌肉男</strong>从枕边飞出，外面便什么声音也没有了，那肌肉男也就飞回来，敛在盒子里。后来呢？后来，老和尚说，这是<strong>飞蕉君</strong>，它能吸蛇的脑髓，<strong>兄贵蛇</strong>就被它致死了。</p><p>​        结末的教训是：所以倘若有陌生的<strong>兄贵</strong>叫你乖乖♂站好，你万不可答应他。</p><p>​        这故♂事很使我觉得做男之险，夏夜乘♂凉，往往有些担心，不敢去看墙上，而且极想得到一套老和尚那样的<strong>调♂教装备</strong>。走到掰♂草园的衣柜旁边时，也常常这样想。但直到现在，总还是没有得到，但也没有遇见过<strong>赤巾蛇</strong>和<strong>兄贵蛇</strong>。叫我乖乖♂站好的陌生声♂音自然是常有的，然而都不是<strong>兄贵蛇</strong>。</p></li><li><h3 id="《尻乙己》"><a href="#《尻乙己》" class="headerlink" title="《尻乙己》"></a>《尻乙己》</h3><p>​       <strong>Van</strong>是站着喝酒而穿皮衣的唯一的人。他身材很高大；黄脸色，皱纹间时常夹些伤痕。穿的虽然是皮衣，可是又脏又破，似乎十多年没有补，也没有洗。他对人说话，总是满口<strong>FA♂Q</strong>，教人半懂不懂的。因为他姓<strong>V</strong>，别人便从描红纸上的“<strong>艺术家Van</strong>”这半懂不懂的话里，替他取下一个绰号，叫作<strong>Van</strong>。<strong>Van</strong>一到店，所有喝酒的人便都看着他笑，有的叫道，“<strong>Van</strong>，你身上又添上新伤疤了！”他不回答，对柜里说，“温两碗酒，要一碟<strong>dark♂</strong>料理。”便排出九文男魂。他们又故意的高声嚷道，“你一定又偷了人家的东西了！”<strong>Van</strong>睁大眼睛说，“你怎么这样凭空<strong>易♂建♂联</strong>……”“什么摔♂跤？我前天亲眼见你偷了<strong>比利家</strong>的尻，绑♂着打。”<strong>Van</strong>便涨红了脸，额上的青筋条条绽出，争辩道，“窃尻不能算偷……窃尻！……<strong>哲学家</strong>的事，能算偷么？”接连便是难懂的话，什么“<strong>deep♂dark♂fantasy</strong>”，什么“<strong>boy♂next♂door</strong>”之类，引得众人都哄笑起来：店内外充满了快活的空气。</p></li><li><h3 id="《你们这个是什么健身房啊》"><a href="#《你们这个是什么健身房啊》" class="headerlink" title="《你们这个是什么健身房啊》"></a>《你们这个是什么健身房啊》</h3><p>​       你们这个是什么健♂身房啊，你们这是<strong>deep♂dark♂fantasy</strong>啊你们这个健♂身房。麻烦你们，真的太过分了你们搞这个健♂身房干什么，我儿子每一科的成绩都不过那个平均分呐，我儿子要是成了<strong>弱子</strong>怎么办啊，他还是个孩子啊好不好。</p><p>​        你们这是什么健♂身房啊，哼！哼！啊啊啊啊啊啊。你们天天摔♂跤，摔死我儿子了。谁是<strong>首领</strong>的快点出来你们<strong>首领</strong>，再不来我叫<strong>跤♂警</strong>了啊。我跟你们说你们这一群<strong>兄贵</strong>啊，一天到晚啊搞这些什么摔♂跤啊<strong>哲♂学</strong>啊会害死你们哒!你们没有前途我跟你说你们这四百多个人好好健♂身不好吗，一天到晚在<strong>fa♂q</strong>有什么意思，有什么意思啊。</p><p>​       麻烦你们重视一下你们受人爱戴的<strong>比利王</strong>好不好有一点目标好不好。一天到晚摔♂跤是不是人啊，你们一天到晚摔♂跤不好好健身会没前途的。<strong>哲♂学害死人</strong>。</p></li></ol><p>​                                                                      </p><h5 id="emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部吴宪霖"><a href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部吴宪霖" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;by  深圳实验学校中学部吴宪霖"></a>&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;by  深圳实验学校中学部吴宪霖</h5><h5 id="emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初二上"><a href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初二上" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;初二上"></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;初二上</h5>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;来自Mohen同学的哲学三部曲↓↓↓↓↓&quot;&gt;&lt;a href=&quot;#来自Mohen同学的哲学三部曲↓↓↓↓↓&quot; class=&quot;headerlink&quot; title=&quot;来自Mohen同学的哲学三部曲↓↓↓↓↓&quot;&gt;&lt;/a&gt;来自Mohen同学的哲学三部曲↓↓↓↓↓&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="文学" scheme="https://mcmohen.top/categories/%E6%96%87%E5%AD%A6/"/>
-    
-    
-      <category term="文学" scheme="https://mcmohen.top/tags/%E6%96%87%E5%AD%A6/"/>
     
   </entry>
   
