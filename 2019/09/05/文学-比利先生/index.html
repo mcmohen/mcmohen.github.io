@@ -23,19 +23,19 @@
 <!---daovoice-->
 <!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>比利先生 | Mohen&#39;s blog</title>
   
   
 
   
-  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog" type="application/atom+xml">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
@@ -56,7 +56,7 @@
     })();
   </script>   
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -64,11 +64,13 @@
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -209,137 +211,7 @@
     };
     loaded();
 })()
- </script><style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFF;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
-    }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-   .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-         .loading-text{
-            font-size: 1.5rem;
-         }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
- </style>
- <script>
-(function () {
-    const loaded = function(){
-       setTimeout(function(){
-            const loader = document.getElementById("loading-container");
-            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-            // document.getElementById("body-wrap").style.display="flex";
-            setTimeout(function(){
-                loader.style.display="none";
-            },1000); 
-        },1000);//强制显示loading page 1s  
-    };
-    loaded();
-})()
- </script></head>
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
 
 
  <div id="loading-container">
@@ -382,7 +254,7 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://share.mcmohen.top/"
+          <a class="nav home" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
             
             
             id="https:share.mcmohen.top">
@@ -536,6 +408,17 @@
 							</li>
       			
   						<li>
+								<a class="nav flat-box" target="_blank" href="http://mc.mcmohen.top:8123/"
+                  
+                    rel="nofollow noopener"
+                  
+                  
+                  id="http:mc.mcmohen.top:8123">
+									<i class='fas fa-gamepad fa-fw fa-fw'></i>&nbsp;MC卫星地图
+								</a>
+							</li>
+      			
+  						<li>
 								<a class="nav flat-box" href="/COVID-19/"
                   
                     rel="nofollow"
@@ -604,7 +487,7 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://share.mcmohen.top/"
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
                 
                 
                 id="https:share.mcmohen.top">
@@ -667,14 +550,14 @@
   <section class='meta'>
     
     
-      <a title='比利先生' href='/2019/09/05/文学-比利先生/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img文学.jpg'></a>
+      <a title='比利先生' href='/2019/09/05/%E6%96%87%E5%AD%A6-%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img文学.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/09/05/文学-比利先生/">
+      <a href="/2019/09/05/%E6%96%87%E5%AD%A6-%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F/">
         比利先生
       </a>
     </h1>
@@ -714,7 +597,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/文学/' rel="nofollow">
+    <a href='/categories/%E6%96%87%E5%AD%A6/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>文学</p>
     </a>
@@ -780,7 +663,7 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <h2 id="《比利先生》"><a href="#《比利先生》" class="headerlink" title="《比利先生》"></a>《比利先生》</h2><h4 id="–过于哲学-慎入！"><a href="#–过于哲学-慎入！" class="headerlink" title="–过于哲学,慎入！"></a>–过于哲学,慎入！</h4><a id="more"></a>
+          <h2 id="《比利先生》"><a href="#《比利先生》" class="headerlink" title="《比利先生》"></a>《比利先生》</h2><h4 id="–过于哲学-慎入！"><a href="#–过于哲学-慎入！" class="headerlink" title="–过于哲学,慎入！"></a>–过于哲学,慎入！</h4><span id="more"></span>
 
 <h2 id="又是这种不正经的博文QAQ"><a href="#又是这种不正经的博文QAQ" class="headerlink" title="又是这种不正经的博文QAQ"></a>又是这种<del>不正经</del>的博文QAQ</h2><h2 id="非哲学人士请自行退出！-真的"><a href="#非哲学人士请自行退出！-真的" class="headerlink" title="非哲学人士请自行退出！(真的)"></a>非哲学人士请自行退出！(真的)</h2><p>&emsp;&emsp;新日♂暮里也无非是这样。幻想乡♂樱花烂熳的时节，望去确也象黑暗的皮甲，但胯下也缺不了成群结队的“调♂教”的速成班，胸间挂着锁♂链，顶得双♂峰的顶♂上高高耸起，形成一座富士♂山。也有摘下锁♂链，勒♂紧得平的，除下套♂头来，油♂光可鉴，宛如姐♀贵的发髻一般，还要将尻♂扭几扭。实在标致极了。<br>&emsp;&emsp;平家boy♂会馆的门房里有调♂教工具买，有时还值得去一转；倘在上午，里面的几间地牢倒也还可以坐坐的。但到傍晚，有一间的地板便常不免要咚咚咚地响得震天，兼以衣柜啪啪的捶♂动声；问问精♂通时事的人，答道，“那是在调♂教。”<br>&emsp;&emsp;到别的地方去看看，如何呢？<br>&emsp;&emsp;我就往泄♂台的调♂教专门学校去。从幻想乡出发，不久便到一处驿站，写道：旧♂日暮里。不知怎地，我到现在还记得这名目。其次却只记得新日暮里了，这是旧日暮里的遗民van♂様先生客死的地方。泄♂台是一个市镇，并不大；冬天冷得利害；还没有调♂教速成班的学生。<br>&emsp;&emsp;大概是物以息♂为贵罢。Boy♂京的皮革运往哲♂江，便用锁链系住♂根，倒挂在地牢门口，尊为“蕉♂菜”；fa♂建野生着的香蕉，一到boy♂京就请进温室，且美其名曰“美利♂坚大香蕉”。我到泄♂台也颇受了这样的优待，不但调教不收裆♂费，几个平家boy还为我的食宿操心。我先是住在地牢旁边一个客店里的，初冬已经颇冷，弱♂子却还多，后来用皮甲盖了全身，用头套包了头脸，只留两个鼻孔出气。在这呼吸不♂息的地方，弱♂子竟无从插嘴，居然睡安稳了。饭食也不坏。但一位先生却以为这客店也包办奴♂隶的饭食，我住在那里不相宜，几次三番，几次三番地说。我虽然觉得客店兼办奴♂隶的饭食和我不相干，然而好意难却，也只得别寻相宜的住处了。于是搬到别一家，离地牢也很远，可惜每天总要喝难以下咽的cum♂。<br>&emsp;&emsp;从此就看见许多陌生的sir♂，听到许多新鲜的肛♂ 义。调♂教学是两个sir分任的。最初是捆绑学。其时进来的是一个黑♂暗的先生，八字须，戴着头套，挟着一迭大大小小的锁链。一将锁链放在讲台上，便用了缓慢而很有顿挫的声调，向学生介绍自己道：“我就是叫作比利海灵顿的……”<br>&emsp;&emsp;后面有几个人笑起来了。他接着便讲述捆绑学在新日暮里发达的历史，那些大大小小的锁链，便是从最初到现今关于这一门学问的工具。起初有几条是钢的；还有铁的，他们摸♂索新的捆绑学，并不比新日暮里早。<br>&emsp;&emsp;那坐在后面发笑的是上学年不及格的留级弱子，在校已经一年，掌♂故颇为熟悉的了。他们便给新生讲演每个sir的历史。这比利先生，据说是穿衣服太模胡了，有时竟会忘记带皮革；冬天是一件旧内♂裤，寒颤颤的，有一回上火车去，致使管车的疑心他是扒♂手，叫车里的客人大家小心些。<br>&emsp;&emsp;他们的话大概是真的，我就亲见他有一次上讲堂没有带皮革。<br>&emsp;&emsp;过了一星期，大约是星期六，他使助手来叫我了。到得地牢，见他坐在锁链和许多单独的皮甲中间，——他其时正在研究着皮甲，后来有一篇论文在本校的杂志上发表出来。<br>&emsp;&emsp;“我的讲义，你能抄下来么？”他问。<br>&emsp;&emsp;“可以抄一点。”<br>&emsp;&emsp;“拿来我看！”<br>&emsp;&emsp;我交出所抄的讲义去，他收下了，第二三天便还我，并且说，此后每一星期要送给他看一回。我拿下来打开看时，很吃了一惊，同时也感到一种不安和感激。原来我的讲义已经从头到末，都用红笔添改过了，不但增加了许多脱漏的地方，连文法的错误，也都一一订正。这样一直继续到教完了他所担任的功课：捆♂绑学、抽♂打学、揉♂搓学。<br>&emsp;&emsp;可惜我那时太不用功，有时也很任性。还记得有一回藤野先生将我叫到他的地牢里去，翻出我那讲义上的一个图来，是下臂的锁链，指着，向我和蔼的说道：“你看，你将这条锁链移了一点位置了。自然，这样一移，的确比较的好看些，然而哲♂学不是美术，实物是那么样的，我们没法改换它。现在我给你改好了，以后你要全照着黑板上那样的画。”<br>&emsp;&emsp;但是我还不服气，口头答应着，心里却想道：“图还是我画的不错；至于实在的情形，我心里自然记得的。”<br>&emsp;&emsp;学年试验完毕之后，我便到幻想乡玩♂了一夏天，秋初再回学校，成绩早已发表了，同学一百余人之中，我在中间，不过是没有落第。这回藤野先生所担任的功课，是调教实习和菊♂部解剖学。<br>&emsp;&emsp;解剖实习了大概一星期，他又叫我去了，很高兴地，仍用了极有抑扬的声调对我说道：“我因为听说弱子是很敬重兄贵的，所以很担心，怕你不肯解剖兄贵。现在总算放心了，没有这回事。”<br>&emsp;&emsp;但他也偶有使我很为难的时候。他听说中国的姐♀贵是裹♂脚的，但不知道详细，所以要问我怎么裹法，足骨变成怎样的畸形，还叹息道，“总要看一看才知道。究竟是怎么一回事呢？”<br>&emsp;&emsp;有一天，本级的学生会干事到我寓里来了，要借我的讲义看。我检出来交给他们，却只翻检了一通，并没有带走。但他们一走，邮差就送到一封很厚的信，拆开看时，第一句是“你吃*罢！”<br>&emsp;&emsp;这是《兄贵宝♂典》上的句子罢，但经木吉新近引用过的。其时正值更衣室战♂争，木老先生便写了一封给van様和魔男的信，开首便是这一句，斥责他的弱♂，爱国boy♂也愤然，然而暗♂地里却早受了他的影响了。其次的话，大略是说上年调教学试验的题目，是比利先生讲义上做了记号，我预先知道的，所以能有这样的成绩。末尾是匿名。<br>&emsp;&emsp;我这才回忆到前几天的一件事。因为要开同级会，干事便在黑板上写广告，末一句是“请全数穿胖次勿漏♂为要”，而且在“漏”字旁边加了一个圈和箭头。我当时虽然觉到圈得可笑，但是毫不介意，这回才悟出那字也在讥刺我了，犹言我得了教员漏♂泄出来的题目。<br>我便将这事告知了比利先生；有几个和我熟识的弱子也很不平，一同去诘责干事托辞检查的无礼，并且要求他们将检查的结果，发表出来。终于这流言消灭了，干事却又竭力运动，要收回那一封匿名信去。结末是我便将这木吉式的信退还了他们。<br>&emsp;&emsp;我的国家是弱国，所以我们当然是弱子，分数在六十分以上，便不是自己的能力了：也无怪他们疑惑。但我接着便有参观枪毙我国人的命运了。第二年添教摸♂茎学，茎的形状是全用电影来显示的，一段落已完而还没有到下课的时候，便影几片时事的片子，自然都是van様战胜魔男的情形。但偏有弱子夹在里边：给魔男做侦探，被van様捕获，要调教了，围着看的也是一群魔男；在讲堂里的还有一个我。<br>&emsp;&emsp;“fa♂q！”他们都拍掌欢呼起来。<br>&emsp;&emsp;这种欢呼，是每看一片都有的，但在我，这一声却特别听得刺耳。此后回来，我看见那些闲看枪毙魔男的弱子们，他们也何尝不酒醉似的喝彩，——呜呼，无法可想！但在那时那地，我的意见却变化了。<br>&emsp;&emsp;到第二学年的终结，我便去寻比利先生，告诉他我将不学哲学，并且离开这泄♂台。他的脸色仿佛有些悲哀，似乎想说话，但竟没有说。<br>&emsp;&emsp;“我想去学性♂学，sir教给我的学问，也还有用的。”其实我并没有决意要学性♂学，因为看得他有些凄然，便说了一个慰安他的谎话。<br>&emsp;&emsp;“为性♂学而教的哲♂学之类，怕于性♂学也没有什么大帮助。”他叹息说。<br>&emsp;&emsp;将走的前几天，他叫我到他家里去，交给我一张照相，后面写着两个字道：“惜别”，还说希望将我的也送他。但我这时适值没有照相了；他便叮嘱我将来照了寄给他，并且时时通信告诉他此后的状况。<br>&emsp;&emsp;我离开泄♂台之后，就多年没有照过相，又因为状况也无聊，说起来无非使他失望，便连信也怕敢写了。经过的年月一多，话更无从说起，所以虽然有时想写信，却又难以下笔，这样的一直到现在，竟没有寄过一封信和一张照片。从他那一面看起来，是一去之后，杳无消息了。<br>&emsp;&emsp;但不知怎地，我总还时时记起他，在我所认为sir之中，他是最使我感激，给我鼓励的一个。有时我常常想：他的对于我的热心的希望，不倦的教诲，小而言之，是为中国，就是希望我们有新的性♂学；大而言之，是为学术，就是希望新的医学传回去。他的性格，在我的眼里和心里是伟大的，虽然他的姓名并不为许多人所知道。<br>&emsp;&emsp;他所改正的讲义，我曾经订成三厚本，收藏着的，将作为永久的纪念。不幸七年前迁居的时候，中途毁坏了一口书箱，失去半箱书，恰巧这讲义也遗失在内了。责成运送局去找寻，寂无回信。只有他的照相至今还挂在我北京地牢的东墙上，绞♂刑架对面。每当夜间疲倦，正想偷懒时，仰面在灯光中瞥见他黑♂暗的面貌，似乎正要说出抑扬顿挫的话来，便使我忽又良心发现，而且增加勇气了，于是点上一枝烟，再继续写些为“正人弱♂子”之流所深恶痛疾的文字。</p>
 <h5 id="emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部夏乾中"><a href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部夏乾中" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;by  深圳实验学校中学部夏乾中"></a>&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;by  深圳实验学校中学部夏乾中</h5><h5 id="emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初三上"><a href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初三上" class="headerlink" title="&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;初三上"></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;初三上</h5><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
@@ -876,7 +759,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/文学/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>文学</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%96%87%E5%AD%A6/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>文学</p></a></div>
 
 
         
@@ -887,9 +770,9 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/09/05/文学-比利先生/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/09/05/%E6%96%87%E5%AD%A6-%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
           
           >
           
@@ -899,9 +782,9 @@
       
     
       
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/09/05/文学-比利先生/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/09/05/%E6%96%87%E5%AD%A6-%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
           
           >
           
@@ -911,7 +794,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACRUlEQVR42u3a0WrDMAxG4b7/S2cwdlHo4p5fdscsH1+VNXX8ZSAUSY8HXtf3ev78vO6uf/0V+Xy354IlQ4aMbRnXcL3ebNU+r3veXT/eU4YMGecweJDlmPFR+Lfjs8mQIUMGCY48vJKDypAhQ8Z8wA22xrvx9FGGDBknM9IEjtxmjB///YPv4jJkyNiQUWsM/M3nj/c3ZMiQ8e8ZV7hqzQDS1Kyd52cHGTJktGaQgletAMdbC+NrgmaqDBkymjL4a2otsKYFNUL95UoZMmQcxuChk4fIMbL2Oi1DhoxzGLWX0rQZSQJ0rdhXLMDJkCFjKwYJi7VhizRkzwxtyJAhozcjHZjgh06boAtaCzJkyGjKSFsCabLIX2v543hTbpMhQ8YBjNrLZ9raTL8NqoYyZMhoykgL9GmyONMqQHgZMmQcwyDF/dpIWS35KwZcGTJktGOQoMbbBvzGacthQSNThgwZmzN4wscDaG23tI16+z+RIUNGO0Y6EsHTR94MSEt1MmTIOI0xTtF40KwNZ6SNhyA1lCFDRgvGqo34CFeaMqJSnQwZMg5g1IpuPEzPp55vrpEhQ0ZrRpqokRI/wc9cH+S2MmTIaMG4wpUeaGaAgz9QGTJk9GbwxV9i1w6W1cYyZMiQ0Y+Rpn21hLI2dhY8dRkyZBzAIAlf2iogqSE/KGpkypAh43hGLZlLk7zawIcMGTJk1GbN5h8EH8WQIUPGCQyezK1qQ87U/6bKbTJkyNiQkf6sVvRPxzLIMMdUC1OGDBl7ML4AAZ1Bz8DEYikAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADO0lEQVR42u3awU4jQQwEUP7/p1lpT4sgocoObKbz5hQlYaZfI2Hs6re3+Hr/e916/e/1+f37d0uee/8++d3qCxsbG/si7Pe71/2F3qfev8+tRd//fr7dt76DjY2NfSo7J+ULze92656bbfrGiI2Njf2S7LbMbMpYWyaxsbGxsR/1sFnZy0vXf6vb2NjY2E/PToZK7bj/UcvNn/4jszRsbGzsp2fvg97nef2r+TY2Njb2E7DfyysJWe8Xttmd9yv/cE9sbGzsg9j5cjeHZtpmJi9O7SGht+R3go2NjX0pdnJcph3r7EPidhhUtyvY2NjYR7NnI/t8m/JNzAtkXT6xsbGxX4CdFJjZ4Z78wOWsRYmaH2xsbOzj2PtHzlqL2SbOWqYvChg2Njb2Eex2tJQUvxaQlLE87s1jDGxsbOzz2JtgtXhYGSq07UexodjY2NgHsdsxTTIqymOD2UirDSHqARM2Njb2Rdjt0Zx8oW0D0w6P8iM+X2wiNjY29kHsYVBa/m/fFrBZtLBpirCxsbGvy56Vn/Z1cv/HlrGibmNjY2NfnL0vFfnikkhgNrqaHc3ExsbGPom9X1C7EW14sIly61QEGxsb+1LszfypHT+1ke1s9D8MA7CxsbEPZc+K0KbUtU8s6vPnWRo2Njb2Eez2YZuhf1smN1tZbzQ2Njb2ZdmzIftsuLNh51scxQPY2NjYB7GTv+p5bLAfM+Vhw/4dbGxs7DPY7WgmH/EkG9eOit7i65tfADY2NvZB7FlZ2gTGs8ajbXiKjcPGxsY+mp2HB2083PZJmyIXRQXY2NjYl2W30eysScgX1G59vrkf3sfGxsY+iJ3HAO1gaFO6Nk1R8VPY2NjYR7Bnw/3f/DQ/vpkPp7CxsbHPY7cHX9owYBPZ/kQLhI2NjX0eu20kklKRNxttGSvGRrfWg42NjX0Quy0bm8M6SZFrvzM7MISNjY19Hrsd6M8GRnkJ3POiAoaNjY19HHt2pGbWVLRRwaOGSjdDAmxsbOyXYedDpXYRjw2Go1YKGxsb+4XZOTX59CeGU9HasLGxsY9jtwdu8gfPAHkT0q4ZGxsb+zx2G/TOgtVZ67LZVmxsbOwXYP8BaT2rz4XBog4AAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -919,9 +802,9 @@
       
     
       
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/09/05/文学-比利先生/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/09/05/%E6%96%87%E5%AD%A6-%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F/&title=比利先生 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=《比利先生》–过于哲学,慎入！"
           
           >
           
@@ -931,7 +814,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACRUlEQVR42u3a0WrDMAxG4b7/S2cwdlHo4p5fdscsH1+VNXX8ZSAUSY8HXtf3ev78vO6uf/0V+Xy354IlQ4aMbRnXcL3ebNU+r3veXT/eU4YMGecweJDlmPFR+Lfjs8mQIUMGCY48vJKDypAhQ8Z8wA22xrvx9FGGDBknM9IEjtxmjB///YPv4jJkyNiQUWsM/M3nj/c3ZMiQ8e8ZV7hqzQDS1Kyd52cHGTJktGaQgletAMdbC+NrgmaqDBkymjL4a2otsKYFNUL95UoZMmQcxuChk4fIMbL2Oi1DhoxzGLWX0rQZSQJ0rdhXLMDJkCFjKwYJi7VhizRkzwxtyJAhozcjHZjgh06boAtaCzJkyGjKSFsCabLIX2v543hTbpMhQ8YBjNrLZ9raTL8NqoYyZMhoykgL9GmyONMqQHgZMmQcwyDF/dpIWS35KwZcGTJktGOQoMbbBvzGacthQSNThgwZmzN4wscDaG23tI16+z+RIUNGO0Y6EsHTR94MSEt1MmTIOI0xTtF40KwNZ6SNhyA1lCFDRgvGqo34CFeaMqJSnQwZMg5g1IpuPEzPp55vrpEhQ0ZrRpqokRI/wc9cH+S2MmTIaMG4wpUeaGaAgz9QGTJk9GbwxV9i1w6W1cYyZMiQ0Y+Rpn21hLI2dhY8dRkyZBzAIAlf2iogqSE/KGpkypAh43hGLZlLk7zawIcMGTJk1GbN5h8EH8WQIUPGCQyezK1qQ87U/6bKbTJkyNiQkf6sVvRPxzLIMMdUC1OGDBl7ML4AAZ1Bz8DEYikAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADO0lEQVR42u3awU4jQQwEUP7/p1lpT4sgocoObKbz5hQlYaZfI2Hs6re3+Hr/e916/e/1+f37d0uee/8++d3qCxsbG/si7Pe71/2F3qfev8+tRd//fr7dt76DjY2NfSo7J+ULze92656bbfrGiI2Njf2S7LbMbMpYWyaxsbGxsR/1sFnZy0vXf6vb2NjY2E/PToZK7bj/UcvNn/4jszRsbGzsp2fvg97nef2r+TY2Njb2E7DfyysJWe8Xttmd9yv/cE9sbGzsg9j5cjeHZtpmJi9O7SGht+R3go2NjX0pdnJcph3r7EPidhhUtyvY2NjYR7NnI/t8m/JNzAtkXT6xsbGxX4CdFJjZ4Z78wOWsRYmaH2xsbOzj2PtHzlqL2SbOWqYvChg2Njb2Eex2tJQUvxaQlLE87s1jDGxsbOzz2JtgtXhYGSq07UexodjY2NgHsdsxTTIqymOD2UirDSHqARM2Njb2Rdjt0Zx8oW0D0w6P8iM+X2wiNjY29kHsYVBa/m/fFrBZtLBpirCxsbGvy56Vn/Z1cv/HlrGibmNjY2NfnL0vFfnikkhgNrqaHc3ExsbGPom9X1C7EW14sIly61QEGxsb+1LszfypHT+1ke1s9D8MA7CxsbEPZc+K0KbUtU8s6vPnWRo2Njb2Eez2YZuhf1smN1tZbzQ2Njb2ZdmzIftsuLNh51scxQPY2NjYB7GTv+p5bLAfM+Vhw/4dbGxs7DPY7WgmH/EkG9eOit7i65tfADY2NvZB7FlZ2gTGs8ajbXiKjcPGxsY+mp2HB2083PZJmyIXRQXY2NjYl2W30eysScgX1G59vrkf3sfGxsY+iJ3HAO1gaFO6Nk1R8VPY2NjYR7Bnw/3f/DQ/vpkPp7CxsbHPY7cHX9owYBPZ/kQLhI2NjX0eu20kklKRNxttGSvGRrfWg42NjX0Quy0bm8M6SZFrvzM7MISNjY19Hrsd6M8GRnkJ3POiAoaNjY19HHt2pGbWVLRRwaOGSjdDAmxsbOyXYedDpXYRjw2Go1YKGxsb+4XZOTX59CeGU9HasLGxsY9jtwdu8gfPAHkT0q4ZGxsb+zx2G/TOgtVZ67LZVmxsbOwXYP8BaT2rz4XBog4AAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
         
@@ -957,7 +840,7 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
-                                <a href="/2019/09/21/教程-导航栏不显示解决方法/" rel="prev" title="导航栏不显示的解决办法">
+                                <a href="/2019/09/21/%E6%95%99%E7%A8%8B-%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%B8%8D%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" rel="prev" title="导航栏不显示的解决办法">
                                   
                                       导航栏不显示的解决办法
                                   
@@ -966,7 +849,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/教程/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;教程</a> <a class="tag" href="/tags/导航栏/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;导航栏</a>
+                                    <a class="tag" href="/tags/%E6%95%99%E7%A8%8B/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;教程</a> <a class="tag" href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;导航栏</a>
                                 </h6>
                             
                         </span>
@@ -977,7 +860,7 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2019/08/19/教程-免费CDN/" rel="prev" title="免费CDN：jsDelivr+Github">
+                                <a href="/2019/08/19/%E6%95%99%E7%A8%8B-%E5%85%8D%E8%B4%B9CDN/" rel="prev" title="免费CDN：jsDelivr+Github">
                                     
                                         免费CDN：jsDelivr+Github
                                     
@@ -986,7 +869,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/教程/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;教程</a> <a class="tag" href="/tags/CDN/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;CDN</a>
+                                    <a class="tag" href="/tags/%E6%95%99%E7%A8%8B/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;教程</a> <a class="tag" href="/tags/CDN/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;CDN</a>
                                 </h6>
                             
                         </span>
@@ -1251,7 +1134,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#《比利先生》"><span class="toc-text">《比利先生》</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#–过于哲学-慎入！"><span class="toc-text">–过于哲学,慎入！</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#又是这种不正经的博文QAQ"><span class="toc-text">又是这种不正经的博文QAQ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非哲学人士请自行退出！-真的"><span class="toc-text">非哲学人士请自行退出！(真的)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部夏乾中"><span class="toc-text">                               by  深圳实验学校中学部夏乾中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初三上"><span class="toc-text">                                         初三上</span></a></li></ol></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%80%8A%E6%AF%94%E5%88%A9%E5%85%88%E7%94%9F%E3%80%8B"><span class="toc-text">《比利先生》</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%93%E8%BF%87%E4%BA%8E%E5%93%B2%E5%AD%A6-%E6%85%8E%E5%85%A5%EF%BC%81"><span class="toc-text">–过于哲学,慎入！</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%88%E6%98%AF%E8%BF%99%E7%A7%8D%E4%B8%8D%E6%AD%A3%E7%BB%8F%E7%9A%84%E5%8D%9A%E6%96%87QAQ"><span class="toc-text">又是这种不正经的博文QAQ</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%93%B2%E5%AD%A6%E4%BA%BA%E5%A3%AB%E8%AF%B7%E8%87%AA%E8%A1%8C%E9%80%80%E5%87%BA%EF%BC%81-%E7%9C%9F%E7%9A%84"><span class="toc-text">非哲学人士请自行退出！(真的)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1%E4%B8%AD%E5%AD%A6%E9%83%A8%E5%A4%8F%E4%B9%BE%E4%B8%AD"><span class="toc-text">&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;ensp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;by  深圳实验学校中学部夏乾中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-%E5%88%9D%E4%B8%89%E4%B8%8A"><span class="toc-text">&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;初三上</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -1294,7 +1177,7 @@
           时间目录
         </a></li>
       
-        <li><a class="flat-box" title="https://share.mcmohen.top/" href="https://share.mcmohen.top/"
+        <li><a class="flat-box" title="https://share.mcmohen.top/" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
           
           
           id="https:share.mcmohen.top">
@@ -1340,6 +1223,18 @@
           留言板
         </a></li>
       
+        <li><a class="flat-box" title="http://mc.mcmohen.top:8123/" target="_blank" href="http://mc.mcmohen.top:8123/"
+          
+            rel="nofollow noopener"
+          
+          
+          id="http:mc.mcmohen.top:8123">
+          
+            <i class="fas fa-gamepad fa-fw fa-fw" aria-hidden="true"></i>
+          
+          MC卫星地图
+        </a></li>
+      
         <li><a class="flat-box" title="/about/" href="/about/"
           
             rel="nofollow"
@@ -1382,23 +1277,23 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%96%87%E5%AD%A6/" href="/categories/%E6%96%87%E5%AD%A6/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%A7%86%E9%A2%91/" href="/categories/%E8%A7%86%E9%A2%91/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资源/" href="/categories/资源/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E6%BA%90/" href="/categories/%E8%B5%84%E6%BA%90/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E8%AE%AF/" href="/categories/%E8%B5%84%E8%AE%AF/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -1429,7 +1324,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/中学部/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/加速器/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/我的世界/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/指南/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/深圳实验学校/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/游戏/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/虚拟机/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资源/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/%E6%8C%87%E5%8D%97/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/%E8%B5%84%E6%BA%90/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px; color: #707070">题解</a>
     </div>
   </section>
 
@@ -1708,7 +1603,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+
     
   
   <script>
@@ -1739,10 +1636,14 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
 
 
 

@@ -23,19 +23,19 @@
 <!---daovoice-->
 <!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>我的世界开服教程 | Mohen&#39;s blog</title>
   
   
 
   
-  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog" type="application/atom+xml">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
@@ -56,7 +56,7 @@
     })();
   </script>   
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -64,11 +64,13 @@
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -209,137 +211,7 @@
     };
     loaded();
 })()
- </script><style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFF;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
-    }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-   .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-         .loading-text{
-            font-size: 1.5rem;
-         }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
- </style>
- <script>
-(function () {
-    const loaded = function(){
-       setTimeout(function(){
-            const loader = document.getElementById("loading-container");
-            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-            // document.getElementById("body-wrap").style.display="flex";
-            setTimeout(function(){
-                loader.style.display="none";
-            },1000); 
-        },1000);//强制显示loading page 1s  
-    };
-    loaded();
-})()
- </script></head>
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
 
 
  <div id="loading-container">
@@ -382,7 +254,7 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://share.mcmohen.top/"
+          <a class="nav home" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
             
             
             id="https:share.mcmohen.top">
@@ -536,6 +408,17 @@
 							</li>
       			
   						<li>
+								<a class="nav flat-box" target="_blank" href="http://mc.mcmohen.top:8123/"
+                  
+                    rel="nofollow noopener"
+                  
+                  
+                  id="http:mc.mcmohen.top:8123">
+									<i class='fas fa-gamepad fa-fw fa-fw'></i>&nbsp;MC卫星地图
+								</a>
+							</li>
+      			
+  						<li>
 								<a class="nav flat-box" href="/COVID-19/"
                   
                     rel="nofollow"
@@ -604,7 +487,7 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://share.mcmohen.top/"
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
                 
                 
                 id="https:share.mcmohen.top">
@@ -667,14 +550,14 @@
   <section class='meta'>
     
     
-      <a title='我的世界开服教程' href='/2021/02/14/教程-我的世界开服/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/u=3204670898,3823579793&fm=11&gp=0.jpg'></a>
+      <a title='我的世界开服教程' href='/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/u=3204670898,3823579793&fm=11&gp=0.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2021/02/14/教程-我的世界开服/">
+      <a href="/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/">
         我的世界开服教程
       </a>
     </h1>
@@ -714,7 +597,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -780,7 +663,7 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <h2 id="想必玩MC的人都希望拥有一台属于自己的服务器"><a href="#想必玩MC的人都希望拥有一台属于自己的服务器" class="headerlink" title="想必玩MC的人都希望拥有一台属于自己的服务器~"></a>想必玩MC的人都希望拥有一台属于自己的服务器~</h2><a id="more"></a>
+          <h2 id="想必玩MC的人都希望拥有一台属于自己的服务器"><a href="#想必玩MC的人都希望拥有一台属于自己的服务器" class="headerlink" title="想必玩MC的人都希望拥有一台属于自己的服务器~"></a>想必玩MC的人都希望拥有一台属于自己的服务器~</h2><span id="more"></span>
 
 <blockquote>
 <p>先申明此教程只能搭建出基友服务器，也就是平时四五个小伙伴一起玩的服务器</p>
@@ -793,12 +676,10 @@
 <li><del>一点灵性</del></li>
 </ol>
 </li>
-</ol>
-<ol start="2">
 <li><h3 id="开服部分："><a href="#开服部分：" class="headerlink" title="开服部分："></a>开服部分：</h3><p><strong>首先嘞，想要开服务器，你需要有一个服务端核心，也就是选择开什么样的服务器。如：官服，插件服，模组服，插件+模组服</strong> </p>
 <p><strong>而这里我只讲官服（因为简单啊）</strong></p>
-<p><strong>官服的核心很好找，去<a href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" target="_blank" rel="noopener">MC维基</a>上面搜就好了</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110115254.png" alt></p>
+<p><strong>官服的核心很好找，去<a target="_blank" rel="noopener" href="https://minecraft-zh.gamepedia.com/Minecraft_Wiki">MC维基</a>上面搜就好了</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110115254.png"></p>
 <p><strong>下完后新建个文件夹把以.jar结尾的文件拖进去</strong></p>
 <p><strong>在那个文件夹里新建一个文本文档，写入如下代码：</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@ECHO OFF</span><br><span class="line">java -Xmx1024M -Xms1024M -jar &quot;你的核心名称.jar&quot;</span><br><span class="line">PAUSE</span><br></pre></td></tr></table></figure>
@@ -812,10 +693,10 @@
 <p>Java默认下载地址应该是在C:\Program Files(x86)\Java或者是C:\Program Files\Java</p>
 </blockquote>
 <p><strong>但是填入的地址要指向java.exe，如下图</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110120431.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210110120431.png"></p>
 <p><strong>OK保存并运行你的批处理文件</strong></p>
 <p><strong>等个几秒后你的小黑窗口会出现如下类似的提示</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[12:04:47] [main/ERROR]: Failed to load properties from file: server.properties</span><br><span class="line">[12:04:47] [main/WARN]: Failed to load eula.txt</span><br><span class="line">[12:04:47] [main/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[12:04:47] [main&#x2F;ERROR]: Failed to load properties from file: server.properties</span><br><span class="line">[12:04:47] [main&#x2F;WARN]: Failed to load eula.txt</span><br><span class="line">[12:04:47] [main&#x2F;INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.</span><br></pre></td></tr></table></figure>
 
 <p><strong>不要紧张，这是正常现象</strong></p>
 <p><strong>只需要回到你的文件夹中找到eula.txt将其中的 eula=false  改成  eula=true  即可</strong></p>
@@ -823,19 +704,17 @@
 <p><strong>直到控制台输出  Done ! For help, type “help”  就说明成功了</strong></p>
 <p><strong>此时进入你的MC（版本要和服务端相同），在多人游戏里添加地址为127.0.0.1的服务器，就可以进去游玩了</strong></p>
 </li>
-</ol>
-<ol start="3">
 <li><h3 id="端口映射部分："><a href="#端口映射部分：" class="headerlink" title="端口映射部分："></a>端口映射部分：</h3><p><strong>此时你的朋友只能在同一WIFI加入你的服务器，并不能实现远程联机。此时就需要将你的局域网映射到公网从而实现远程联机。</strong></p>
 <blockquote>
 <p>先说明内网穿透的缺点：会导致服务器不能ban-ip（因为你们使用的都是127.0.0.1的ip）</p>
 </blockquote>
 <p><strong>内网穿透有很多服务商，而我个人用的是SakuraFrp，Sakura可以通过签到领取流量，每日签到领取的流量至少可以支持10人小服正常运作</strong></p>
-<p><a href="https://www.natfrp.com/" target="_blank" rel="noopener">SkuraFrp点我传送</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.natfrp.com/">SkuraFrp点我传送</a></p>
 <p><strong>进去先进行常规操作（注册等），然后进入管理面板按下图顺序操作</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214211337.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214211337.png"></p>
 <ol>
 <li><p>创建隧道</p>
-<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214213809.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214213809.png"></p>
 <blockquote>
 <p> Ps：节点看右边介绍选，隧道类型TCP，名字随便，本地地址和端口看图填，远程端口可以自己填不过可能已被别人使用，推荐自动生成。</p>
 </blockquote>
@@ -843,13 +722,11 @@
 <li><p>软件下载</p>
 <p><strong>隧道创建完就到开启隧道了，隧道的开启需要下载Sakura的软件，点击软件下载选择对应系统的软件下载，然后根据软件提示开启你所创建的隧道</strong></p>
 <p><strong>隧道开启成功后会给予你映射的ip地址：</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214214741.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/20210214214741.png"></p>
 <p><strong>红圈部分就是你的服务器地址，把它发给你的朋友就可进行远程联机啦！（若要绑定域名就将域名CNAME解析到对应的节点服务器如上图的cn-zz-bgp-7.sakurafrp.com）绑定域名后只需输入<em>你的域名:你的端口</em>即可进入服务器</strong></p>
 </li>
 </ol>
 </li>
-</ol>
-<ol start="4">
 <li><h3 id="常见问题："><a href="#常见问题：" class="headerlink" title="常见问题："></a>常见问题：</h3><ol>
 <li>盗版进不去—-在文件夹里找到  <strong>server.properties</strong>  并将其中的  <strong>online-mode=true</strong>  改为  <strong>online-mode=false</strong>  重启服务器即可</li>
 </ol>
@@ -951,7 +828,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/教程/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/游戏/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>游戏</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/我的世界/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>我的世界</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Minecraft/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>Minecraft</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%B8%B8%E6%88%8F/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>游戏</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>我的世界</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Minecraft/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>Minecraft</p></a></div>
 
 
         
@@ -962,9 +839,9 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2021/02/14/教程-我的世界开服/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
           
           >
           
@@ -974,9 +851,9 @@
       
     
       
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2021/02/14/教程-我的世界开服/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
           
           >
           
@@ -986,7 +863,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrklEQVR42u3aQW7cQAwEwP3/p51zkKzUTWoWa6B0Chx5NKWDhm7y9Yqvn+D69/5367xb890Tr9d84MLDw8N7dOvXD7ve4rttzbaePP0/6+Dh4eEd4yXLtffkgNnLTV4lHh4e3jfwro+BhNqug4eHh/fbeclWZgEEHh4e3u/iJUVtWzrnIUVy5/GsBQ8PDy/m5V2k7/n3kf4eHh4e3kMDAbNQNSmj9z+/2S0eHh7eAd4+aGh/qwgR1uEFHh4e3gleewC0BXc+FpDcmQQTf62Jh4eHd4yXfIKTn89eVhvFFlEFHh4e3kd4eSGbN7f2EcNwtAsPDw/vGG9TTM8OmDYOzocVXu0bxcPDw1vwWnz++DYObhtvUX8PDw8P7wAv2eKJT3neJMtbaHh4eHjneJvhpzoaWAwcrMYL8PDw8I7x9tRZi2tWZOcHCR4eHt6zvHb4KS+pZ0dFO4B1sw4eHh7eAV77aZ5tYj9otYow8PDw8A7zZkFtGx9sqPX/4uHh4R3g5aXwBpCQNu20OszFw8PDG/Hy8rfdblKsb4YMomfh4eHhHeAly+WPbEvkZP1NkwwPDw/v87xZeZ0MHOTjCO0Bg4eHh3eal4cCG2ob5rav7O1BhYeHh3eAtwlM2xGEfISrHTUoUmo8PDy8h3j7g2E2gLWJa/P2Gx4eHt45Xj5QlX/iN+x9IY6Hh4f3SV4+GJpcbXHcIm+GwPDw8PAe5f2UV354XL+g/KOfR8M3+QoeHh7eQ7z2g7spi2cvKw8vNscJHh4eXstrw4U2KZ0dCTn75o8BPDw8vGO8ZNNtnLoZk8rPrps78fDw8L6Glxwe7aZnB0w0TYaHh4f3Bbx207N0pB1ZOHju4eHh4cVtsDz9LQKC8kWsWmt4eHh4n+jaP7b1TVGejw4Me3p4eHh4E94fSi7kKULlb0EAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD4ElEQVR42u3aQW4bQQwEQP//0wmQk4FkpW6SMnKoPQWBpJmpPbTJ4ddX/Pz683z/9/f/efrk359/+u6v4Hla6+mTT986eHDgwIEDR3DU9qdboNcET7+ZH+z1fgpoHDhw4MBxxJEv8JpmE9X7kE6g3+wcBw4cOHD8IMe+wEt+f3aY5E8BHDhw4MDxv3Hky+eF3Kw1efUtHDhw4MDxOY6kObiJwKQ820Pn+z/oleLAgQMHjnnSRRdC//O/jx8cOHDgwDGKqDyQkjZfHrR5ydeO0L05HQ4cOHDgWHO0JdPVUMKmqXd1Gfb4XRw4cODAseZ4/YXN8HRbN212kjc0z7aFAwcOHDjiQiiPt2RDSUk2G7/OA7UoSnHgwIEDxynHfiwg55gRz0YiigsqHDhw4MCx4MgbfG1Yzgq8Gf3VK8GBAwcOHHuOT0RjwpcH5KZZOVwXBw4cOHAs1v3cAeoBgtGLSQK4WAsHDhw4cJxyzMqhDdZsiO22ZYkDBw4cOG459mMBs88njcg2MvPyL4l8HDhw4MCx4UjKsPaoLWV7BdVC5C8ABw4cOHDsOdooaouldgAiWStv/M1AceDAgQPHnqO9/tkMH8wCezbE0J4RBw4cOHBsOOoOYllo7bd7xRetggMHDhw4Tjny/lheIF3F9tWgw5tiDwcOHDhwfIAjHy+74piVdglZO7SHAwcOHDj2HLOrmuRHZ8feHGz2+zhw4MCB4xMcm+ZgO+iQrJKE7m1bEwcOHDhw3HLkrcB2JO6qCJxFe/vgwIEDB44rjrYNN2vY7S+c2rG5168BBw4cOHB8miPZerJAWz7Nht7yWG2DHAcOHDhwbDhmQ29XYwSzgm0fz487xIEDBw4cRxz5RdFsE0nstcfehH10/4YDBw4cOI5GGTaNwv2wQj4wsSnkHn8TBw4cOHCsOdro2i+5H3qYhXexZxw4cODAseBor3xml09tiCbQOW5RmuLAgQMHjiOOthnXll751VSCsmlxFgMNOHDgwIFjwZEXY+0CmyGD9lVtYhgHDhw4cNxyzK55crKrsq0doaiDGQcOHDhwrDnaWGqP3RZj7WVVEq71a8aBAwcOHAuO2fV/O7iQY+Vb3zQx3/zdgQMHDhw4Fhz5kwdYfoxNkLetyXwnOHDgwIFjz3HbpJuRzYqxTwQ5Dhw4cOC44mi3nh+gTfgkVvNRifqPBhw4cODA8YMceYGUx15eaLXV5/AV4sCBAweOH+dIjpQMqyXHaw+TNyjfNAdx4MCBA8eaYxZL+WBB27bLhxvaMi8KWhw4cODAseBor3bawYX8YLOLq7y9eIaCAwcOHDj+ve5vgPe5zHntlLYAAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -994,9 +871,9 @@
       
     
       
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2021/02/14/教程-我的世界开服/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/&title=我的世界开服教程 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=想必玩MC的人都希望拥有一台属于自己的服务器~"
           
           >
           
@@ -1006,7 +883,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrklEQVR42u3aQW7cQAwEwP3/p51zkKzUTWoWa6B0Chx5NKWDhm7y9Yqvn+D69/5367xb890Tr9d84MLDw8N7dOvXD7ve4rttzbaePP0/6+Dh4eEd4yXLtffkgNnLTV4lHh4e3jfwro+BhNqug4eHh/fbeclWZgEEHh4e3u/iJUVtWzrnIUVy5/GsBQ8PDy/m5V2k7/n3kf4eHh4e3kMDAbNQNSmj9z+/2S0eHh7eAd4+aGh/qwgR1uEFHh4e3gleewC0BXc+FpDcmQQTf62Jh4eHd4yXfIKTn89eVhvFFlEFHh4e3kd4eSGbN7f2EcNwtAsPDw/vGG9TTM8OmDYOzocVXu0bxcPDw1vwWnz++DYObhtvUX8PDw8P7wAv2eKJT3neJMtbaHh4eHjneJvhpzoaWAwcrMYL8PDw8I7x9tRZi2tWZOcHCR4eHt6zvHb4KS+pZ0dFO4B1sw4eHh7eAV77aZ5tYj9otYow8PDw8A7zZkFtGx9sqPX/4uHh4R3g5aXwBpCQNu20OszFw8PDG/Hy8rfdblKsb4YMomfh4eHhHeAly+WPbEvkZP1NkwwPDw/v87xZeZ0MHOTjCO0Bg4eHh3eal4cCG2ob5rav7O1BhYeHh3eAtwlM2xGEfISrHTUoUmo8PDy8h3j7g2E2gLWJa/P2Gx4eHt45Xj5QlX/iN+x9IY6Hh4f3SV4+GJpcbXHcIm+GwPDw8PAe5f2UV354XL+g/KOfR8M3+QoeHh7eQ7z2g7spi2cvKw8vNscJHh4eXstrw4U2KZ0dCTn75o8BPDw8vGO8ZNNtnLoZk8rPrps78fDw8L6Glxwe7aZnB0w0TYaHh4f3Bbx207N0pB1ZOHju4eHh4cVtsDz9LQKC8kWsWmt4eHh4n+jaP7b1TVGejw4Me3p4eHh4E94fSi7kKULlb0EAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAAD4ElEQVR42u3aQW4bQQwEQP//0wmQk4FkpW6SMnKoPQWBpJmpPbTJ4ddX/Pz683z/9/f/efrk359/+u6v4Hla6+mTT986eHDgwIEDR3DU9qdboNcET7+ZH+z1fgpoHDhw4MBxxJEv8JpmE9X7kE6g3+wcBw4cOHD8IMe+wEt+f3aY5E8BHDhw4MDxv3Hky+eF3Kw1efUtHDhw4MDxOY6kObiJwKQ820Pn+z/oleLAgQMHjnnSRRdC//O/jx8cOHDgwDGKqDyQkjZfHrR5ydeO0L05HQ4cOHDgWHO0JdPVUMKmqXd1Gfb4XRw4cODAseZ4/YXN8HRbN212kjc0z7aFAwcOHDjiQiiPt2RDSUk2G7/OA7UoSnHgwIEDxynHfiwg55gRz0YiigsqHDhw4MCx4MgbfG1Yzgq8Gf3VK8GBAwcOHHuOT0RjwpcH5KZZOVwXBw4cOHAs1v3cAeoBgtGLSQK4WAsHDhw4cJxyzMqhDdZsiO22ZYkDBw4cOG459mMBs88njcg2MvPyL4l8HDhw4MCx4UjKsPaoLWV7BdVC5C8ABw4cOHDsOdooaouldgAiWStv/M1AceDAgQPHnqO9/tkMH8wCezbE0J4RBw4cOHBsOOoOYllo7bd7xRetggMHDhw4Tjny/lheIF3F9tWgw5tiDwcOHDhwfIAjHy+74piVdglZO7SHAwcOHDj2HLOrmuRHZ8feHGz2+zhw4MCB4xMcm+ZgO+iQrJKE7m1bEwcOHDhw3HLkrcB2JO6qCJxFe/vgwIEDB44rjrYNN2vY7S+c2rG5168BBw4cOHB8miPZerJAWz7Nht7yWG2DHAcOHDhwbDhmQ29XYwSzgm0fz487xIEDBw4cRxz5RdFsE0nstcfehH10/4YDBw4cOI5GGTaNwv2wQj4wsSnkHn8TBw4cOHCsOdro2i+5H3qYhXexZxw4cODAseBor3xml09tiCbQOW5RmuLAgQMHjiOOthnXll751VSCsmlxFgMNOHDgwIFjwZEXY+0CmyGD9lVtYhgHDhw4cNxyzK55crKrsq0doaiDGQcOHDhwrDnaWGqP3RZj7WVVEq71a8aBAwcOHAuO2fV/O7iQY+Vb3zQx3/zdgQMHDhw4Fhz5kwdYfoxNkLetyXwnOHDgwIFjz3HbpJuRzYqxTwQ5Dhw4cOC44mi3nh+gTfgkVvNRifqPBhw4cODA8YMceYGUx15eaLXV5/AV4sCBAweOH+dIjpQMqyXHaw+TNyjfNAdx4MCBA8eaYxZL+WBB27bLhxvaMi8KWhw4cODAseBor3bawYX8YLOLq7y9eIaCAwcOHDj+ve5vgPe5zHntlLYAAAAASUVORK5CYII='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
         
@@ -1033,7 +910,7 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2021/01/10/文学-深圳实验中学部校园学生指南/" rel="prev" title="深圳实验中学部校园学生指南">
+                                <a href="/2021/01/10/%E6%96%87%E5%AD%A6-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E4%B8%AD%E5%AD%A6%E9%83%A8%E6%A0%A1%E5%9B%AD%E5%AD%A6%E7%94%9F%E6%8C%87%E5%8D%97/" rel="prev" title="深圳实验中学部校园学生指南">
                                     
                                         深圳实验中学部校园学生指南
                                     
@@ -1042,7 +919,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/指南/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;指南</a> <a class="tag" href="/tags/深圳实验学校/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;深圳实验学校</a> <a class="tag" href="/tags/中学部/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;中学部</a>
+                                    <a class="tag" href="/tags/%E6%8C%87%E5%8D%97/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;指南</a> <a class="tag" href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;深圳实验学校</a> <a class="tag" href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;中学部</a>
                                 </h6>
                             
                         </span>
@@ -1307,7 +1184,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#想必玩MC的人都希望拥有一台属于自己的服务器"><span class="toc-text">想必玩MC的人都希望拥有一台属于自己的服务器~</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备材料："><span class="toc-text">准备材料：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开服部分："><span class="toc-text">开服部分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#端口映射部分："><span class="toc-text">端口映射部分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见问题："><span class="toc-text">常见问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#最后安利一下我自己的基友服（版本1-16-x）："><span class="toc-text">最后安利一下我自己的基友服（版本1.16.x）：</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%B3%E5%BF%85%E7%8E%A9MC%E7%9A%84%E4%BA%BA%E9%83%BD%E5%B8%8C%E6%9C%9B%E6%8B%A5%E6%9C%89%E4%B8%80%E5%8F%B0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-text">想必玩MC的人都希望拥有一台属于自己的服务器~</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E6%9D%90%E6%96%99%EF%BC%9A"><span class="toc-text">准备材料：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E6%9C%8D%E9%83%A8%E5%88%86%EF%BC%9A"><span class="toc-text">开服部分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E6%98%A0%E5%B0%84%E9%83%A8%E5%88%86%EF%BC%9A"><span class="toc-text">端口映射部分：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-text">常见问题：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E5%AE%89%E5%88%A9%E4%B8%80%E4%B8%8B%E6%88%91%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9F%BA%E5%8F%8B%E6%9C%8D%EF%BC%88%E7%89%88%E6%9C%AC1-16-x%EF%BC%89%EF%BC%9A"><span class="toc-text">最后安利一下我自己的基友服（版本1.16.x）：</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -1350,7 +1227,7 @@
           时间目录
         </a></li>
       
-        <li><a class="flat-box" title="https://share.mcmohen.top/" href="https://share.mcmohen.top/"
+        <li><a class="flat-box" title="https://share.mcmohen.top/" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
           
           
           id="https:share.mcmohen.top">
@@ -1396,6 +1273,18 @@
           留言板
         </a></li>
       
+        <li><a class="flat-box" title="http://mc.mcmohen.top:8123/" target="_blank" href="http://mc.mcmohen.top:8123/"
+          
+            rel="nofollow noopener"
+          
+          
+          id="http:mc.mcmohen.top:8123">
+          
+            <i class="fas fa-gamepad fa-fw fa-fw" aria-hidden="true"></i>
+          
+          MC卫星地图
+        </a></li>
+      
         <li><a class="flat-box" title="/about/" href="/about/"
           
             rel="nofollow"
@@ -1438,23 +1327,23 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%96%87%E5%AD%A6/" href="/categories/%E6%96%87%E5%AD%A6/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%A7%86%E9%A2%91/" href="/categories/%E8%A7%86%E9%A2%91/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资源/" href="/categories/资源/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E6%BA%90/" href="/categories/%E8%B5%84%E6%BA%90/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E8%AE%AF/" href="/categories/%E8%B5%84%E8%AE%AF/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -1485,7 +1374,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/中学部/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/加速器/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/我的世界/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/指南/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/深圳实验学校/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/游戏/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/虚拟机/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资源/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/%E6%8C%87%E5%8D%97/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/%E8%B5%84%E6%BA%90/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px; color: #707070">题解</a>
     </div>
   </section>
 
@@ -1764,7 +1653,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+
     
   
   <script>
@@ -1795,10 +1686,14 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
 
 
 

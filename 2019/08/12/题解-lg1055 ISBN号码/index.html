@@ -23,19 +23,19 @@
 <!---daovoice-->
 <!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen&#39;s blog</title>
   
   
 
   
-  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog" type="application/atom+xml">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
@@ -56,7 +56,7 @@
     })();
   </script>   
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -64,11 +64,13 @@
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -209,137 +211,7 @@
     };
     loaded();
 })()
- </script><style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFF;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
-    }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-   .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-         .loading-text{
-            font-size: 1.5rem;
-         }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
- </style>
- <script>
-(function () {
-    const loaded = function(){
-       setTimeout(function(){
-            const loader = document.getElementById("loading-container");
-            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-            // document.getElementById("body-wrap").style.display="flex";
-            setTimeout(function(){
-                loader.style.display="none";
-            },1000); 
-        },1000);//强制显示loading page 1s  
-    };
-    loaded();
-})()
- </script></head>
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
 
 
  <div id="loading-container">
@@ -382,7 +254,7 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://share.mcmohen.top/"
+          <a class="nav home" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
             
             
             id="https:share.mcmohen.top">
@@ -536,6 +408,17 @@
 							</li>
       			
   						<li>
+								<a class="nav flat-box" target="_blank" href="http://mc.mcmohen.top:8123/"
+                  
+                    rel="nofollow noopener"
+                  
+                  
+                  id="http:mc.mcmohen.top:8123">
+									<i class='fas fa-gamepad fa-fw fa-fw'></i>&nbsp;MC卫星地图
+								</a>
+							</li>
+      			
+  						<li>
 								<a class="nav flat-box" href="/COVID-19/"
                   
                     rel="nofollow"
@@ -604,7 +487,7 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://share.mcmohen.top/"
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
                 
                 
                 id="https:share.mcmohen.top">
@@ -667,14 +550,14 @@
   <section class='meta'>
     
     
-      <a title='洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】' href='/2019/08/12/题解-lg1055 ISBN号码/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgans.jpg'></a>
+      <a title='洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】' href='/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgans.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/08/12/题解-lg1055 ISBN号码/">
+      <a href="/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/">
         洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】
       </a>
     </h1>
@@ -714,7 +597,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/题解/' rel="nofollow">
+    <a href='/categories/%E9%A2%98%E8%A7%A3/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>题解</p>
     </a>
@@ -749,7 +632,7 @@
           <span class="post-meta-item-icon">
             <i class="fa fa-keyboard"></i>
             <span class="post-meta-item-text">  字数统计: </span>
-            <span class="post-count">351字</span>
+            <span class="post-count">399字</span>
           </span>
         </span>
         &nbsp; | &nbsp;
@@ -757,7 +640,7 @@
           <span class="post-meta-item-icon">
             <i class="fa fa-hourglass-half"></i>
             <span class="post-meta-item-text">  阅读时长≈</span>
-            <span class="post-count">1分</span>
+            <span class="post-count">2分</span>
           </span>
         </span>
       </div>
@@ -780,12 +663,12 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <p><a href="https://www.luogu.org/problem/P1055" target="_blank" rel="noopener">lg1055传送门</a></p>
-<a id="more"></a>
+          <p><a target="_blank" rel="noopener" href="https://www.luogu.org/problem/P1055">lg1055传送门</a></p>
+<span id="more"></span>
 
 <p>这是一道<del>非常水</del>的题！<del>(毕竟第一题)</del></p>
 <h3 id="算法可能就是模拟和字符串吧"><a href="#算法可能就是模拟和字符串吧" class="headerlink" title="算法可能就是模拟和字符串吧!"></a>算法可能就是模拟和字符串吧!</h3><p>代码如下:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> c[<span class="number">14</span>];  <span class="comment">//储存字符</span></span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10</span>],ans;  <span class="comment">//a储存数字</span></span><br><span class="line"><span class="keyword">char</span> tot;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	freopen(<span class="string">"isbn.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);  <span class="comment">//流输入输出</span></span><br><span class="line">	freopen(<span class="string">"isbn.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">13</span>;i++) <span class="comment">//从1开始</span></span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;c[i];</span><br><span class="line">	a[<span class="number">1</span>]=c[<span class="number">1</span>]-<span class="string">'0'</span>;  <span class="comment">//以下为字符转整形</span></span><br><span class="line">	a[<span class="number">2</span>]=c[<span class="number">3</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">3</span>]=c[<span class="number">4</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">4</span>]=c[<span class="number">5</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">5</span>]=c[<span class="number">7</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">6</span>]=c[<span class="number">8</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">7</span>]=c[<span class="number">9</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">8</span>]=c[<span class="number">10</span>]-<span class="string">'0'</span>;</span><br><span class="line">	a[<span class="number">9</span>]=c[<span class="number">11</span>]-<span class="string">'0'</span>;</span><br><span class="line">	tot=c[<span class="number">13</span>]; <span class="comment">//13为判断依据单独存(以字符存储)</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">		ans=a[i]*i+ans;  <span class="comment">//按题意计算出第13位</span></span><br><span class="line">	ans=ans%<span class="number">11</span>;  </span><br><span class="line">	<span class="keyword">if</span>(ans!=<span class="number">10</span>) <span class="comment">//判断是否余数为10</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(ans==tot-<span class="string">'0'</span>) <span class="comment">//如果相等直接输出RIGHT</span></span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">"Right"</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="comment">//错误则输出正确的ISBN号码</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;a[<span class="number">1</span>]&lt;&lt;<span class="string">'-'</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'-'</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">5</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'-'</span>&lt;&lt;ans;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="comment">//为10</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(tot==<span class="string">'X'</span>) <span class="comment">//是X</span></span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">"Right"</span>;</span><br><span class="line">		<span class="keyword">else</span>  <span class="comment">//不是X</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;a[<span class="number">1</span>]&lt;&lt;<span class="string">'-'</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'-'</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">5</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">'-'</span>&lt;&lt;<span class="string">'X'</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> c[<span class="number">14</span>];  <span class="comment">//储存字符</span></span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10</span>],ans;  <span class="comment">//a储存数字</span></span><br><span class="line"><span class="keyword">char</span> tot;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	freopen(<span class="string">&quot;isbn.in&quot;</span>,<span class="string">&quot;r&quot;</span>,<span class="built_in">stdin</span>);  <span class="comment">//流输入输出</span></span><br><span class="line">	freopen(<span class="string">&quot;isbn.out&quot;</span>,<span class="string">&quot;w&quot;</span>,<span class="built_in">stdout</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">13</span>;i++) <span class="comment">//从1开始</span></span><br><span class="line">		<span class="built_in">cin</span>&gt;&gt;c[i];</span><br><span class="line">	a[<span class="number">1</span>]=c[<span class="number">1</span>]-<span class="string">&#x27;0&#x27;</span>;  <span class="comment">//以下为字符转整形</span></span><br><span class="line">	a[<span class="number">2</span>]=c[<span class="number">3</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">3</span>]=c[<span class="number">4</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">4</span>]=c[<span class="number">5</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">5</span>]=c[<span class="number">7</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">6</span>]=c[<span class="number">8</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">7</span>]=c[<span class="number">9</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">8</span>]=c[<span class="number">10</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	a[<span class="number">9</span>]=c[<span class="number">11</span>]-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">	tot=c[<span class="number">13</span>]; <span class="comment">//13为判断依据单独存(以字符存储)</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">		ans=a[i]*i+ans;  <span class="comment">//按题意计算出第13位</span></span><br><span class="line">	ans=ans%<span class="number">11</span>;  </span><br><span class="line">	<span class="keyword">if</span>(ans!=<span class="number">10</span>) <span class="comment">//判断是否余数为10</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(ans==tot-<span class="string">&#x27;0&#x27;</span>) <span class="comment">//如果相等直接输出RIGHT</span></span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Right&quot;</span>;</span><br><span class="line">		<span class="keyword">else</span> <span class="comment">//错误则输出正确的ISBN号码</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;a[<span class="number">1</span>]&lt;&lt;<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">5</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;-&#x27;</span>&lt;&lt;ans;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="comment">//为10</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(tot==<span class="string">&#x27;X&#x27;</span>) <span class="comment">//是X</span></span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;Right&quot;</span>;</span><br><span class="line">		<span class="keyword">else</span>  <span class="comment">//不是X</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;a[<span class="number">1</span>]&lt;&lt;<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">5</span>;i&lt;=<span class="number">9</span>;i++)</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;a[i];</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="string">&#x27;-&#x27;</span>&lt;&lt;<span class="string">&#x27;X&#x27;</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><del>所以又水了一篇题解！</del></p>
 <h2 id="emmm…"><a href="#emmm…" class="headerlink" title="emmm…"></a>emmm…</h2><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
@@ -881,7 +764,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>C++</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/题解/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>题解</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>C++</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%A2%98%E8%A7%A3/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>题解</p></a></div>
 
 
         
@@ -892,9 +775,9 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/08/12/题解-lg1055 ISBN号码/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
           
           >
           
@@ -904,9 +787,9 @@
       
     
       
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/08/12/题解-lg1055 ISBN号码/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
           
           >
           
@@ -916,7 +799,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3aMW7DMAwF0Nz/0i3QqUDr+JMUkwzPU+A4ip4GkSb1eMTX189Vvf/72+TJv79K/uvAhYeHh9ea+vO/qU736lfJRKvzuVkaPDw8vDVedaI5o7dwya+i4IGHh4f3Vt7V8/lUeguUzAEPDw/vk3mThagm1pOEHg8PD2+b10thq1t2kjpPvsXDw8N7Da/aAPuEz4v9PTw8PLxBVz3fcJOWf7UkMb/w8PDwNnhXg/Ya/EmRt3c/CQmFNwY8PDy8Q7w8gc7DQC9UVJP7m9Hw8PDwFnh7V6/xn4eQanKPh4eHN+clIaF3CHWyor0U/J87eHh4eAu86jv7KeqpFLlwaAAPDw/vEC9vbuWtrPz5XoKeLzQeHh7eBq9aWp1v+pMUuVqSwMPDw9vjVTf3SfMp39x7y3p56AoPDw/vKK+X1OabeLXckIyw2K/Dw8PDW3u9rx42rW7rk5H/qbXg4eHhHeLd3EpqGMXg0Ytak8IxHh4e3h4vSWdzTJJSV1tuk0IwHh4e3ile3rKqbs2TTb966OrmZAQeHh7eUV61ZVVtO1WLvL022M1y4OHh4R3l9Yqt1dJDHip67MvZ4uHh4S3wkqG/nl554/9UAywfAQ8PD2+DVx1iHh56pYfmASw8PDy8Bd4kJOSNrt4Wn5QwoiCEh4eHd5RXncSp5yf38yQeDw8P7zW86nafb/rVtL56/zGJJ3h4eHiDf8wPCjzfsk8dJsjbXVF7DA8PD2/Ma1Yv8ob906VJxhkl3Hh4eHgLvF7i21uI6hGEhIqHh4f3Ll61DJGn49WjBpOm2mWIwsPDw1vjnUptewXZSSp/k9bj4eHhvZXXKw3k+CopWg48PDy8D+P1kumNYwQ3bTA8PDy8BV61GNErXlSXqVfywMPDw9vm9V7yz7avcnzzNBkeHh7eGd430u0r8JnQ1P8AAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADN0lEQVR42u3aQW7jMBAEwPz/01lgz5bdPWQAiyqdAluRVdShxZn5+YmP3/9H/snVt1fntOdfnbP5wMbGxr4J+/ftcXWLK7c1O/OK9/7eLpcGGxsb+zh2crn357dRlCxHcoV2abCxsbGfzH7/Y7Ply4NztqXBxsbGxk5Ca9fGJrlCu0zY2NjYz2HnEZVvRfa2EPIA21xLw8bGxv56dtvo/ea//7C/jY2Njf2V7N+tR9sSfh8ws1iN7hMbGxv7IPbKCON6G3jWuG2LU1GMYWNjY9+cnYdB2zxYH+7JR3xmMYmNjY19d3YeXXvL+vn2Y3a1D8uEjY2NfRw7eT+fNVlXKvPJVmQWk9jY2NgnsfPX+ll5aNdGoi1jFcM62NjY2Ddnt83UWSF+tpHY9b/Y2NjYZ7PrF/flQZmkiN/G3obWNTY2NvbN2bMC0ErRZ3bNzeM72NjY2Eew8xGZfJSnrmYtjA21TeIP/W1sbGzsG7LbuGpf99dL/LNC1eZWATY2NvYXs9sAW2kJt+2E9V+//BVsbGzs49j5JiQpQrXlqnYYqA2wF99iY2NjH8fOQ6gtza80FVbaAB/aCdjY2NgPY6+0BGYDQLMZm+L62NjY2Aex18vxSdjkjYc85GaFJ2xsbOzz2G0UrZTmkyeQL01+Vy+ug42NjX0QO4mN/OW+DapZeyCJrii3sbGxsR/DHsZDvEx7mwTFI8TGxsY+gj1rx7bUtlk7awAU32JjY2MfzU4AyedtAWhWwEo2Ti/OxMbGxn4Ye/3MNq7Ws+bDhgQbGxv7IHbSmm0jZ9agTQCzclj05LGxsbGPYM82HrOfXGk55O3hPCaxsbGxT2KvBEPbTmg/yctYs0YCNjY29knsotQeR2Abh+1WZzMSGxsb+ybsWZGoHbKZIdvHUNwVNjY29kHs9dBKWgjt5qQNvz/cimBjY2PfhJ2HVhshxehMXK7Kl/JDsGFjY2Mfx86bBLt4s+WYbVTqTMbGxsZ+ADvZQsxGc/LQah/Di60INjY29sPYK0Ptu5Z1NgC6tBXBxsbGvgl7vbmbXK2NmbbUlS8KNjY29knstjQzK8fPBoNyfPL5Un8bGxsb+xvZ/wA5qk8CSVtPxAAAAABJRU5ErkJggg=='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -924,9 +807,9 @@
       
     
       
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/08/12/题解-lg1055 ISBN号码/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/&title=洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=lg1055传送门"
           
           >
           
@@ -936,7 +819,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3aMW7DMAwF0Nz/0i3QqUDr+JMUkwzPU+A4ip4GkSb1eMTX189Vvf/72+TJv79K/uvAhYeHh9ea+vO/qU736lfJRKvzuVkaPDw8vDVedaI5o7dwya+i4IGHh4f3Vt7V8/lUeguUzAEPDw/vk3mThagm1pOEHg8PD2+b10thq1t2kjpPvsXDw8N7Da/aAPuEz4v9PTw8PLxBVz3fcJOWf7UkMb/w8PDwNnhXg/Ya/EmRt3c/CQmFNwY8PDy8Q7w8gc7DQC9UVJP7m9Hw8PDwFnh7V6/xn4eQanKPh4eHN+clIaF3CHWyor0U/J87eHh4eAu86jv7KeqpFLlwaAAPDw/vEC9vbuWtrPz5XoKeLzQeHh7eBq9aWp1v+pMUuVqSwMPDw9vjVTf3SfMp39x7y3p56AoPDw/vKK+X1OabeLXckIyw2K/Dw8PDW3u9rx42rW7rk5H/qbXg4eHhHeLd3EpqGMXg0Ytak8IxHh4e3h4vSWdzTJJSV1tuk0IwHh4e3ile3rKqbs2TTb966OrmZAQeHh7eUV61ZVVtO1WLvL022M1y4OHh4R3l9Yqt1dJDHip67MvZ4uHh4S3wkqG/nl554/9UAywfAQ8PD2+DVx1iHh56pYfmASw8PDy8Bd4kJOSNrt4Wn5QwoiCEh4eHd5RXncSp5yf38yQeDw8P7zW86nafb/rVtL56/zGJJ3h4eHiDf8wPCjzfsk8dJsjbXVF7DA8PD2/Ma1Yv8ob906VJxhkl3Hh4eHgLvF7i21uI6hGEhIqHh4f3Ll61DJGn49WjBpOm2mWIwsPDw1vjnUptewXZSSp/k9bj4eHhvZXXKw3k+CopWg48PDy8D+P1kumNYwQ3bTA8PDy8BV61GNErXlSXqVfywMPDw9vm9V7yz7avcnzzNBkeHh7eGd430u0r8JnQ1P8AAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADN0lEQVR42u3aQW7jMBAEwPz/01lgz5bdPWQAiyqdAluRVdShxZn5+YmP3/9H/snVt1fntOdfnbP5wMbGxr4J+/ftcXWLK7c1O/OK9/7eLpcGGxsb+zh2crn357dRlCxHcoV2abCxsbGfzH7/Y7Ply4NztqXBxsbGxk5Ca9fGJrlCu0zY2NjYz2HnEZVvRfa2EPIA21xLw8bGxv56dtvo/ea//7C/jY2Njf2V7N+tR9sSfh8ws1iN7hMbGxv7IPbKCON6G3jWuG2LU1GMYWNjY9+cnYdB2zxYH+7JR3xmMYmNjY19d3YeXXvL+vn2Y3a1D8uEjY2NfRw7eT+fNVlXKvPJVmQWk9jY2NgnsfPX+ll5aNdGoi1jFcM62NjY2Ddnt83UWSF+tpHY9b/Y2NjYZ7PrF/flQZmkiN/G3obWNTY2NvbN2bMC0ErRZ3bNzeM72NjY2Eew8xGZfJSnrmYtjA21TeIP/W1sbGzsG7LbuGpf99dL/LNC1eZWATY2NvYXs9sAW2kJt+2E9V+//BVsbGzs49j5JiQpQrXlqnYYqA2wF99iY2NjH8fOQ6gtza80FVbaAB/aCdjY2NgPY6+0BGYDQLMZm+L62NjY2Aex18vxSdjkjYc85GaFJ2xsbOzz2G0UrZTmkyeQL01+Vy+ug42NjX0QO4mN/OW+DapZeyCJrii3sbGxsR/DHsZDvEx7mwTFI8TGxsY+gj1rx7bUtlk7awAU32JjY2MfzU4AyedtAWhWwEo2Ti/OxMbGxn4Ye/3MNq7Ws+bDhgQbGxv7IHbSmm0jZ9agTQCzclj05LGxsbGPYM82HrOfXGk55O3hPCaxsbGxT2KvBEPbTmg/yctYs0YCNjY29knsotQeR2Abh+1WZzMSGxsb+ybsWZGoHbKZIdvHUNwVNjY29kHs9dBKWgjt5qQNvz/cimBjY2PfhJ2HVhshxehMXK7Kl/JDsGFjY2Mfx86bBLt4s+WYbVTqTMbGxsZ+ADvZQsxGc/LQah/Di60INjY29sPYK0Ptu5Z1NgC6tBXBxsbGvgl7vbmbXK2NmbbUlS8KNjY29knstjQzK8fPBoNyfPL5Un8bGxsb+xvZ/wA5qk8CSVtPxAAAAABJRU5ErkJggg=='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
         
@@ -962,7 +845,7 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
-                                <a href="/2019/08/13/文学-吴宪霖大作/" rel="prev" title="吴宪霖三部曲">
+                                <a href="/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/" rel="prev" title="吴宪霖三部曲">
                                   
                                       吴宪霖三部曲
                                   
@@ -971,7 +854,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/文学/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;文学</a>
+                                    <a class="tag" href="/tags/%E6%96%87%E5%AD%A6/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;文学</a>
                                 </h6>
                             
                         </span>
@@ -982,7 +865,7 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2019/08/12/题解-lg1909 买铅笔/" rel="prev" title="洛谷题解 P1909 【(2016年普及组第一题)买铅笔】">
+                                <a href="/2019/08/12/%E9%A2%98%E8%A7%A3-lg1909%20%E4%B9%B0%E9%93%85%E7%AC%94/" rel="prev" title="洛谷题解 P1909 【(2016年普及组第一题)买铅笔】">
                                     
                                         洛谷题解 P1909 【(2016年普及组第一题)买铅笔】
                                     
@@ -991,7 +874,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/题解/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
+                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/%E9%A2%98%E8%A7%A3/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
                                 </h6>
                             
                         </span>
@@ -1256,7 +1139,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#算法可能就是模拟和字符串吧"><span class="toc-text">算法可能就是模拟和字符串吧!</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#emmm…"><span class="toc-text">emmm…</span></a>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%8F%AF%E8%83%BD%E5%B0%B1%E6%98%AF%E6%A8%A1%E6%8B%9F%E5%92%8C%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%90%A7"><span class="toc-text">算法可能就是模拟和字符串吧!</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#emmm%E2%80%A6"><span class="toc-text">emmm…</span></a>
     </div>
   </section>
 
@@ -1299,7 +1182,7 @@
           时间目录
         </a></li>
       
-        <li><a class="flat-box" title="https://share.mcmohen.top/" href="https://share.mcmohen.top/"
+        <li><a class="flat-box" title="https://share.mcmohen.top/" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
           
           
           id="https:share.mcmohen.top">
@@ -1345,6 +1228,18 @@
           留言板
         </a></li>
       
+        <li><a class="flat-box" title="http://mc.mcmohen.top:8123/" target="_blank" href="http://mc.mcmohen.top:8123/"
+          
+            rel="nofollow noopener"
+          
+          
+          id="http:mc.mcmohen.top:8123">
+          
+            <i class="fas fa-gamepad fa-fw fa-fw" aria-hidden="true"></i>
+          
+          MC卫星地图
+        </a></li>
+      
         <li><a class="flat-box" title="/about/" href="/about/"
           
             rel="nofollow"
@@ -1387,23 +1282,23 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%96%87%E5%AD%A6/" href="/categories/%E6%96%87%E5%AD%A6/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%A7%86%E9%A2%91/" href="/categories/%E8%A7%86%E9%A2%91/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资源/" href="/categories/资源/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E6%BA%90/" href="/categories/%E8%B5%84%E6%BA%90/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E8%AE%AF/" href="/categories/%E8%B5%84%E8%AE%AF/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -1434,7 +1329,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/中学部/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/加速器/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/我的世界/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/指南/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/深圳实验学校/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/游戏/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/虚拟机/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资源/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/%E6%8C%87%E5%8D%97/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/%E8%B5%84%E6%BA%90/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px; color: #707070">题解</a>
     </div>
   </section>
 
@@ -1713,7 +1608,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+
     
   
   <script>
@@ -1744,10 +1641,14 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
 
 
 

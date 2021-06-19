@@ -23,19 +23,19 @@
 <!---daovoice-->
 <!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>吴宪霖三部曲 | Mohen&#39;s blog</title>
   
   
 
   
-  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog" type="application/atom+xml">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
@@ -56,7 +56,7 @@
     })();
   </script>   
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -64,11 +64,13 @@
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -209,137 +211,7 @@
     };
     loaded();
 })()
- </script><style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFF;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
-    }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-   .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-         .loading-text{
-            font-size: 1.5rem;
-         }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
- </style>
- <script>
-(function () {
-    const loaded = function(){
-       setTimeout(function(){
-            const loader = document.getElementById("loading-container");
-            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-            // document.getElementById("body-wrap").style.display="flex";
-            setTimeout(function(){
-                loader.style.display="none";
-            },1000); 
-        },1000);//强制显示loading page 1s  
-    };
-    loaded();
-})()
- </script></head>
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
 
 
  <div id="loading-container">
@@ -382,7 +254,7 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://share.mcmohen.top/"
+          <a class="nav home" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
             
             
             id="https:share.mcmohen.top">
@@ -536,6 +408,17 @@
 							</li>
       			
   						<li>
+								<a class="nav flat-box" target="_blank" href="http://mc.mcmohen.top:8123/"
+                  
+                    rel="nofollow noopener"
+                  
+                  
+                  id="http:mc.mcmohen.top:8123">
+									<i class='fas fa-gamepad fa-fw fa-fw'></i>&nbsp;MC卫星地图
+								</a>
+							</li>
+      			
+  						<li>
 								<a class="nav flat-box" href="/COVID-19/"
                   
                     rel="nofollow"
@@ -604,7 +487,7 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://share.mcmohen.top/"
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
                 
                 
                 id="https:share.mcmohen.top">
@@ -667,14 +550,14 @@
   <section class='meta'>
     
     
-      <a title='吴宪霖三部曲' href='/2019/08/13/文学-吴宪霖大作/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img文学.jpg'></a>
+      <a title='吴宪霖三部曲' href='/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img文学.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2019/08/13/文学-吴宪霖大作/">
+      <a href="/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/">
         吴宪霖三部曲
       </a>
     </h1>
@@ -714,7 +597,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/文学/' rel="nofollow">
+    <a href='/categories/%E6%96%87%E5%AD%A6/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>文学</p>
     </a>
@@ -780,7 +663,7 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <h2 id="来自Mohen同学的哲学三部曲↓↓↓↓↓"><a href="#来自Mohen同学的哲学三部曲↓↓↓↓↓" class="headerlink" title="来自Mohen同学的哲学三部曲↓↓↓↓↓"></a>来自Mohen同学的哲学三部曲↓↓↓↓↓</h2>   <a id="more"></a>
+          <h2 id="来自Mohen同学的哲学三部曲↓↓↓↓↓"><a href="#来自Mohen同学的哲学三部曲↓↓↓↓↓" class="headerlink" title="来自Mohen同学的哲学三部曲↓↓↓↓↓"></a>来自Mohen同学的哲学三部曲↓↓↓↓↓</h2>   <span id="more"></span>
 
 <ol>
 <li><h3 id="《从掰草园到三味书屋》"><a href="#《从掰草园到三味书屋》" class="headerlink" title="《从掰草园到三味书屋》"></a>《从掰草园到三味书屋》</h3><p>​        我家的后面有一个很大的更♂衣室， 相传叫作掰♂草园。现在是早已并屋子一起卖给<strong>比利</strong>的子孙了，连那最末次的相见也已经隔了七八年， 其中似乎确凿只有一些弱子 ；但那时却是我的乐♂园。</p>
@@ -891,7 +774,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/文学/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>文学</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%96%87%E5%AD%A6/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>文学</p></a></div>
 
 
         
@@ -902,9 +785,9 @@
   <div class="-mob-share-list share-body">
     
       
-        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/08/13/文学-吴宪霖大作/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mcmohen.top/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
           
           >
           
@@ -914,9 +797,9 @@
       
     
       
-        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/08/13/文学-吴宪霖大作/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://mcmohen.top/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
           
           >
           
@@ -926,7 +809,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACpUlEQVR42u3a0W7CQAwEwPz/T9PnChGtfXZKpclTBCW5oVJs1ndd8fF6O6qv58f7fd/Phw88PDy846VvLPfTK9V15mvGw8PD2+Yll7u/Ta+EJOUnLxJ4eHh438mrNtzlR/nt9fHw8PD+I68aItwv9CQEwcPDw/tbXhIlJAVj6suqNu4DWQseHh5ev4O9qot7/nxlvoeHh4d3PFXPg9deu5wPt5qrxcPDw1vg5Q/cXlCbhBcnkUcUduDh4eEt83rbpDaucB8QJwM5PDw8vG1etTmeGvxXx2nlABcPDw9vlNf7WNI05yFs78uNxm94eHh4a7zq4/j+0vnIqhcWF+JjPDw8vGVeNbo9CWp7LXt56xUeHh7eAq/aqk4xZtvo8vYsPDw8vCFedRNA76vpFZ7qtgY8PDy8PV4SQ/QKxsnWger/5+Md8fDw8NZ4ycap3nnelK+MwfDw8PAembDnTXDeFudjtpMNXh/fxcPDwxvlnQ/A8kWXG+J400ChJODh4eEN8fIYojcY68UKyX2jGBcPDw/vQV5eAJqbn+IAtxoZ4+Hh4e3xes1u/iivxrtJY139AYCHh4c3y0sG+c2xfRzR5tcpt+l4eHh4C7xea3uyMSvB9MLfaBiGh4eHN8Qr9+CtgHVqO1d5IIeHh4f3OK/XBPea5pNSUc6J8fDw8IZ41ducXOFkS0Eh/sDDw8Nb5g1cLg5tT8pDocjh4eHhjfJexWOqa82b5l448mu+h4eHhzfK6z3KTwZUz5zj4eHhbfOSYpC03XkZ6D3ik08Vcg48PDy8Y17eKJ80x71hW2+Ah4eHh/dtvJOI4bz3zwsGHh4e3jfwckASB+eNcjNoxsPDw1vjJWFE9W82xld5wcDDw8Pb41V/8Pfa6/yVPMy9pg48PDy8lPcDOtexhlT0rBMAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADLklEQVR42u3aS46jQBAE0L7/pT3SrEYaGSIqccsUj5WF+NQrFun8/PzEx+vv8f/vyTX/njm+9/jMu3ddcGBjY2PfhP06PI5f8+76Y9jxc/Jrjs+crA0bGxt7O3YekJJNSbYv2ZrJOk/uxcbGxn4kOw8hbYiaBEVsbGxs7LXAkASqNixNtgAbGxsbO2fkZyZb2Z75YC0NGxsb++vZk0bvt/3+pf42NjY29tewX0tHPoKTJyrtk0frx8bGxt6InacQSRFqbUxnXoRKUpRiidjY2Ng3ZH/u0XlZP9+sa1sL2NjY2Huw8/GXZOxm0vqdrKRuXWBjY2Nvym6TinaYpt2UPJjViRM2Njb2dux2vGYtMchTmnaEKL8XGxsbe1f2WkFnraDfDt9EjOBd2NjY2Pux80W05aT8LcmZtr9RfGdsbGzsLdjXNn3z8cdrhynriI2NjY29EfuqxmobkPIPkDcSovPY2NjYG7HzQNUmDHkC07aEr2pIYGNjY+/BLv6+lw3gtlyVbFObckQZGDY2NvYW7DZIJO2BCSYPh2tDPNjY2Nh7s/P0oG3HJhuUtw1GpS5sbGzsjdhtOtEWgPLEJkmE2pTjJLxhY2Njb8RuS0Xt0tt28qT0335CbGxs7P3YeQox37Ik5ZgMA0UNY2xsbOybs9tiTV6+acHztm7RbMbGxsZ+AHvtL34b/JLglG9H0aLGxsbG3o6dl/LXFjcZtanbt8lqsbGxsR/DjmpRZXkovybZmrXPho2Njf0E9mQsclJ+umqg5ySIYmNjY2/ETl4zD2N5gzZvALQfCRsbG/tp7OTRbWIwGb5ZK2B9JDnBxsbG/mJ2EngmIW2t6TsZJBq1CrCxsbFvyG7LSWshZN6yXWtIn9yFjY2NfVv2qzyuTV3ao20AvN1WbGxs7I3Yk1cmzYC1u9qS09oTsLGxsXdirxV98hJSm4okTdxkrOckAGNjY2Nvx57UohJkXh5qR3/y0IuNjY2N3bZv28JTnjld0ADGxsbGfiR7klq0TeKrkqULUhFsbGzsm7CTh66FrrWxzqRQtdZCwMbGxt6PvVaaacNMG4RafLtl2NjY2Fuw/wCgqv1hKrnJ8gAAAABJRU5ErkJggg=='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
         
@@ -934,9 +817,9 @@
       
     
       
-        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
           
-          href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/08/13/文学-吴宪霖大作/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://mcmohen.top/2019/08/13/%E6%96%87%E5%AD%A6-%E5%90%B4%E5%AE%AA%E9%9C%96%E5%A4%A7%E4%BD%9C/&title=吴宪霖三部曲 | Mohen's blog&pics=https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img/90133cbc21b46c765beb08a89ec4bc45194d5b.jpg&summary=来自Mohen同学的哲学三部曲↓↓↓↓↓"
           
           >
           
@@ -946,7 +829,7 @@
       
     
       
-        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACpUlEQVR42u3a0W7CQAwEwPz/T9PnChGtfXZKpclTBCW5oVJs1ndd8fF6O6qv58f7fd/Phw88PDy846VvLPfTK9V15mvGw8PD2+Yll7u/Ta+EJOUnLxJ4eHh438mrNtzlR/nt9fHw8PD+I68aItwv9CQEwcPDw/tbXhIlJAVj6suqNu4DWQseHh5ev4O9qot7/nxlvoeHh4d3PFXPg9deu5wPt5qrxcPDw1vg5Q/cXlCbhBcnkUcUduDh4eEt83rbpDaucB8QJwM5PDw8vG1etTmeGvxXx2nlABcPDw9vlNf7WNI05yFs78uNxm94eHh4a7zq4/j+0vnIqhcWF+JjPDw8vGVeNbo9CWp7LXt56xUeHh7eAq/aqk4xZtvo8vYsPDw8vCFedRNA76vpFZ7qtgY8PDy8PV4SQ/QKxsnWger/5+Md8fDw8NZ4ycap3nnelK+MwfDw8PAembDnTXDeFudjtpMNXh/fxcPDwxvlnQ/A8kWXG+J400ChJODh4eEN8fIYojcY68UKyX2jGBcPDw/vQV5eAJqbn+IAtxoZ4+Hh4e3xes1u/iivxrtJY139AYCHh4c3y0sG+c2xfRzR5tcpt+l4eHh4C7xea3uyMSvB9MLfaBiGh4eHN8Qr9+CtgHVqO1d5IIeHh4f3OK/XBPea5pNSUc6J8fDw8IZ41ducXOFkS0Eh/sDDw8Nb5g1cLg5tT8pDocjh4eHhjfJexWOqa82b5l448mu+h4eHhzfK6z3KTwZUz5zj4eHhbfOSYpC03XkZ6D3ik08Vcg48PDy8Y17eKJ80x71hW2+Ah4eHh/dtvJOI4bz3zwsGHh4e3jfwckASB+eNcjNoxsPDw1vjJWFE9W82xld5wcDDw8Pb41V/8Pfa6/yVPMy9pg48PDy8lPcDOtexhlT0rBMAAAAASUVORK5CYII='>
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADLklEQVR42u3aS46jQBAE0L7/pT3SrEYaGSIqccsUj5WF+NQrFun8/PzEx+vv8f/vyTX/njm+9/jMu3ddcGBjY2PfhP06PI5f8+76Y9jxc/Jrjs+crA0bGxt7O3YekJJNSbYv2ZrJOk/uxcbGxn4kOw8hbYiaBEVsbGxs7LXAkASqNixNtgAbGxsbO2fkZyZb2Z75YC0NGxsb++vZk0bvt/3+pf42NjY29tewX0tHPoKTJyrtk0frx8bGxt6InacQSRFqbUxnXoRKUpRiidjY2Ng3ZH/u0XlZP9+sa1sL2NjY2Huw8/GXZOxm0vqdrKRuXWBjY2Nvym6TinaYpt2UPJjViRM2Njb2dux2vGYtMchTmnaEKL8XGxsbe1f2WkFnraDfDt9EjOBd2NjY2Pux80W05aT8LcmZtr9RfGdsbGzsLdjXNn3z8cdrhynriI2NjY29EfuqxmobkPIPkDcSovPY2NjYG7HzQNUmDHkC07aEr2pIYGNjY+/BLv6+lw3gtlyVbFObckQZGDY2NvYW7DZIJO2BCSYPh2tDPNjY2Nh7s/P0oG3HJhuUtw1GpS5sbGzsjdhtOtEWgPLEJkmE2pTjJLxhY2Njb8RuS0Xt0tt28qT0335CbGxs7P3YeQox37Ik5ZgMA0UNY2xsbOybs9tiTV6+acHztm7RbMbGxsZ+AHvtL34b/JLglG9H0aLGxsbG3o6dl/LXFjcZtanbt8lqsbGxsR/DjmpRZXkovybZmrXPho2Njf0E9mQsclJ+umqg5ySIYmNjY2/ETl4zD2N5gzZvALQfCRsbG/tp7OTRbWIwGb5ZK2B9JDnBxsbG/mJ2EngmIW2t6TsZJBq1CrCxsbFvyG7LSWshZN6yXWtIn9yFjY2NfVv2qzyuTV3ao20AvN1WbGxs7I3Yk1cmzYC1u9qS09oTsLGxsXdirxV98hJSm4okTdxkrOckAGNjY2Nvx57UohJkXh5qR3/y0IuNjY2N3bZv28JTnjld0ADGxsbGfiR7klq0TeKrkqULUhFsbGzsm7CTh66FrrWxzqRQtdZCwMbGxt6PvVaaacNMG4RafLtl2NjY2Fuw/wCgqv1hKrnJ8gAAAABJRU5ErkJggg=='>
         
           <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
         
@@ -972,7 +855,7 @@
                         <span class="art-item-left">
                             <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
                             <h4>
-                                <a href="/2019/08/15/题解-lg2010 回文日期/" rel="prev" title="洛谷题解 P2010 【(2016年普及组第二题)回文日期】">
+                                <a href="/2019/08/15/%E9%A2%98%E8%A7%A3-lg2010%20%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F/" rel="prev" title="洛谷题解 P2010 【(2016年普及组第二题)回文日期】">
                                   
                                       洛谷题解 P2010 【(2016年普及组第二题)回文日期】
                                   
@@ -981,7 +864,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/题解/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
+                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/%E9%A2%98%E8%A7%A3/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
                                 </h6>
                             
                         </span>
@@ -992,7 +875,7 @@
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/2019/08/12/题解-lg1055 ISBN号码/" rel="prev" title="洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】">
+                                <a href="/2019/08/12/%E9%A2%98%E8%A7%A3-lg1055%20ISBN%E5%8F%B7%E7%A0%81/" rel="prev" title="洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】">
                                     
                                         洛谷题解 P1055 【(2008年普及组第一题)ISBN号码】
                                     
@@ -1001,7 +884,7 @@
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/题解/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
+                                    <a class="tag" href="/tags/C/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;C++</a> <a class="tag" href="/tags/%E9%A2%98%E8%A7%A3/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;题解</a>
                                 </h6>
                             
                         </span>
@@ -1266,7 +1149,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#来自Mohen同学的哲学三部曲↓↓↓↓↓"><span class="toc-text">来自Mohen同学的哲学三部曲↓↓↓↓↓</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#《从掰草园到三味书屋》"><span class="toc-text">《从掰草园到三味书屋》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#《尻乙己》"><span class="toc-text">《尻乙己》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#《你们这个是什么健身房啊》"><span class="toc-text">《你们这个是什么健身房啊》</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-深圳实验学校中学部吴宪霖"><span class="toc-text">                               by  深圳实验学校中学部吴宪霖</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-初二上"><span class="toc-text">                                         初二上</span></a></li></ol></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A5%E8%87%AAMohen%E5%90%8C%E5%AD%A6%E7%9A%84%E5%93%B2%E5%AD%A6%E4%B8%89%E9%83%A8%E6%9B%B2%E2%86%93%E2%86%93%E2%86%93%E2%86%93%E2%86%93"><span class="toc-text">来自Mohen同学的哲学三部曲↓↓↓↓↓</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%8A%E4%BB%8E%E6%8E%B0%E8%8D%89%E5%9B%AD%E5%88%B0%E4%B8%89%E5%91%B3%E4%B9%A6%E5%B1%8B%E3%80%8B"><span class="toc-text">《从掰草园到三味书屋》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%8A%E5%B0%BB%E4%B9%99%E5%B7%B1%E3%80%8B"><span class="toc-text">《尻乙己》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E3%80%8A%E4%BD%A0%E4%BB%AC%E8%BF%99%E4%B8%AA%E6%98%AF%E4%BB%80%E4%B9%88%E5%81%A5%E8%BA%AB%E6%88%BF%E5%95%8A%E3%80%8B"><span class="toc-text">《你们这个是什么健身房啊》</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-ensp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-by-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1%E4%B8%AD%E5%AD%A6%E9%83%A8%E5%90%B4%E5%AE%AA%E9%9C%96"><span class="toc-text">&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;ensp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;by  深圳实验学校中学部吴宪霖</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-emsp-%E5%88%9D%E4%BA%8C%E4%B8%8A"><span class="toc-text">&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;初二上</span></a></li></ol></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -1309,7 +1192,7 @@
           时间目录
         </a></li>
       
-        <li><a class="flat-box" title="https://share.mcmohen.top/" href="https://share.mcmohen.top/"
+        <li><a class="flat-box" title="https://share.mcmohen.top/" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
           
           
           id="https:share.mcmohen.top">
@@ -1355,6 +1238,18 @@
           留言板
         </a></li>
       
+        <li><a class="flat-box" title="http://mc.mcmohen.top:8123/" target="_blank" href="http://mc.mcmohen.top:8123/"
+          
+            rel="nofollow noopener"
+          
+          
+          id="http:mc.mcmohen.top:8123">
+          
+            <i class="fas fa-gamepad fa-fw fa-fw" aria-hidden="true"></i>
+          
+          MC卫星地图
+        </a></li>
+      
         <li><a class="flat-box" title="/about/" href="/about/"
           
             rel="nofollow"
@@ -1397,23 +1292,23 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%96%87%E5%AD%A6/" href="/categories/%E6%96%87%E5%AD%A6/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%A7%86%E9%A2%91/" href="/categories/%E8%A7%86%E9%A2%91/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资源/" href="/categories/资源/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E6%BA%90/" href="/categories/%E8%B5%84%E6%BA%90/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E8%AE%AF/" href="/categories/%E8%B5%84%E8%AE%AF/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -1444,7 +1339,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/中学部/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/加速器/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/我的世界/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/指南/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/深圳实验学校/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/游戏/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/虚拟机/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资源/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/%E6%8C%87%E5%8D%97/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/%E8%B5%84%E6%BA%90/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px; color: #707070">题解</a>
     </div>
   </section>
 
@@ -1723,7 +1618,9 @@
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   
     
-      <script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0.6/js/volantis.min.js"></script>
+
     
   
   <script>
@@ -1754,10 +1651,14 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
 
 
 

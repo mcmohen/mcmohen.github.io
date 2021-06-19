@@ -23,19 +23,19 @@
 <!---daovoice-->
 <!--<script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4f07a23b.js","daovoice")</script>-->
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <title>Mohen&#39;s blog</title>
   
   
 
   
-  <link rel="alternate" href="/atom.xml" title="Mohen's blog">
+  <link rel="alternate" href="/atom.xml" title="Mohen's blog" type="application/atom+xml">
   
 
-  <meta name="HandheldFriendly" content="True">
+  <meta name="HandheldFriendly" content="True" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- meta -->
@@ -56,7 +56,7 @@
     })();
   </script>   
   <!-- link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
   
@@ -64,11 +64,13 @@
   
 
   
-  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/mcmohen/CDNELSE@1.2/Favicon/favicon.ico">
   
 
   
-    <link rel="stylesheet" href="/style.css">
+    
+<link rel="stylesheet" href="/style.css">
+
   
 
   <script>
@@ -209,137 +211,7 @@
     };
     loaded();
 })()
- </script><style type="text/css" lang="css">
-    #loading-container{
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
-        width: 100vw;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFF;
-        text-align: center;
-        /* loader页面消失采用渐隐的方式*/
-        -webkit-transition: opacity 1s ease;
-        -moz-transition: opacity 1s ease;
-        -o-transition: opacity 1s ease;
-        transition: opacity 1s ease;
-    }
-    .loading-image{
-        width: 120px;
-        height: 50px;
-        transform: translate(-50%);
-    }
-
-    .loading-image div:nth-child(2) {
-        -webkit-animation: pacman-balls 1s linear 0s infinite;
-        animation: pacman-balls 1s linear 0s infinite
-    }
-
-    .loading-image div:nth-child(3) {
-        -webkit-animation: pacman-balls 1s linear .33s infinite;
-        animation: pacman-balls 1s linear .33s infinite
-    }
-
-    .loading-image div:nth-child(4) {
-        -webkit-animation: pacman-balls 1s linear .66s infinite;
-        animation: pacman-balls 1s linear .66s infinite
-    }
-
-    .loading-image div:nth-child(5) {
-        -webkit-animation: pacman-balls 1s linear .99s infinite;
-        animation: pacman-balls 1s linear .99s infinite
-    }
-
-   .loading-image div:first-of-type {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_up .5s 0s infinite;
-        animation: rotate_pacman_half_up .5s 0s infinite;
-    }
-    .loading-image div:nth-child(2) {
-        width: 0;
-        height: 0;
-        border: 25px solid #49b1f5;
-        border-right-color: transparent;
-        border-radius: 25px;
-        -webkit-animation: rotate_pacman_half_down .5s 0s infinite;
-        animation: rotate_pacman_half_down .5s 0s infinite;
-        margin-top: -50px;
-    }
-    @-webkit-keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @keyframes rotate_pacman_half_up {0% {transform: rotate(270deg)}50% {transform: rotate(1turn)}to {transform: rotate(270deg)}}
-
-    @-webkit-keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @keyframes rotate_pacman_half_down {0% {transform: rotate(90deg)}50% {transform: rotate(0deg)}to {transform: rotate(90deg)}}
-
-    @-webkit-keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-    @keyframes pacman-balls {75% {opacity: .7}to {transform: translate(-100px, -6.25px)}}
-
-
-    .loading-image div:nth-child(3),
-    .loading-image div:nth-child(4),
-    .loading-image div:nth-child(5),
-    .loading-image div:nth-child(6){
-        background-color: #49b1f5;
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        margin: 2px;
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        transform: translateY(-6.25px);
-        top: 25px;
-        left: 100px;
-    }
-    .loading-text{
-        margin-bottom: 20vh;
-        text-align: center;
-        color: #2c3e50;
-        font-size: 2rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        text-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    @media only screen and (max-width: 500px) {
-         .loading-text{
-            font-size: 1.5rem;
-         }
-    }
-    .fadeout {
-        opacity: 0;
-        filter: alpha(opacity=0);
-    }
-    /* logo出现动画 */
-    @-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}
-    @keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);}}
- </style>
- <script>
-(function () {
-    const loaded = function(){
-       setTimeout(function(){
-            const loader = document.getElementById("loading-container");
-            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
-            // document.getElementById("body-wrap").style.display="flex";
-            setTimeout(function(){
-                loader.style.display="none";
-            },1000); 
-        },1000);//强制显示loading page 1s  
-    };
-    loaded();
-})()
- </script></head>
+ </script><meta name="generator" content="Hexo 5.4.0"></head>
 
 
  <div id="loading-container">
@@ -382,7 +254,7 @@
         </li>
       
         <li>
-          <a class="nav home" href="https://share.mcmohen.top/"
+          <a class="nav home" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
             
             
             id="https:share.mcmohen.top">
@@ -536,6 +408,17 @@
 							</li>
       			
   						<li>
+								<a class="nav flat-box" target="_blank" href="http://mc.mcmohen.top:8123/"
+                  
+                    rel="nofollow noopener"
+                  
+                  
+                  id="http:mc.mcmohen.top:8123">
+									<i class='fas fa-gamepad fa-fw fa-fw'></i>&nbsp;MC卫星地图
+								</a>
+							</li>
+      			
+  						<li>
 								<a class="nav flat-box" href="/COVID-19/"
                   
                     rel="nofollow"
@@ -604,7 +487,7 @@
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://share.mcmohen.top/"
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
                 
                 
                 id="https:share.mcmohen.top">
@@ -720,13 +603,13 @@
   <section class='meta'>
     
     
-      <a title='TOP公告' href='/2019/10/03/资讯-置顶公告/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img喇叭2.jpg'></a>
+      <a title='TOP公告' href='/2019/10/03/%E8%B5%84%E8%AE%AF-%E7%BD%AE%E9%A1%B6%E5%85%AC%E5%91%8A/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img喇叭2.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/10/03/资讯-置顶公告/">
+    <a href="/2019/10/03/%E8%B5%84%E8%AE%AF-%E7%BD%AE%E9%A1%B6%E5%85%AC%E5%91%8A/">
       TOP公告
     </a>
   </h2>
@@ -765,7 +648,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/资讯/' rel="nofollow">
+    <a href='/categories/%E8%B5%84%E8%AE%AF/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>资讯</p>
     </a>
@@ -836,7 +719,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/资讯/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;资讯</a>
+          <a href="/tags/%E8%B5%84%E8%AE%AF/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;资讯</a>
         
       </div>
     
@@ -868,13 +751,13 @@
   <section class='meta'>
     
     
-      <a title='我的世界开服教程' href='/2021/02/14/教程-我的世界开服/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/u=3204670898,3823579793&fm=11&gp=0.jpg'></a>
+      <a title='我的世界开服教程' href='/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting2/u=3204670898,3823579793&fm=11&gp=0.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2021/02/14/教程-我的世界开服/">
+    <a href="/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/">
       我的世界开服教程
     </a>
   </h2>
@@ -913,7 +796,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -969,7 +852,7 @@
       <h2 id="想必玩MC的人都希望拥有一台属于自己的服务器"><a href="#想必玩MC的人都希望拥有一台属于自己的服务器" class="headerlink" title="想必玩MC的人都希望拥有一台属于自己的服务器~"></a>想必玩MC的人都希望拥有一台属于自己的服务器~</h2>
       
         <div class="readmore">
-          <a href="/2021/02/14/教程-我的世界开服/" class="flat-box">
+          <a href="/2021/02/14/%E6%95%99%E7%A8%8B-%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%BC%80%E6%9C%8D/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -979,11 +862,11 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
-          <a href="/tags/游戏/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
+          <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
         
-          <a href="/tags/我的世界/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;我的世界</a>
+          <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;我的世界</a>
         
           <a href="/tags/Minecraft/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;Minecraft</a>
         
@@ -1004,13 +887,13 @@
   <section class='meta'>
     
     
-      <a title='深圳实验中学部校园学生指南' href='/2021/01/10/文学-深圳实验中学部校园学生指南/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20191116223015.png'></a>
+      <a title='深圳实验中学部校园学生指南' href='/2021/01/10/%E6%96%87%E5%AD%A6-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E4%B8%AD%E5%AD%A6%E9%83%A8%E6%A0%A1%E5%9B%AD%E5%AD%A6%E7%94%9F%E6%8C%87%E5%8D%97/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img20191116223015.png'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2021/01/10/文学-深圳实验中学部校园学生指南/">
+    <a href="/2021/01/10/%E6%96%87%E5%AD%A6-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E4%B8%AD%E5%AD%A6%E9%83%A8%E6%A0%A1%E5%9B%AD%E5%AD%A6%E7%94%9F%E6%8C%87%E5%8D%97/">
       深圳实验中学部校园学生指南
     </a>
   </h2>
@@ -1049,7 +932,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/文学/' rel="nofollow">
+    <a href='/categories/%E6%96%87%E5%AD%A6/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>文学</p>
     </a>
@@ -1105,7 +988,7 @@
       <h2 id="深圳实验中学部校园学生指南"><a href="#深圳实验中学部校园学生指南" class="headerlink" title="深圳实验中学部校园学生指南"></a><strong>深圳实验中学部校园学生指南</strong></h2>
       
         <div class="readmore">
-          <a href="/2021/01/10/文学-深圳实验中学部校园学生指南/" class="flat-box">
+          <a href="/2021/01/10/%E6%96%87%E5%AD%A6-%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E4%B8%AD%E5%AD%A6%E9%83%A8%E6%A0%A1%E5%9B%AD%E5%AD%A6%E7%94%9F%E6%8C%87%E5%8D%97/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1115,11 +998,11 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/指南/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;指南</a>
+          <a href="/tags/%E6%8C%87%E5%8D%97/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;指南</a>
         
-          <a href="/tags/深圳实验学校/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;深圳实验学校</a>
+          <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;深圳实验学校</a>
         
-          <a href="/tags/中学部/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;中学部</a>
+          <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;中学部</a>
         
       </div>
     
@@ -1138,13 +1021,13 @@
   <section class='meta'>
     
     
-      <a title='Hyper-V的安装及使用' href='/2020/02/28/教程-Hyper-V的安装及使用/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
+      <a title='Hyper-V的安装及使用' href='/2020/02/28/%E6%95%99%E7%A8%8B-Hyper-V%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2020/02/28/教程-Hyper-V的安装及使用/">
+    <a href="/2020/02/28/%E6%95%99%E7%A8%8B-Hyper-V%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/">
       Hyper-V的安装及使用
     </a>
   </h2>
@@ -1183,7 +1066,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -1213,7 +1096,7 @@
           <span class="post-meta-item-icon">
             <i class="fa fa-hourglass-half"></i>
             <span class="post-meta-item-text">  阅读时长≈</span>
-            <span class="post-count">3分</span>
+            <span class="post-count">4分</span>
           </span>
         </span>
       </div>
@@ -1239,7 +1122,7 @@
       <h3 id="Hyper-V，一款win10自带的虚拟机平台，你确定不看看？"><a href="#Hyper-V，一款win10自带的虚拟机平台，你确定不看看？" class="headerlink" title="Hyper-V，一款win10自带的虚拟机平台，你确定不看看？"></a>Hyper-V，一款win10自带的虚拟机平台，你确定不看看？</h3>
       
         <div class="readmore">
-          <a href="/2020/02/28/教程-Hyper-V的安装及使用/" class="flat-box">
+          <a href="/2020/02/28/%E6%95%99%E7%A8%8B-Hyper-V%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1249,9 +1132,9 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
-          <a href="/tags/虚拟机/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;虚拟机</a>
+          <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;虚拟机</a>
         
           <a href="/tags/Hyper-V/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;Hyper-V</a>
         
@@ -1272,13 +1155,13 @@
   <section class='meta'>
     
     
-      <a title='四款免费加速器' href='/2020/02/21/资源-四款免费加速器/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_img1111111.jfif'></a>
+      <a title='四款免费加速器' href='/2020/02/21/%E8%B5%84%E6%BA%90-%E5%9B%9B%E6%AC%BE%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E5%99%A8/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_img1111111.jfif'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2020/02/21/资源-四款免费加速器/">
+    <a href="/2020/02/21/%E8%B5%84%E6%BA%90-%E5%9B%9B%E6%AC%BE%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E5%99%A8/">
       四款免费加速器
     </a>
   </h2>
@@ -1317,7 +1200,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/资源/' rel="nofollow">
+    <a href='/categories/%E8%B5%84%E6%BA%90/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>资源</p>
     </a>
@@ -1373,7 +1256,7 @@
       <h3 id="你还在因没有加速器而烦恼吗？那就来看看吧！-σﾟ∀ﾟ-σ-☆"><a href="#你还在因没有加速器而烦恼吗？那就来看看吧！-σﾟ∀ﾟ-σ-☆" class="headerlink" title="你还在因没有加速器而烦恼吗？那就来看看吧！(σﾟ∀ﾟ)σ..:*☆"></a>你还在因没有加速器而烦恼吗？那就来看看吧！(σﾟ∀ﾟ)σ..:*☆</h3>
       
         <div class="readmore">
-          <a href="/2020/02/21/资源-四款免费加速器/" class="flat-box">
+          <a href="/2020/02/21/%E8%B5%84%E6%BA%90-%E5%9B%9B%E6%AC%BE%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E5%99%A8/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1383,11 +1266,11 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/资源/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;资源</a>
-        
-          <a href="/tags/加速器/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;加速器</a>
-        
           <a href="/tags/PUBG/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;PUBG</a>
+        
+          <a href="/tags/%E8%B5%84%E6%BA%90/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;资源</a>
+        
+          <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;加速器</a>
         
       </div>
     
@@ -1406,13 +1289,13 @@
   <section class='meta'>
     
     
-      <a title='全战模拟隐藏兵种(不会更新)' href='/2019/12/08/教程-全面战争模拟器隐藏兵种/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
+      <a title='全战模拟隐藏兵种(不会更新)' href='/2019/12/08/%E6%95%99%E7%A8%8B-%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%9A%90%E8%97%8F%E5%85%B5%E7%A7%8D/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/12/08/教程-全面战争模拟器隐藏兵种/">
+    <a href="/2019/12/08/%E6%95%99%E7%A8%8B-%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%9A%90%E8%97%8F%E5%85%B5%E7%A7%8D/">
       全战模拟隐藏兵种(不会更新)
     </a>
   </h2>
@@ -1451,7 +1334,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -1504,10 +1387,10 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img%E5%85%A8%E6%88%98%E5%B0%81%E9%9D%A2.jpg" alt></p>
+      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img%E5%85%A8%E6%88%98%E5%B0%81%E9%9D%A2.jpg"></p>
       
         <div class="readmore">
-          <a href="/2019/12/08/教程-全面战争模拟器隐藏兵种/" class="flat-box">
+          <a href="/2019/12/08/%E6%95%99%E7%A8%8B-%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8%E9%9A%90%E8%97%8F%E5%85%B5%E7%A7%8D/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1517,11 +1400,11 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
-          <a href="/tags/游戏/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
+          <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
         
-          <a href="/tags/全面战争模拟器/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;全面战争模拟器</a>
+          <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;全面战争模拟器</a>
         
       </div>
     
@@ -1540,13 +1423,13 @@
   <section class='meta'>
     
     
-      <a title='PUBG操作集锦' href='/2019/11/29/视频-PUBG操作集锦/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
+      <a title='PUBG操作集锦' href='/2019/11/29/%E8%A7%86%E9%A2%91-PUBG%E6%93%8D%E4%BD%9C%E9%9B%86%E9%94%A6/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/11/29/视频-PUBG操作集锦/">
+    <a href="/2019/11/29/%E8%A7%86%E9%A2%91-PUBG%E6%93%8D%E4%BD%9C%E9%9B%86%E9%94%A6/">
       PUBG操作集锦
     </a>
   </h2>
@@ -1585,7 +1468,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/视频/' rel="nofollow">
+    <a href='/categories/%E8%A7%86%E9%A2%91/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>视频</p>
     </a>
@@ -1638,10 +1521,10 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imglogo_b.png" alt></p>
+      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imglogo_b.png"></p>
       
         <div class="readmore">
-          <a href="/2019/11/29/视频-PUBG操作集锦/" class="flat-box">
+          <a href="/2019/11/29/%E8%A7%86%E9%A2%91-PUBG%E6%93%8D%E4%BD%9C%E9%9B%86%E9%94%A6/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1651,9 +1534,9 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/游戏/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
+          <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;游戏</a>
         
-          <a href="/tags/视频/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
+          <a href="/tags/%E8%A7%86%E9%A2%91/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
         
           <a href="/tags/PUBG/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;PUBG</a>
         
@@ -1674,13 +1557,13 @@
   <section class='meta'>
     
     
-      <a title='软件-Proxyee Down' href='/2019/11/09/教程-Proxyee Down/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
+      <a title='软件-Proxyee Down' href='/2019/11/09/%E6%95%99%E7%A8%8B-Proxyee%20Down/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/11/09/教程-Proxyee Down/">
+    <a href="/2019/11/09/%E6%95%99%E7%A8%8B-Proxyee%20Down/">
       软件-Proxyee Down
     </a>
   </h2>
@@ -1719,7 +1602,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -1775,7 +1658,7 @@
       <h3 id="Proxyee-Down的使用"><a href="#Proxyee-Down的使用" class="headerlink" title="Proxyee Down的使用"></a>Proxyee Down的使用</h3>
       
         <div class="readmore">
-          <a href="/2019/11/09/教程-Proxyee Down/" class="flat-box">
+          <a href="/2019/11/09/%E6%95%99%E7%A8%8B-Proxyee%20Down/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1785,11 +1668,11 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
           <a href="/tags/Proxyee-Down/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;Proxyee Down</a>
         
-          <a href="/tags/百度云/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;百度云</a>
+          <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;百度云</a>
         
       </div>
     
@@ -1808,13 +1691,13 @@
   <section class='meta'>
     
     
-      <a title='罗小黑战记 HD1080P' href='/2019/11/05/视频-罗小黑战记/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
+      <a title='罗小黑战记 HD1080P' href='/2019/11/05/%E8%A7%86%E9%A2%91-%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/11/05/视频-罗小黑战记/">
+    <a href="/2019/11/05/%E8%A7%86%E9%A2%91-%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0/">
       罗小黑战记 HD1080P
     </a>
   </h2>
@@ -1853,7 +1736,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/视频/' rel="nofollow">
+    <a href='/categories/%E8%A7%86%E9%A2%91/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>视频</p>
     </a>
@@ -1906,10 +1789,10 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0.jpg" alt></p>
+      <p><img src="https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_img%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0.jpg"></p>
       
         <div class="readmore">
-          <a href="/2019/11/05/视频-罗小黑战记/" class="flat-box">
+          <a href="/2019/11/05/%E8%A7%86%E9%A2%91-%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -1919,7 +1802,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/视频/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
+          <a href="/tags/%E8%A7%86%E9%A2%91/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
         
       </div>
     
@@ -1938,13 +1821,13 @@
   <section class='meta'>
     
     
-      <a title='8848 ass手机' href='/2019/10/25/视频-8848ass/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
+      <a title='8848 ass手机' href='/2019/10/25/%E8%A7%86%E9%A2%91-8848ass/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgtimg.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/10/25/视频-8848ass/">
+    <a href="/2019/10/25/%E8%A7%86%E9%A2%91-8848ass/">
       8848 ass手机
     </a>
   </h2>
@@ -1983,7 +1866,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/视频/' rel="nofollow">
+    <a href='/categories/%E8%A7%86%E9%A2%91/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>视频</p>
     </a>
@@ -2039,7 +1922,7 @@
       <p>Ass we can！</p>
       
         <div class="readmore">
-          <a href="/2019/10/25/视频-8848ass/" class="flat-box">
+          <a href="/2019/10/25/%E8%A7%86%E9%A2%91-8848ass/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -2049,7 +1932,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/视频/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
+          <a href="/tags/%E8%A7%86%E9%A2%91/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;视频</a>
         
       </div>
     
@@ -2068,13 +1951,13 @@
   <section class='meta'>
     
     
-      <a title='C++对拍' href='/2019/10/03/教程-对拍/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
+      <a title='C++对拍' href='/2019/10/03/%E6%95%99%E7%A8%8B-%E5%AF%B9%E6%8B%8D/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/mcmohen/ImageHosting/mcmohen_imgmcmohen_imgteacher.jpg'></a>
     
     <div class="meta" id="header-meta">
       
         
   <h2 class="title">
-    <a href="/2019/10/03/教程-对拍/">
+    <a href="/2019/10/03/%E6%95%99%E7%A8%8B-%E5%AF%B9%E6%8B%8D/">
       C++对拍
     </a>
   </h2>
@@ -2113,7 +1996,7 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/教程/' rel="nofollow">
+    <a href='/categories/%E6%95%99%E7%A8%8B/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
       <p>教程</p>
     </a>
@@ -2135,7 +2018,7 @@
           <span class="post-meta-item-icon">
             <i class="fa fa-keyboard"></i>
             <span class="post-meta-item-text">  字数统计: </span>
-            <span class="post-count">1.6k字</span>
+            <span class="post-count">1.7k字</span>
           </span>
         </span>
         &nbsp; | &nbsp;
@@ -2169,7 +2052,7 @@
       <h2 id="对拍"><a href="#对拍" class="headerlink" title="对拍"></a>对拍</h2>
       
         <div class="readmore">
-          <a href="/2019/10/03/教程-对拍/" class="flat-box">
+          <a href="/2019/10/03/%E6%95%99%E7%A8%8B-%E5%AF%B9%E6%8B%8D/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
             阅读全文
           </a>
@@ -2179,7 +2062,7 @@
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/教程/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
+          <a href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;教程</a>
         
           <a href="/tags/C/" rel="nofollow"><i class="fas fa-tags fa-fw"></i>&nbsp;C++</a>
         
@@ -2463,7 +2346,7 @@
           时间目录
         </a></li>
       
-        <li><a class="flat-box" title="https://share.mcmohen.top/" href="https://share.mcmohen.top/"
+        <li><a class="flat-box" title="https://share.mcmohen.top/" target="_blank" rel="noopener" href="https://share.mcmohen.top/"
           
           
           id="https:share.mcmohen.top">
@@ -2509,6 +2392,18 @@
           留言板
         </a></li>
       
+        <li><a class="flat-box" title="http://mc.mcmohen.top:8123/" target="_blank" href="http://mc.mcmohen.top:8123/"
+          
+            rel="nofollow noopener"
+          
+          
+          id="http:mc.mcmohen.top:8123">
+          
+            <i class="fas fa-gamepad fa-fw fa-fw" aria-hidden="true"></i>
+          
+          MC卫星地图
+        </a></li>
+      
         <li><a class="flat-box" title="/about/" href="/about/"
           
             rel="nofollow"
@@ -2551,23 +2446,23 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/作者专用/" href="/categories/作者专用/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/"><div class='name'>作者专用</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/test/" href="/categories/作者专用/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/test/"><div class='name'>test</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box child" title="/categories/作者专用/藏匿/" href="/categories/作者专用/藏匿/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box child" title="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/" href="/categories/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/%E8%97%8F%E5%8C%BF/"><div class='name'>藏匿</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"><div class='name'>教程</div><div class='badge'>(11)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/文学/" href="/categories/文学/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E6%96%87%E5%AD%A6/" href="/categories/%E6%96%87%E5%AD%A6/"><div class='name'>文学</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/视频/" href="/categories/视频/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%A7%86%E9%A2%91/" href="/categories/%E8%A7%86%E9%A2%91/"><div class='name'>视频</div><div class='badge'>(4)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资源/" href="/categories/资源/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E6%BA%90/" href="/categories/%E8%B5%84%E6%BA%90/"><div class='name'>资源</div><div class='badge'>(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/资讯/" href="/categories/资讯/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E8%B5%84%E8%AE%AF/" href="/categories/%E8%B5%84%E8%AE%AF/"><div class='name'>资讯</div><div class='badge'>(2)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/题解/" href="/categories/题解/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
+          <li><a class="flat-box" title="/categories/%E9%A2%98%E8%A7%A3/" href="/categories/%E9%A2%98%E8%A7%A3/"><div class='name'>题解</div><div class='badge'>(4)</div></a></li>
         
       </ul>
     </div>
@@ -2598,7 +2493,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/中学部/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/作者专用/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/全面战争模拟器/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/加密/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/加速器/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/导航栏/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/我的世界/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/指南/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/教程/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/文学/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/深圳实验学校/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/游戏/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/百度云/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/虚拟机/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/视频/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/资源/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/资讯/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/题解/" style="font-size: 20px; color: #707070">题解</a>
+      <a href="/tags/C/" style="font-size: 22px; color: #636363">C++</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/Hyper-V/" style="font-size: 14px; color: #999">Hyper-V</a> <a href="/tags/Markdown/" style="font-size: 20px; color: #707070">Markdown</a> <a href="/tags/Minecraft/" style="font-size: 14px; color: #999">Minecraft</a> <a href="/tags/PUBG/" style="font-size: 16px; color: #8b8b8b">PUBG</a> <a href="/tags/Proxyee-Down/" style="font-size: 14px; color: #999">Proxyee Down</a> <a href="/tags/test/" style="font-size: 16px; color: #8b8b8b">test</a> <a href="/tags/%E4%B8%AD%E5%AD%A6%E9%83%A8/" style="font-size: 14px; color: #999">中学部</a> <a href="/tags/%E4%BD%9C%E8%80%85%E4%B8%93%E7%94%A8/" style="font-size: 14px; color: #999">作者专用</a> <a href="/tags/%E5%85%A8%E9%9D%A2%E6%88%98%E4%BA%89%E6%A8%A1%E6%8B%9F%E5%99%A8/" style="font-size: 14px; color: #999">全面战争模拟器</a> <a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 14px; color: #999">加密</a> <a href="/tags/%E5%8A%A0%E9%80%9F%E5%99%A8/" style="font-size: 14px; color: #999">加速器</a> <a href="/tags/%E5%AF%BC%E8%88%AA%E6%A0%8F/" style="font-size: 14px; color: #999">导航栏</a> <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" style="font-size: 14px; color: #999">我的世界</a> <a href="/tags/%E6%8C%87%E5%8D%97/" style="font-size: 14px; color: #999">指南</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%96%87%E5%AD%A6/" style="font-size: 18px; color: #7e7e7e">文学</a> <a href="/tags/%E6%B7%B1%E5%9C%B3%E5%AE%9E%E9%AA%8C%E5%AD%A6%E6%A0%A1/" style="font-size: 14px; color: #999">深圳实验学校</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18px; color: #7e7e7e">游戏</a> <a href="/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/" style="font-size: 14px; color: #999">百度云</a> <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 14px; color: #999">虚拟机</a> <a href="/tags/%E8%A7%86%E9%A2%91/" style="font-size: 20px; color: #707070">视频</a> <a href="/tags/%E8%B5%84%E6%BA%90/" style="font-size: 14px; color: #999">资源</a> <a href="/tags/%E8%B5%84%E8%AE%AF/" style="font-size: 16px; color: #8b8b8b">资讯</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 20px; color: #707070">题解</a>
     </div>
   </section>
 
@@ -2876,10 +2771,14 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/app.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-material-x@19.11/js/search.js"></script>
+
 
 
 
@@ -3050,5 +2949,5 @@ color="0,0,0" opacity='0.5' zIndex="-2" count="40" src="//cdn.bootcss.com/canvas
 <!-- 悟空 -->
 <!--<div id="wukong"><marquee direction="right"><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.6/images/wukong.gif"></marquee></div>-->
   
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"mobile":{"show":false},"log":false});</script><script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
-</script></body></html>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"mobile":{"show":false},"log":false});</script></body>
+</html>
